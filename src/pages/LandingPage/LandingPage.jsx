@@ -176,6 +176,91 @@ const LandingPage = () => {
                   </div>
                 </div>
               </div>
+            </div>          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="products-section">
+        <div className="container">
+          <div className="section-header">
+            <div className="tagline">// OUR PRODUCTS</div>
+            <h2 className="section-title">
+              We provide a variety<br />
+              of products for defence
+            </h2>
+          </div>
+          <div className="products-scroll-container">
+            <div className="products-grid">
+              <div className="product-card">
+                <div className="product-image">
+                  <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Equipment - Aqua" />
+                </div>
+                <div className="product-info">
+                  <h3 className="product-title">Equipment - Aqua</h3>
+                  <div className="product-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="product-card">
+                <div className="product-image">
+                  <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fire Control System - Kavach" />
+                </div>
+                <div className="product-info">
+                  <h3 className="product-title">Fire Control System - Kavach</h3>
+                  <div className="product-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="product-card">
+                <div className="product-image">
+                  <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fire Control System T90" />
+                </div>
+                <div className="product-info">
+                  <h3 className="product-title">Fire Control System T90</h3>
+                  <div className="product-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="product-card">
+                <div className="product-image">
+                  <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="CREW - Library" />
+                </div>
+                <div className="product-info">
+                  <h3 className="product-title">CREW - Library</h3>
+                  <div className="product-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="product-card">
+                <div className="product-image">
+                  <img src="https://images.unsplash.com/photo-1581093458791-9d42e3b2c533?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Advanced Defense System" />
+                </div>
+                <div className="product-info">
+                  <h3 className="product-title">Advanced Defense System</h3>
+                  <div className="product-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
