@@ -261,6 +261,86 @@ const LandingPage = () => {
                   </div>
                 </div>
               </div>
+            </div>        
+          </div>
+        </div>
+      </section>
+
+      {/* Premises Section */}
+      <section className="premises-section">
+        <div className="container">
+          <div className="section-header">
+            <div className="tagline">// GALLERY</div>
+            <h2 className="section-title">
+              Have A Glimpse Of Our Premises<br />
+              And Work Environment
+            </h2>
+          </div>
+          <div className="premises-grid">
+            <div className="premises-item large">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Office Building Exterior" />
+            </div>
+            <div className="premises-item">
+              <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Office Entrance" />
+            </div>
+            <div className="premises-item">
+              <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Work Environment" />
+            </div>
+            <div className="premises-item">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Conference Room" />
+            </div>
+            <div className="premises-item">
+              <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Workspace" />
+            </div>          </div>
+        </div>
+      </section>
+
+      {/* Quality Section */}
+      <section className="quality-section">
+        <div className="container">
+          <div className="quality-content">
+            <div className="quality-text">
+              <div className="tagline">// EXCEEDING EXPECTATIONS</div>
+              <h2 className="quality-title">
+                Quality: An Integral<br />
+                Part Of Work Culture
+              </h2>
+              <p className="quality-description">
+                At EON, Quality is not merely a function, but a vital mission and an 
+                integral part of the work culture. Quality-enhanced processes are 
+                the cornerstones of EON's development methodology. At EON, we 
+                are a serious <strong>ISO 9001:2015 organization</strong>, currently 
+                working towards <strong>SEI CMMI level 3</strong>.
+              </p>
+            </div>
+            
+            <div className="quality-features">
+              <div className="quality-feature-card">
+                <div className="feature-image">
+                  <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Extensive Reach" />
+                  <div className="feature-overlay">
+                    <h3 className="feature-name">Extensive Reach</h3>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="quality-feature-card">
+                <div className="feature-image">
+                  <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Feedback Efficiency" />
+                  <div className="feature-overlay">
+                    <h3 className="feature-name">Feedback Efficiency</h3>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="quality-feature-card">
+                <div className="feature-image">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Continuous Enhancement" />
+                  <div className="feature-overlay">
+                    <h3 className="feature-name">Continuous Enhancement</h3>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
