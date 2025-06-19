@@ -341,6 +341,108 @@ const LandingPage = () => {
                   </div>
                 </div>
               </div>
+            </div>          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials-section">
+        <div className="container">
+          <div className="section-header">
+            <div className="tagline">// TESTIMONIALS</div>
+            <h2 className="section-title">
+              What our clients say<br />
+              about us!
+            </h2>
+            <div className="google-rating">
+              <div className="rating-info">
+                <span className="rating-text">Good</span>
+                <div className="stars">
+                  <span className="star filled">★</span>
+                  <span className="star filled">★</span>
+                  <span className="star filled">★</span>
+                  <span className="star filled">★</span>
+                  <span className="star half">★</span>
+                </div>
+                <span className="rating-count">Based on 15 reviews</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="google-logo" />
+            </div>
+          </div>
+          
+          <div className="testimonials-slider">
+            <div className="testimonials-container">
+              <div className="testimonial-card">
+                <div className="testimonial-header">
+                  <div className="reviewer-info">
+                    <div className="reviewer-avatar">
+                      <span>J</span>
+                    </div>
+                    <div className="reviewer-details">
+                      <h4 className="reviewer-name">Jasojeet Dhiman</h4>
+                      <div className="review-stars">
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="review-source" />
+                </div>
+                <p className="testimonial-text">
+                  "Eon talent built us a technology company with exceptional work and great opportunities. It provide flexible working hours and all the benefits as per law of the employed workers."
+                </p>
+              </div>
+              
+              <div className="testimonial-card">
+                <div className="testimonial-header">
+                  <div className="reviewer-info">
+                    <div className="reviewer-avatar">
+                      <span>S</span>
+                    </div>
+                    <div className="reviewer-details">
+                      <h4 className="reviewer-name">Sunaina Regmi</h4>
+                      <div className="review-stars">
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="review-source" />
+                </div>
+                <p className="testimonial-text">
+                  "Outstanding service and professional approach. The team delivered beyond our expectations with innovative solutions."
+                </p>
+              </div>
+              
+              <div className="testimonial-card">
+                <div className="testimonial-header">
+                  <div className="reviewer-info">
+                    <div className="reviewer-avatar">
+                      <span>A</span>
+                    </div>
+                    <div className="reviewer-details">
+                      <h4 className="reviewer-name">Anotya Bhattri</h4>
+                      <div className="review-stars">
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                        <span className="star filled">★</span>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="review-source" />
+                </div>
+                <p className="testimonial-text">
+                  "Excellent quality work and timely delivery. Highly recommended for defense technology solutions."
+                </p>              
+              </div>
             </div>
           </div>
         </div>
