@@ -1,39 +1,43 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
     <nav className="navbar">
-      <div className="nav-container">
-        <div className="nav-logo">
-          <div className="logo">
+      <div className="nav-container">        <div className="nav-logo">
+          <Link to="/" className="logo">
             <img src="/eon_logo_trans.png" alt="Eon Infotech" className="logo-image" />
             <div className="brand-text">
               <strong>Eon</strong>
               <div className="brand-subtitle">Infotech</div>
             </div>
-          </div>
+          </Link>
         </div>
-        
-        <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-          <a href="#home" className="nav-link active" onClick={toggleMenu}>
+          <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+          <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={toggleMenu}>
             Home
-          </a>
+          </Link>
           <a href="#about" className="nav-link" onClick={toggleMenu}>
             About Us
           </a>
           <a href="#products" className="nav-link" onClick={toggleMenu}>
             Our Products
           </a>
-          <a href="#life" className="nav-link" onClick={toggleMenu}>
+          <Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
             Life at Eon
-          </a>
+          </Link>
           <a href="#contact" className="nav-link" onClick={toggleMenu}>
             Contact Us
           </a>
