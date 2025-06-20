@@ -196,6 +196,39 @@ const About = () => {
               <div className="success-ripple"></div>
               <div className="inspire-icon">🎯</div>
             </div>
+          </div>        
+          </div>
+      </div>      {/* Vision Section */}
+      <div className="about-vision-section">
+        <div className="about-vision-container">
+          <div className="vision-image-container">
+            <img 
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" 
+              alt="Professional Business Vision" 
+              className="vision-image"
+            />
+          </div>
+          <div className="vision-content">
+            <div className="vision-badge">// OUR VISION</div>
+            <h2 className="vision-title">Explained.</h2>
+            <p className="vision-description">
+              We envision ourselves in the leadership position in providing embedded product-
+              realization solutions in India.
+            </p>            
+            <div className="vision-details">
+              <p>
+                As we use this term, leadership means more external, more profit, more innovation that serves all customer's 
+                needs, and a more attractive place to work than any competitor. Achieving this ambitious objective will 
+                require that we double our revenue and profit every year for the next two years, and then double them every 
+                two years thereafter. It will require that we become less India oriented, more externally focused, have a mix of 
+                products and services, and continue to maintain a special focus on the wireless communications domain, 
+                which is our core competence. It will require us to deliver, time and again, world class solutions at Indian 
+                prices. The business will be sufficiently diversified through a judicious customer spread and a component of 
+                revenue coming through projects with predictable cash flows. We sincerely believe that if we work together, 
+                we can create this change and in this process create a firm that will be admired by our stockholders, 
+                customers, employees, and the community.
+              </p>
+            </div>
           </div>
         </div>
       </div>

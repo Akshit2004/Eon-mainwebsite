@@ -754,14 +754,19 @@
   justify-content: center;
   width: 150px;
   height: 150px;
+  margin: 0 auto; /* Center the visual on mobile */
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .success-ripple {
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
   border: 3px solid #3b82f6;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
   animation: ripple 2s ease-out infinite;
 }
 
@@ -769,10 +774,13 @@
 .success-ripple::after {
   content: '';
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
   border: 2px solid #3b82f6;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
   animation: ripple 2s ease-out infinite;
 }
 
@@ -788,11 +796,11 @@
 
 @keyframes ripple {
   0% {
-    transform: scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
     opacity: 1;
   }
   100% {
-    transform: scale(1.5);
+    transform: translate(-50%, -50%) scale(1.5);
     opacity: 0;
   }
 }
@@ -803,6 +811,96 @@
   z-index: 2;
   position: relative;
 }
+
+/* Vision Section */
+.about-vision-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 0;
+  position: relative;
+}
+
+.about-vision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.vision-image-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.vision-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-image:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.15);
+}
+
+.vision-content {
+  flex: 1;
+  color: #1e293b;
+}
+
+.vision-badge {
+  display: inline-block;
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.vision-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #1e293b;
+}
+
+.vision-description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.vision-details {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px;
+  border-left: 4px solid #3b82f6;
+}
+
+.vision-details p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #475569;
+  margin: 0;
+  font-weight: 400;
+}
+
+
 
 /* Responsive Design for Technology Section */
 @media (max-width: 1200px) {
@@ -924,10 +1022,10 @@
   .success-message h2 {
     font-size: 2rem;
   }
-  
-  .inspire-visual {
+    .inspire-visual {
     width: 120px;
     height: 120px;
+    margin: 0 auto;
   }
   
   .inspire-icon {
@@ -970,13 +1068,89 @@
   .success-message p {
     font-size: 1.1rem;
   }
-  
-  .inspire-visual {
+    .inspire-visual {
     width: 100px;
     height: 100px;
+    margin: 0 auto;
   }
   
   .inspire-icon {
     font-size: 2rem;
+  }
+}
+
+/* Responsive Design for Vision Section */
+@media (max-width: 1200px) {
+  .about-vision-container {
+    gap: 60px;
+    padding: 0 1.5rem;
+  }
+  
+  .vision-title {
+    font-size: 2.5rem;
+  }
+  
+  .vision-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-vision-container {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .vision-image-container {
+    max-width: 100%;
+  }
+  
+  .vision-image {
+    height: 350px;
+  }
+  
+  .vision-title {
+    font-size: 2.2rem;
+  }
+  
+  .vision-description {
+    font-size: 1.2rem;
+  }
+  
+  .vision-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-vision-section {
+    padding: 60px 0;
+  }
+  
+  .about-vision-container {
+    padding: 0 1rem;
+    gap: 30px;
+  }
+  
+  .vision-title {
+    font-size: 1.8rem;
+  }
+  
+  .vision-description {
+    font-size: 1.1rem;
+  }
+  
+  .vision-details {
+    padding: 24px;
+  }
+  
+  .vision-details p {
+    font-size: 1rem;
+  }
+  
+  .vision-image {
+    height: 250px;
+    border-radius: 12px;
   }
 }
