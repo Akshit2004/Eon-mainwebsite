@@ -233,6 +233,150 @@ const About = () => {
         </div>
       </div>
 
+      {/* Five Pillars Section */}
+      <div className="about-pillars-section">
+        <div className="about-pillars-container">
+          <div className="pillars-header">
+            <div className="pillars-badge">// The Eon Strategy</div>
+            <h2 className="pillars-title">Five Pillars of the Eon Strategy</h2>
+          </div>
+          
+          <div className="pillars-grid">
+            <div className="pillar-card pillar-1">
+              <div className="pillar-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=400&q=80" 
+                  alt="Focus on Customer Vision" 
+                />
+              </div>
+              <div className="pillar-content">
+                <h3>Focus on Customer Vision</h3>
+                <p>
+                  At Eon Information Limited, we have only one mission: clients – "To Make Our Customer's Vision Possible." Everything that constitutes Eon's Customer & Sales, we seek first to understand our clients, understand their needs. This shapes our service technology solutions that satisfy their needs. The ultimate result is that we stay focused on the customer as the centre of our mission statement, while our customers focus on their own core business and have the mission statement.
+                </p>
+              </div>
+            </div>
+
+            <div className="pillar-card pillar-2">
+              <div className="pillar-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" 
+                  alt="Speed" 
+                />
+              </div>
+              <div className="pillar-content">
+                <h3>Speed</h3>
+                <p>
+                  We realise that speed is one of the key factors in delivering to our customers. We are a young, nimble-footed team compared to bigger players. Our typical delivery times are 50% faster than bigger players. We leverage simplicity, agility and technology while embracing efficiency without compromising on the quality of our solutions, so you'll not only get your projects delivered faster but also with the highest standards upheld.
+                </p>
+              </div>
+            </div>
+
+            <div className="pillar-card pillar-3">
+              <div className="pillar-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=400&q=80" 
+                  alt="Research & Development" 
+                />
+              </div>
+              <div className="pillar-content">
+                <h3>Research & Development</h3>
+                <p>
+                  Research and Development is our lifeline, and gives us the competitive advantage in this fiercely contested marketplace. 10% of our budget goes into Research and Development every year, this enables us to keep our talents within Eon are currently working on technologies of tomorrow.
+                </p>
+              </div>
+            </div>
+
+            <div className="pillar-card pillar-4">
+              <div className="pillar-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=400&q=80" 
+                  alt="Quality Practices" 
+                />
+              </div>
+              <div className="pillar-content">
+                <h3>Quality Practices, Standards and Management</h3>
+                <p>
+                  Quality is a way of life at Eon. The trinity of Quality Standards, Quality Practices and Quality Management guides us in all our engagements. We are a systems driven ISO 9001:2008 Organization.
+                </p>
+              </div>
+            </div>
+
+            <div className="pillar-card pillar-5">
+              <div className="pillar-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=400&q=80" 
+                  alt="Prices" 
+                />
+              </div>
+              <div className="pillar-content">
+                <h3>Prices</h3>
+                <p>
+                  A lean India company can bring you world class solutions at naturally Indian prices. Our focus on efficiency allows us to deliver world-class services without the hefty price tags.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Our Philosophy Section */}
+      <div className="about-philosophy-section">
+        <div className="about-philosophy-container">
+          <div className="philosophy-header">
+            <div className="philosophy-badge">// OUR PHILOSOPHY</div>
+            <h2 className="philosophy-title">
+              At the core Eon's philosophy are<br />the following principles
+            </h2>
+          </div>
+          <div className="philosophy-grid">
+            <div className="philosophy-card card-1">
+              <div className="philosophy-bg-number">01</div>
+              <div className="philosophy-content">
+                <h3>Customer-Centric Approach</h3>
+                <p>Eon believes in understanding and fulfilling their customer's vision, dreams, and needs.</p>
+                <div className="philosophy-icon">👥</div>
+              </div>
+            </div>
+            <div className="philosophy-card card-2">
+              <div className="philosophy-bg-number">02</div>
+              <div className="philosophy-content">
+                <h3>Innovative Spirit</h3>
+                <p>Eon Infotech stay ahead of the curve in innovation and providing cutting-edge technology solutions in their products.</p>
+                <div className="philosophy-icon">🚀</div>
+              </div>
+            </div>
+            <div className="philosophy-card card-3">
+              <div className="philosophy-bg-number">03</div>
+              <div className="philosophy-content">
+                <h3>Commitment to Excellence</h3>
+                <p>Eon upholds a culture of excellence in all aspects of their operations to ensure the highest level of customer satisfaction.</p>
+                <div className="philosophy-icon">🏅</div>
+              </div>
+            </div>
+            <div className="philosophy-card card-4">
+              <div className="philosophy-bg-number">04</div>
+              <div className="philosophy-content">
+                <h3>Value-Oriented Pricing</h3>
+                <p>Eon also values affordability as they aim to provide cost-effective solutions to their valueable clients.</p>
+                <div className="philosophy-icon">💲</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Consultation CTA Section */}
+      <div className="about-consultation-section">
+        <div className="consultation-overlay">
+          <div className="consultation-content">
+            <div className="consultation-badge">// Drop us a line! We are here to answer your questions 24/7</div>
+            <h2 className="consultation-title">NEED A CONSULTATION?</h2>
+            <a href="/contact" className="consultation-btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </>
   );
