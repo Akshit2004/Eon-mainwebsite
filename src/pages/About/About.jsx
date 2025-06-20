@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import laptopImage from "../../assets/image-from-rawpixel-id-12362751-png.png";
 
 const About = () => {
   return (
@@ -77,6 +78,128 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* New Technology Innovation Section */}
+      <div className="about-tech-section">
+        <div className="about-tech-container">
+          <div className="about-tech-content">
+            <div className="about-tech-badge">// Innovation</div>
+            <h2 className="about-tech-title">
+              Cutting-Edge Technology
+              <br />
+              <span className="tech-highlight">Driving Innovation</span>
+            </h2>
+            <p className="about-tech-description">
+              Our mission is to make our customer's vision possible through
+              advanced embedded solutions and innovative software development.
+              We believe in transforming ideas into reality with precision and
+              excellence.
+            </p>
+
+            <div className="about-tech-stats">
+              <div className="tech-stat">
+                <div className="stat-number">10+</div>
+                <div className="stat-label">Years Experience</div>
+              </div>
+              <div className="tech-stat">
+                <div className="stat-number">500+</div>
+                <div className="stat-label">Projects Delivered</div>
+              </div>
+              <div className="tech-stat">
+                <div className="stat-number">99%</div>
+                <div className="stat-label">Client Satisfaction</div>
+              </div>
+            </div>
+
+            <div className="about-tech-points">
+              <div className="tech-point">
+                <div className="tech-point-icon">🚀</div>
+                <div className="tech-point-text">Advanced Embedded Systems</div>
+              </div>
+              <div className="tech-point">
+                <div className="tech-point-icon">⚡</div>
+                <div className="tech-point-text">Real-time Processing</div>
+              </div>
+              <div className="tech-point">
+                <div className="tech-point-icon">🔒</div>
+                <div className="tech-point-text">Secure Defense Solutions</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="about-tech-visual">
+            <div className="laptop-container">
+              <img
+                src={laptopImage}
+                alt="Technology Laptop"
+                className="laptop-image"
+              />
+              <div className="floating-elements">
+                <div className="floating-circle circle-1"></div>
+                <div className="floating-circle circle-2"></div>
+                <div className="floating-circle circle-3"></div>
+                <div className="code-snippet snippet-1">
+                  <span>{'<EON/>'}</span>
+                </div>
+                <div className="code-snippet snippet-2">
+                  <span>console.log('innovation')</span>
+                </div>
+                <div className="tech-icon icon-1">💻</div>
+                <div className="tech-icon icon-2">⚙️</div>
+                <div className="tech-icon icon-3">🔧</div>
+              </div>
+            </div>
+          </div>        </div>
+      </div>
+
+      {/* Customer Journey Section */}
+      <div className="about-journey-section">
+        <div className="about-journey-container">
+          <div className="journey-cards">
+            <div className="journey-card card-1">
+              <div className="card-icon">
+                <div className="icon-circle dreams-icon">
+                  <span>💭</span>
+                </div>
+              </div>
+              <h3>Our Customer Dreams</h3>
+              <p>We listen to our customers' aspirations and understand their vision for the future.</p>
+            </div>
+
+            <div className="journey-card card-2">
+              <div className="card-icon">
+                <div className="icon-circle believe-icon">
+                  <span>💡</span>
+                </div>
+              </div>
+              <h3>And We Believe</h3>
+              <p>We believe in turning those dreams into achievable goals with our expertise and dedication.</p>
+            </div>
+
+            <div className="journey-card card-3">
+              <div className="card-icon">
+                <div className="icon-circle create-icon">
+                  <span>⚙️</span>
+                </div>
+              </div>
+              <h3>Then We Create</h3>
+              <p>We create innovative solutions that bring those dreams to life with precision and excellence.</p>
+            </div>
+          </div>
+
+          <div className="journey-message">
+            <div className="success-message">
+              <h2>And then he succeeds.</h2>
+              <p>His success inspires us to do More.</p>
+            </div>
+            <div className="inspire-visual">
+              <div className="success-ripple"></div>
+              <div className="inspire-icon">🎯</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </>
   );
