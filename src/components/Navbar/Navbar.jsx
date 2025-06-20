@@ -34,13 +34,12 @@ const Navbar = () => {
           </a>
           <a href="#products" className="nav-link" onClick={toggleMenu}>
             Our Products
-          </a>          
-          <Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
+          </a>            <Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
             Life at Eon
           </Link>
-          <a href="#contact" className="nav-link" onClick={toggleMenu}>
+          <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={toggleMenu}>
             Contact Us
-          </a>
+          </Link>
           <Link to="/quality" className={`nav-link ${isActive('/quality') ? 'active' : ''}`} onClick={toggleMenu}>
             Quality
           </Link>

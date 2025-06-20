@@ -72,13 +72,12 @@ const Footer = () => {
                   <span className="contact-icon">✉️</span>
                   <p>info@eoninfotech.com</p>
                 </div>
-              </div>
-                <div className="footer-column">
+              </div>              <div className="footer-column">
                 <h4 className="footer-column-title">Quick Links</h4>
                 <ul className="footer-menu">
                   <li><a href="/">Home</a></li>
                   <li><a href="#about">About Us</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
+                  <li><a href="/contact">Contact Us</a></li>
                   <li><a href="/life">Life at Eon</a></li>
                   <li><a href="/quality">Quality</a></li>
                 </ul>
