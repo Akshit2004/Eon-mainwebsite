@@ -25,16 +25,15 @@ const Navbar = () => {
             </div>
           </Link>
         </div>
-          <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-          <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={toggleMenu}>
+          <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>          <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={toggleMenu}>
             Home
           </Link>
-          <a href="#about" className="nav-link" onClick={toggleMenu}>
+          <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} onClick={toggleMenu}>
             About Us
-          </a>
+          </Link>
           <a href="#products" className="nav-link" onClick={toggleMenu}>
             Our Products
-          </a>            <Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
+          </a><Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
             Life at Eon
           </Link>
           <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={toggleMenu}>
