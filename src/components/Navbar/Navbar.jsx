@@ -34,16 +34,16 @@ const Navbar = () => {
           </a>
           <a href="#products" className="nav-link" onClick={toggleMenu}>
             Our Products
-          </a>
+          </a>          
           <Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
             Life at Eon
           </Link>
           <a href="#contact" className="nav-link" onClick={toggleMenu}>
             Contact Us
           </a>
-          <a href="#quality" className="nav-link" onClick={toggleMenu}>
+          <Link to="/quality" className={`nav-link ${isActive('/quality') ? 'active' : ''}`} onClick={toggleMenu}>
             Quality
-          </a>
+          </Link>
         </div>
 
         <div className="nav-actions">

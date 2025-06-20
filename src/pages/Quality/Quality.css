@@ -1,0 +1,349 @@
+/* Quality Page Styles */
+.quality-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Quality Hero Section */
+.quality-hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.quality-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: url('https://aimcontrolgroup.com/vnt_upload/expert/QAQC/quality_inspection/quality-inspection.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.quality-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.quality-hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.quality-hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.quality-hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;  opacity: 0.9;
+}
+
+/* Exceeding Expectations Section */
+.exceeding-expectations-section {
+  padding: 8rem 0;
+  background: white;
+}
+
+.expectations-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.expectations-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.expectations-title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.expectations-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.quality-statement {
+  text-align: center;
+  margin: 4rem 0;
+  padding: 3rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  position: relative;
+}
+
+.statement-quote {
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 4rem;
+  color: #667eea;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+.statement-text {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.description-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 4rem 0;
+  align-items: start;
+}
+
+.description-left p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.description-left strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.quality-highlights {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 4px solid #667eea;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.highlight-item:last-child {
+  margin-bottom: 0;
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.highlight-content h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.highlight-content p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.quality-approach {
+  margin: 4rem 0;
+  padding: 3rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  color: white;
+}
+
+.approach-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.approach-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.quality-philosophy {
+  margin-top: 4rem;
+}
+
+.philosophy-card {
+  background: #f8f9fa;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+}
+
+.philosophy-card h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.philosophy-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.philosophy-card strong {
+  color: #667eea;
+}
+
+.philosophy-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.feature-tag {
+  background: #667eea;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.feature-tag:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .quality-hero-title {
+    font-size: 3rem;
+  }
+  
+  .description-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .expectations-title {
+    font-size: 2.5rem;
+  }
+  
+  .statement-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .quality-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .quality-hero-description {
+    font-size: 1rem;
+  }  
+  .exceeding-expectations-section {
+    padding: 4rem 0;
+  }
+  
+  .quality-statement,
+  .quality-statement,
+  .quality-approach,
+  .philosophy-card {
+    padding: 2rem;
+  }  
+  .section-title,
+  .expectations-title {
+    font-size: 2rem;
+  }
+  
+  .statement-text {
+    font-size: 1.3rem;
+  }
+  .quote-mark {
+    font-size: 3rem;
+  }
+  
+  .philosophy-features {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .feature-tag {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quality-hero-title {
+    font-size: 2rem;
+  }
+  
+  .quality-hero-content {
+    padding: 0 1rem;
+  }
+    .container {
+    padding: 0 1rem;
+  }
+  
+  .quality-statement,
+  .quality-approach,
+  .philosophy-card {    padding: 1.5rem;
+  }
+  
+  .expectations-title {
+    font-size: 1.8rem;
+  }
+  
+  .statement-text {
+    font-size: 1.1rem;
+  }
+  
+  .highlight-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .highlight-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
