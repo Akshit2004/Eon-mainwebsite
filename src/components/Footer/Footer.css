@@ -38,7 +38,7 @@
 .newsletter-input {
   padding: 14px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 0;
   background: white;
   color: #333;
   font-size: 16px;
@@ -51,7 +51,7 @@
 }
 
 .newsletter-input:focus {
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  outline: 3px solid rgba(59, 130, 246, 0.3);
 }
 
 .newsletter-submit {
@@ -59,7 +59,7 @@
   background: #3b82f6;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 0;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -133,7 +133,7 @@
   width: 40px;
   height: 40px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border-radius: 0;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;

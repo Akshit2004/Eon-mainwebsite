@@ -1,7 +1,6 @@
 /* Navbar Styles */
 .navbar {
   background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(10px);
   padding: 0.75rem 0;
   position: fixed;
   top: 0;
@@ -129,7 +128,7 @@
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0;
   font-weight: 600;
   font-size: 0.85rem;
   letter-spacing: 0.5px;
@@ -141,7 +140,6 @@
 .nav-cta-btn:hover {
   background: linear-gradient(135deg, #3b82f6, #2563eb);
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 /* Mobile Toggle */
@@ -167,18 +165,15 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .nav-menu {
+@media screen and (max-width: 768px) {  .nav-menu {
     position: fixed;
     left: -100%;
     top: 70px;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     padding: 2rem 0;
     gap: 1.5rem;
   }

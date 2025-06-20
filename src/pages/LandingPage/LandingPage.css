@@ -67,7 +67,6 @@
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background: linear-gradient(135deg, #ffffff 0%, #e5e7eb 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -295,16 +294,14 @@
 
 .achievement-card {
   background: white;
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   border: 1px solid #f3f4f6;
 }
 
 .achievement-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
 .achievement-image {
@@ -409,7 +406,7 @@
   width: 50px;
   height: 50px;
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  border-radius: 0.75rem;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,9 +451,8 @@
 
 .grid-item {
   position: relative;
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -528,12 +524,12 @@
 
 .products-scroll-container::-webkit-scrollbar-track {
   background: #f1f5f9;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .products-scroll-container::-webkit-scrollbar-thumb {
   background: #cbd5e1;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .products-scroll-container::-webkit-scrollbar-thumb:hover {
@@ -549,9 +545,8 @@
 .product-card {
   flex: 0 0 350px;
   background: white;
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   border: 1px solid #f3f4f6;
   cursor: pointer;
@@ -559,7 +554,6 @@
 
 .product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
 .product-image {
@@ -646,16 +640,14 @@
 
 .premises-item {
   position: relative;
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .premises-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
 .premises-item.large {
@@ -728,16 +720,14 @@
 
 .quality-feature-card {
   position: relative;
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .quality-feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
 .feature-image {
@@ -954,8 +944,7 @@
   margin-bottom: 3rem;
   padding: 1rem;
   background: white;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -1021,15 +1010,13 @@
 .testimonial-card {
   background: white;
   padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0;
   transition: all 0.3s ease;
   border: 1px solid #f3f4f6;
 }
 
 .testimonial-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-header {

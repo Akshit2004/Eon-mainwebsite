@@ -23,9 +23,11 @@ const Life = () => {
               Discover a workplace where innovation meets collaboration, where your career grows alongside 
               cutting-edge technology, and where every day brings new opportunities to make a difference.
             </p>
+          </div>        
           </div>
-        </div>
-      </section>      {/* Company Culture Section */}
+      </section>
+
+      {/* Company Culture Section */}
       <section className="company-culture-section">
         <div className="container">
           <div className="culture-content">
@@ -94,7 +96,8 @@ const Life = () => {
                   Partners can also refer information on the company's background and history, its 
                   structure, hierarchy, vision, policies, core activities, special initiatives and rewards, 
                   customer feedback and industry updates. This opportunity for exchange of ideas and for 
-                  ready access to organization related information facilitates a sense of identification with                  the organization's mission and its growth.
+                  ready access to organization related information facilitates a sense of identification with                  
+                  the organization's mission and its growth.
                 </p>
               </div>
             </div>
