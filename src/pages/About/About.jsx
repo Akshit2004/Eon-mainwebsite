@@ -156,34 +156,19 @@ const About = () => {
       <div className="about-journey-section">
         <div className="about-journey-container">
           <div className="journey-cards">
-            <div className="journey-card card-1">
-              <div className="card-icon">
-                <div className="icon-circle dreams-icon">
-                  <span>💭</span>
-                </div>
+            <div className="journey-card combined-card horizontal">
+              <div className="card-content">
+                <h3>Our Customer Dreams</h3>
+                <p>We listen to our customers' aspirations and understand their vision for the future.</p>
               </div>
-              <h3>Our Customer Dreams</h3>
-              <p>We listen to our customers' aspirations and understand their vision for the future.</p>
-            </div>
-
-            <div className="journey-card card-2">
-              <div className="card-icon">
-                <div className="icon-circle believe-icon">
-                  <span>💡</span>
-                </div>
+              <div className="card-content">
+                <h3>And We Believe</h3>
+                <p>We believe in turning those dreams into achievable goals with our expertise and dedication.</p>
               </div>
-              <h3>And We Believe</h3>
-              <p>We believe in turning those dreams into achievable goals with our expertise and dedication.</p>
-            </div>
-
-            <div className="journey-card card-3">
-              <div className="card-icon">
-                <div className="icon-circle create-icon">
-                  <span>⚙️</span>
-                </div>
+              <div className="card-content">
+                <h3>Then We Create</h3>
+                <p>We create innovative solutions that bring those dreams to life with precision and excellence.</p>
               </div>
-              <h3>Then We Create</h3>
-              <p>We create innovative solutions that bring those dreams to life with precision and excellence.</p>
             </div>
           </div>
 
