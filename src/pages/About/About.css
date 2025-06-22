@@ -220,7 +220,7 @@
 /* Technology Innovation Section */
 .about-tech-section {
   width: 100%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: none; /* Removed purple gradient background */
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -255,7 +255,7 @@
 
 .about-tech-content {
   flex: 1;
-  color: white;
+  color: #1e293b; /* Changed from white to dark for visibility */
 }
 
 .about-tech-badge {
@@ -263,7 +263,7 @@
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
+  color: #1e293b; /* Changed from white to dark for visibility */
   padding: 8px 20px;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -278,19 +278,16 @@
   line-height: 1.2;
   margin-bottom: 24px;
   animation: fadeInUp 1s ease 0.4s both;
+  color: #1e293b; /* Ensure title is visible */
 }
 
 .tech-highlight {
-  background: linear-gradient(45deg, #ffd89b 0%, #19547b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 3s ease-in-out infinite;
-}
-
-@keyframes shimmer {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.8; }
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  color: #2563eb; /* Use a solid accent color for emphasis */
+  animation: none;
 }
 
 .about-tech-description {
@@ -299,6 +296,7 @@
   opacity: 0.9;
   margin-bottom: 40px;
   animation: fadeInUp 1s ease 0.6s both;
+  color: #475569; /* Changed from default to dark for visibility */
 }
 
 .about-tech-stats {
@@ -903,7 +901,7 @@
 /* Five Pillars Section */
 .about-pillars-section {
   width: 100%;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: #fff; /* Changed from purple gradient to white */
   padding: 100px 0;
   position: relative;
 }

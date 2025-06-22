@@ -87,7 +87,7 @@ const About = () => {
             <h2 className="about-tech-title">
               Cutting-Edge Technology
               <br />
-              <span className="tech-highlight">Driving Innovation</span>
+              <span>Driving Innovation</span>
             </h2>
             <p className="about-tech-description">
               Our mission is to make our customer's vision possible through
