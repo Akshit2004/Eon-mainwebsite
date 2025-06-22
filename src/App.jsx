@@ -5,6 +5,7 @@ import About from './pages/About/About';
 import Life from './pages/Life/Life';
 import Quality from './pages/Quality/Quality';
 import Contact from './pages/Contact/Contact';
+import Product from './pages/Product';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/life" element={<Life />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/products" element={<Product />} />
         </Routes>
       </Router>
     </div>

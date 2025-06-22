@@ -31,9 +31,10 @@ const Navbar = () => {
           <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} onClick={toggleMenu}>
             About Us
           </Link>
-          <a href="#products" className="nav-link" onClick={toggleMenu}>
+          <Link to="/products" className={`nav-link ${isActive('/products') ? 'active' : ''}`} onClick={toggleMenu}>
             Our Products
-          </a><Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
+          </Link>
+          <Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
             Life at Eon
           </Link>
           <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={toggleMenu}>
