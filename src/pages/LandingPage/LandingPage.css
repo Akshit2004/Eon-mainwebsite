@@ -429,7 +429,7 @@
 
 .feature-text {
   font-size: 1rem;
-  color: #6b7280;
+  color: #000000;
   line-height: 1.5;
   margin: 0;
 }
@@ -444,6 +444,12 @@
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5rem;
   height: 450px;
+}
+
+.life-features .feature-content,
+.life-features .feature-title,
+.life-features .feature-text {
+  color: #000 !important;
 }
 
 .grid-item {
@@ -1434,6 +1440,20 @@
   .google-rating {
     max-width: 250px;
     padding: 0.75rem;
+  }
+}
+
+.about-section .section-title,
+.about-section .about-heading,
+.about-section .about-text {
+  text-align: left !important;
+}
+
+@media (max-width: 768px) {
+  .about-section .section-title,
+  .about-section .about-heading,
+  .about-section .about-text {
+    text-align: left !important;
   }
 }
 
