@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className="nav-link nav-dropdown">
             <span>Our Products</span>
             <div className="dropdown-content">
-              <Link to="/products/aqua" onClick={toggleMenu}>Equipment - Aqua</Link>
+              <Link to="/products/aqua" onClick={toggleMenu}>CREW Equipment - Aqua</Link>
               <Link to="/products/kavach" onClick={toggleMenu}>Fire Control System - Kavach</Link>
               <Link to="/products/t90" onClick={toggleMenu}>Fire Control System T90</Link>
               <Link to="/leo" onClick={toggleMenu}>CREW Equipment - LEO</Link>

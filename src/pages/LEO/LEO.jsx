@@ -185,16 +185,16 @@ const LEO = () => {
               <div className="product-more-card-title">CREW - CRIS</div>
             </div>
             <div className="product-more-card">
-              <img src={prodAqua} alt="CREW Equipment" className="product-more-img" />
-              <div className="product-more-card-title">CREW Equipment</div>
+              <img src={prodAqua} alt="CREW Equipment - Aqua" className="product-more-img" />
+              <div className="product-more-card-title">CREW Equipment - Aqua</div>
             </div>
             <div className="product-more-card">
-              <img src="https://i.imgur.com/3QeQZpT.jpg" alt="Jammer X1" className="product-more-img" />
-              <div className="product-more-card-title">Jammer X1</div>
+              <img src={prodKavach} alt="CREW - Kavach" className="product-more-img" />
+              <div className="product-more-card-title">CREW - Kavach</div>
             </div>
             <div className="product-more-card">
-              <img src="https://i.imgur.com/4QeQZpT.jpg" alt="Signal Disruptor" className="product-more-img" />
-              <div className="product-more-card-title">Signal Disruptor</div>
+              <img src={prodLibra} alt="CREW - Libra" className="product-more-img" />
+              <div className="product-more-card-title">CREW - Libra</div>
             </div>
           </div>
           <button className="scroll-btn right" onClick={() => scrollByAmount(300)} aria-label="Scroll right">&#8594;</button>
