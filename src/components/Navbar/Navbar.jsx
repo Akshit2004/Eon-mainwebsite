@@ -31,9 +31,17 @@ const Navbar = () => {
           <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} onClick={toggleMenu}>
             About Us
           </Link>
-          <Link to="/products" className={`nav-link ${isActive('/products') ? 'active' : ''}`} onClick={toggleMenu}>
-            Our Products
-          </Link>
+          <div className="nav-link nav-dropdown">
+            <span>Our Products</span>
+            <div className="dropdown-content">
+              <Link to="/products/aqua" onClick={toggleMenu}>Equipment - Aqua</Link>
+              <Link to="/products/kavach" onClick={toggleMenu}>Fire Control System - Kavach</Link>
+              <Link to="/products/t90" onClick={toggleMenu}>Fire Control System T90</Link>
+              <Link to="/leo" onClick={toggleMenu}>CREW Equipment - LEO</Link>
+              <Link to="/products/libra" onClick={toggleMenu}>CREW - Libra</Link>
+              <Link to="/products/cris" onClick={toggleMenu}>CREW - CRIS</Link>
+            </div>
+          </div>
           <Link to="/life" className={`nav-link ${isActive('/life') ? 'active' : ''}`} onClick={toggleMenu}>
             Life at Eon
           </Link>

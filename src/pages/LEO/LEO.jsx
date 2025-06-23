@@ -1,9 +1,20 @@
 import React, { useRef } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import "./Product.css";
+import "./LEO.css";
+import prodAqua from '../../assets/Products/aqua/prod6aqua1-min.JPG';
+import prodKavach from '../../assets/Products/Kavach/kavach1-min.JPG';
+import prodT90 from '../../assets/Products/fcst90/prod2ACU1-min.JPG';
+import prodLeo from '../../assets/Products/leo/prod5leo1-min.JPG';
+import prodLeo1 from '../../assets/Products/leo/prod5leo1-min.JPG';
+import prodLeo2 from '../../assets/Products/leo/prod5leo2-min.JPG';
+import prodLeo3 from '../../assets/Products/leo/prod5leo3-min.JPG';
+import prodLeo4 from '../../assets/Products/leo/prod5leo4-min.JPG';
+import prodLeo5 from '../../assets/Products/leo/prod5leo5-min.JPG';
+import prodLibra from '../../assets/Products/libra/prod3libra1-min.JPG';
+import prodCris from '../../assets/Products/cris/prod4cris1-min.JPG';
 
-const Product = () => {
+const LEO = () => {
   const scrollRef = useRef(null);
   let isDown = false;
   let startX;
@@ -42,21 +53,16 @@ const Product = () => {
       <Navbar />
       <section className="product-hero-section">
         <div className="product-hero-overlay">
-          <h1>Our Products</h1>
+          <h1>LEO</h1>
         </div>
       </section>
       <section className="product-details-section">
         <div className="product-details-container">
           <div className="product-details-image-wrap">
             <img
-              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+              src={prodLeo}
               alt="CREW Equipment LEO"
               className="product-details-main-img"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=60"
-              alt="CREW Equipment LEO small"
-              className="product-details-thumb-img"
             />
           </div>
           <div className="product-details-content">
@@ -89,7 +95,8 @@ const Product = () => {
           </div>
         </div>
       </section>
-      
+
+
       {/* Key Features Section */}
       <section className="product-key-features-section">
         <div className="product-key-features-header">
@@ -139,13 +146,15 @@ const Product = () => {
         <div className="product-gallery-header">
           <div className="product-gallery-label">// PRODUCT GALLERY</div>
           <h2 className="product-gallery-title">
-            Visual Showcase of Our<br />Advanced Defense Product
+            Visual Showcase of Our<br />CREW Equipment - LEO
           </h2>
         </div>
         <div className="product-gallery-images">
-          <img src="https://i.imgur.com/0QeQZpT.jpg" alt="Product 1" className="product-gallery-img" />
-          <img src="https://i.imgur.com/8QeQZpT.jpg" alt="Product 2" className="product-gallery-img" />
-          <img src="https://i.imgur.com/1QeQZpT.jpg" alt="Product 3" className="product-gallery-img" />
+          <img src={prodLeo1} alt="LEO Product 1" className="product-gallery-img" />
+          <img src={prodLeo2} alt="LEO Product 2" className="product-gallery-img" />
+          <img src={prodLeo3} alt="LEO Product 3" className="product-gallery-img" />
+          <img src={prodLeo4} alt="LEO Product 4" className="product-gallery-img" />
+          <img src={prodLeo5} alt="LEO Product 5" className="product-gallery-img" />
         </div>
       </section>
 
@@ -164,19 +173,19 @@ const Product = () => {
             style={{ cursor: 'grab' }}
           >
             <div className="product-more-card">
-              <img src="https://i.imgur.com/0QeQZpT.jpg" alt="Control System T90" className="product-more-img" />
+              <img src={prodT90} alt="Control System T90" className="product-more-img" />
               <div className="product-more-card-title">Control System T90</div>
             </div>
             <div className="product-more-card">
-              <img src="https://i.imgur.com/8QeQZpT.jpg" alt="CREW - Libra" className="product-more-img" />
+              <img src={prodLeo} alt="CREW - Libra" className="product-more-img" />
               <div className="product-more-card-title">CREW - Libra</div>
             </div>
             <div className="product-more-card">
-              <img src="https://i.imgur.com/1QeQZpT.jpg" alt="CREW - CRIS" className="product-more-img" />
+              <img src={prodCris} alt="CREW - CRIS" className="product-more-img" />
               <div className="product-more-card-title">CREW - CRIS</div>
             </div>
             <div className="product-more-card">
-              <img src="https://i.imgur.com/2QeQZpT.jpg" alt="CREW Equipment" className="product-more-img" />
+              <img src={prodAqua} alt="CREW Equipment" className="product-more-img" />
               <div className="product-more-card-title">CREW Equipment</div>
             </div>
             <div className="product-more-card">
@@ -210,4 +219,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default LEO;

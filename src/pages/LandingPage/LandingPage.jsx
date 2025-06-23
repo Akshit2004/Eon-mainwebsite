@@ -2,6 +2,15 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import './LandingPage.css';
+import img1 from '../../assets/img1/1.png';
+import img2 from '../../assets/img1/2.png';
+import img3 from '../../assets/img1/3.png';
+import img4 from '../../assets/img1/4.png';
+import award1 from '../../assets/Awards/indesization.JPG';
+import award2 from '../../assets/Awards/srijan ratn.JPG';
+import award3 from '../../assets/Awards/defence conclave.JPG';
+import award4 from '../../assets/Awards/defence ministry.JPG';
+import prodLeo from '../../assets/Products/leo/prod5leo1-min.JPG';
 
 const LandingPage = () => {
   return (
@@ -81,25 +90,25 @@ const LandingPage = () => {
           <div className="achievements-grid">
             <div className="achievement-card">
               <div className="achievement-image">
-                <img src="https://images.unsplash.com/photo-1567443024551-f3e3cc2be870?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Excellence in Indigenization Award" />
+                <img src={award1} alt="Excellence in Indigenization Award" />
               </div>
               <h3 className="achievement-title">Excellence in Indigenization Award</h3>
             </div>
             <div className="achievement-card">
               <div className="achievement-image">
-                <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Winner of Rashtriya Srijan Rath" />
+                <img src={award2} alt="Winner of Rashtriya Srijan Rath" />
               </div>
               <h3 className="achievement-title">Winner of Rashtriya Srijan Rath</h3>
             </div>
             <div className="achievement-card">
               <div className="achievement-image">
-                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Honored as Esteemed Guest at MSME Defence Conclave" />
+                <img src={award3} alt="Honored as Esteemed Guest at MSME Defence Conclave" />
               </div>
               <h3 className="achievement-title">Honored as Esteemed Guest at MSME Defence Conclave</h3>
             </div>
             <div className="achievement-card">
               <div className="achievement-image">
-                <img src="https://images.unsplash.com/photo-1586769852044-692d6df3490f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Award Received from Defence Ministry" />
+                <img src={award4} alt="Award Received from Defence Ministry" />
               </div>
               <h3 className="achievement-title">Award Received from Defence Ministry</h3>
             </div>          </div>
@@ -130,7 +139,7 @@ const LandingPage = () => {
                       <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <div className="feature-content">
+                  <div className="feature-content" style={{ color: '#000' }}>
                     <h3 className="feature-title">Experience</h3>
                     <p className="feature-text">Our great team of expert certified engineers.</p>
                   </div>
@@ -143,7 +152,7 @@ const LandingPage = () => {
                       <path d="M19.4 15C19.2 15.1 19.1 15.2 19 15.4C18.9 15.6 18.9 15.8 19 16L20.2 17.2C20.3 17.3 20.4 17.4 20.4 17.6C20.4 17.8 20.3 17.9 20.2 18L18.4 19.8C18.3 19.9 18.1 20 18 20C17.9 20 17.7 19.9 17.6 19.8L16.3 18.6C16.1 18.5 15.9 18.4 15.7 18.5C15.5 18.6 15.4 18.7 15.3 18.9L14.8 20.3C14.7 20.7 14.4 21 14 21H12C11.6 21 11.3 20.7 11.2 20.3L10.7 18.9C10.6 18.7 10.5 18.6 10.3 18.5C10.1 18.4 9.9 18.5 9.7 18.6L8.4 19.8C8.3 19.9 8.1 20 8 20C7.9 20 7.7 19.9 7.6 19.8L5.8 18C5.7 17.9 5.6 17.7 5.6 17.6C5.6 17.4 5.7 17.3 5.8 17.2L7 16C7.1 15.8 7.1 15.6 7 15.4C6.9 15.2 6.8 15.1 6.6 15L5.2 14.5C4.8 14.4 4.5 14.1 4.5 13.7V10.3C4.5 9.9 4.8 9.6 5.2 9.5L6.6 9C6.8 8.9 6.9 8.8 7 8.6C7.1 8.4 7.1 8.2 7 8L5.8 6.8C5.7 6.7 5.6 6.6 5.6 6.4C5.6 6.2 5.7 6.1 5.8 6L7.6 4.2C7.7 4.1 7.9 4 8 4C8.1 4 8.3 4.1 8.4 4.2L9.7 5.4C9.9 5.5 10.1 5.6 10.3 5.5C10.5 5.4 10.6 5.3 10.7 5.1L11.2 3.7C11.3 3.3 11.6 3 12 3H14C14.4 3 14.7 3.3 14.8 3.7L15.3 5.1C15.4 5.3 15.5 5.4 15.7 5.5C15.9 5.6 16.1 5.5 16.3 5.4L17.6 4.2C17.7 4.1 17.9 4 18 4C18.1 4 18.3 4.1 18.4 4.2L20.2 6C20.3 6.1 20.4 6.3 20.4 6.4C20.4 6.6 20.3 6.7 20.2 6.8L19 8C18.9 8.2 18.9 8.4 19 8.6C19.1 8.8 19.2 8.9 19.4 9L20.8 9.5C21.2 9.6 21.5 9.9 21.5 10.3V13.7C21.5 14.1 21.2 14.4 20.8 14.5L19.4 15Z" stroke="currentColor" strokeWidth="2"/>
                     </svg>
                   </div>
-                  <div className="feature-content">
+                  <div className="feature-content" style={{ color: '#000' }}>
                     <h3 className="feature-title">Quick Support</h3>
                     <p className="feature-text">We'll help you test bold new ideas while sharing your.</p>
                   </div>
@@ -153,25 +162,25 @@ const LandingPage = () => {
               <div className="life-images">
               <div className="image-grid">
                 <div className="grid-item large">
-                  <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Our Mission" />
+                  <img src={img1} alt="Our Mission" />
                   <div className="image-overlay">
                     <span>Our Mission</span>
                   </div>
                 </div>
                 <div className="grid-item">
-                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Our Philosophy" />
+                  <img src={img2} alt="Our Philosophy" />
                   <div className="image-overlay">
                     <span>Our Philosophy</span>
                   </div>
                 </div>
                 <div className="grid-item">
-                  <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Our Vision" />
+                  <img src={img3} alt="Our Vision" />
                   <div className="image-overlay">
                     <span>Our Vision</span>
                   </div>
                 </div>
                 <div className="grid-item">
-                  <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Our Strategy" />
+                  <img src={img4} alt="Our Strategy" />
                   <div className="image-overlay">
                     <span>Our Strategy</span>
                   </div>
@@ -255,6 +264,20 @@ const LandingPage = () => {
                 </div>
                 <div className="product-info">
                   <h3 className="product-title">Advanced Defense System</h3>
+                  <div className="product-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="product-card">
+                <div className="product-image">
+                  <img src={prodLeo} alt="CREW Equipment - LEO" />
+                </div>
+                <div className="product-info">
+                  <h3 className="product-title">CREW Equipment - LEO</h3>
                   <div className="product-arrow">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

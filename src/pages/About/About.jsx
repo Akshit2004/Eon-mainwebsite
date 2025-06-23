@@ -3,6 +3,13 @@ import "./About.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import laptopImage from "../../assets/image-from-rawpixel-id-12362751-png.png";
+import photo1 from '../../assets/OurPhotos/1.png';
+import photo2 from '../../assets/OurPhotos/2.png';
+import pillar1 from '../../assets/Pillars/Focus on Customer Vision.jpeg';
+import pillar2 from '../../assets/Pillars/Speed.jpeg';
+import pillar3 from '../../assets/Pillars/Research & Development.jpg';
+import pillar4 from '../../assets/Pillars/Quality Practices, Standards and Management.jpeg';
+import pillar5 from '../../assets/Pillars/Prices.jpeg';
 
 const About = () => {
   return (
@@ -25,13 +32,13 @@ const About = () => {
         <div className="about-main-wrapper">
           <div className="about-main-images">
             <img
-              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
-              alt="Engineer at work"
+              src={photo1}
+              alt="EON Team 1"
               className="about-main-img1"
             />
             <img
-              src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80"
-              alt="Microchip closeup"
+              src={photo2}
+              alt="EON Team 2"
               className="about-main-img2"
             />
           </div>
@@ -230,7 +237,7 @@ const About = () => {
             <div className="pillar-card pillar-1">
               <div className="pillar-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=400&q=80" 
+                  src={pillar1} 
                   alt="Focus on Customer Vision" 
                 />
               </div>
@@ -245,7 +252,7 @@ const About = () => {
             <div className="pillar-card pillar-2">
               <div className="pillar-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" 
+                  src={pillar2} 
                   alt="Speed" 
                 />
               </div>
@@ -260,7 +267,7 @@ const About = () => {
             <div className="pillar-card pillar-3">
               <div className="pillar-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=400&q=80" 
+                  src={pillar3} 
                   alt="Research & Development" 
                 />
               </div>
@@ -275,7 +282,7 @@ const About = () => {
             <div className="pillar-card pillar-4">
               <div className="pillar-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=400&q=80" 
+                  src={pillar4} 
                   alt="Quality Practices" 
                 />
               </div>
@@ -290,7 +297,7 @@ const About = () => {
             <div className="pillar-card pillar-5">
               <div className="pillar-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=400&q=80" 
+                  src={pillar5} 
                   alt="Prices" 
                 />
               </div>
