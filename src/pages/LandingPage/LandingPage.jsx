@@ -494,7 +494,7 @@ const LandingPage = () => {
       {/* Consultation Section */}
       <section className="consultation-section">
         <div className="consultation-background"></div>
-        <div className="consultation-overlay"></div>
+        <div className="hero-overlay"></div>
         <div className="container">
           <div className="consultation-content">
             <div className="consultation-tagline">//Drop us a line! We are here to answer your questions 24/7</div>
