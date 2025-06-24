@@ -11,6 +11,11 @@ import award2 from '../../assets/Awards/srijan ratn.JPG';
 import award3 from '../../assets/Awards/defence conclave.JPG';
 import award4 from '../../assets/Awards/defence ministry.JPG';
 import prodLeo from '../../assets/Products/leo/prod5leo1-min.JPG';
+import prodAqua from '../../assets/Products/aqua/prod6aqua1-min.JPG';
+import prodKavach from '../../assets/Products/Kavach/kavach1-min.JPG';
+import prodT90 from '../../assets/Products/fcst90/prod2ACU1-min.JPG';
+import prodLibra from '../../assets/Products/libra/prod3libra1-min.JPG';
+import prodCris from '../../assets/Products/cris/prod4cris1-min.JPG';
 
 const LandingPage = () => {
   return (
@@ -204,71 +209,71 @@ const LandingPage = () => {
             <div className="products-grid">
               <div className="product-card">
                 <div className="product-image">
-                  <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Equipment - Aqua" />
+                  <img src={prodAqua} alt="Equipment - Aqua" />
                 </div>
                 <div className="product-info">
                   <h3 className="product-title">Equipment - Aqua</h3>
-                  <div className="product-arrow">
+                  <a href="/Aqua" className="product-arrow" title="View Aqua">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
               
               <div className="product-card">
                 <div className="product-image">
-                  <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fire Control System - Kavach" />
+                  <img src={prodKavach} alt="Fire Control System - Kavach" />
                 </div>
                 <div className="product-info">
                   <h3 className="product-title">Fire Control System - Kavach</h3>
-                  <div className="product-arrow">
+                  <a href="/Kavach" className="product-arrow" title="View Kavach">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
               
               <div className="product-card">
                 <div className="product-image">
-                  <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fire Control System T90" />
+                  <img src={prodT90} alt="Fire Control System T90" />
                 </div>
                 <div className="product-info">
                   <h3 className="product-title">Fire Control System T90</h3>
-                  <div className="product-arrow">
+                  <a href="/T90" className="product-arrow" title="View T90">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
               
               <div className="product-card">
                 <div className="product-image">
-                  <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="CREW - Library" />
+                  <img src={prodLibra} alt="CREW - Library" />
                 </div>
                 <div className="product-info">
                   <h3 className="product-title">CREW - Library</h3>
-                  <div className="product-arrow">
+                  <a href="/Libra" className="product-arrow" title="View Libra">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
               
               <div className="product-card">
                 <div className="product-image">
-                  <img src="https://images.unsplash.com/photo-1581093458791-9d42e3b2c533?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Advanced Defense System" />
+                  <img src={prodCris} alt="Advanced Defense System" />
                 </div>
                 <div className="product-info">
                   <h3 className="product-title">Advanced Defense System</h3>
-                  <div className="product-arrow">
+                  <a href="/Cris" className="product-arrow" title="View Cris">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
               
@@ -278,11 +283,11 @@ const LandingPage = () => {
                 </div>
                 <div className="product-info">
                   <h3 className="product-title">CREW Equipment - LEO</h3>
-                  <div className="product-arrow">
+                  <a href="/LEO" className="product-arrow" title="View LEO">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>        
@@ -308,14 +313,15 @@ const LandingPage = () => {
               <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Office Entrance" />
             </div>
             <div className="premises-item">
-              <img src="https:x`//images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Work Environment" />
+              <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Work Environment" />
             </div>
             <div className="premises-item">
               <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Conference Room" />
             </div>
             <div className="premises-item">
               <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Workspace" />
-            </div>          </div>
+            </div>          
+            </div>
         </div>
       </section>
 
@@ -390,7 +396,7 @@ const LandingPage = () => {
                 </div>
                 <span className="rating-count">Based on 15 reviews</span>
               </div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="google-logo" />
+              <img src="/google_g_logo.svg" alt="Google" className="google-logo" />
             </div>
           </div>
           
@@ -399,11 +405,9 @@ const LandingPage = () => {
               <div className="testimonial-card">
                 <div className="testimonial-header">
                   <div className="reviewer-info">
-                    <div className="reviewer-avatar">
-                      <span>J</span>
-                    </div>
+                    <div className="reviewer-avatar"><span>S</span></div>
                     <div className="reviewer-details">
-                      <h4 className="reviewer-name">Jasojeet Dhiman</h4>
+                      <h4 className="reviewer-name">Shashank Srivastava</h4>
                       <div className="review-stars">
                         <span className="star filled">★</span>
                         <span className="star filled">★</span>
@@ -413,21 +417,18 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="review-source" />
+                  <img src="/google_g_logo.svg" alt="Google" className="review-source" />
                 </div>
                 <p className="testimonial-text">
-                  "Eon talent built us a technology company with exceptional work and great opportunities. It provide flexible working hours and all the benefits as per law of the employed workers."
+                  Colleagues are good, they are very supportive, interaction with the customer and their feedback is valuable. A great place to learn, experiment, unlearn and relearn. The management supports initiatives and recognises the impact created by each employee.
                 </p>
               </div>
-              
               <div className="testimonial-card">
                 <div className="testimonial-header">
                   <div className="reviewer-info">
-                    <div className="reviewer-avatar">
-                      <span>S</span>
-                    </div>
+                    <div className="reviewer-avatar"><span>S</span></div>
                     <div className="reviewer-details">
-                      <h4 className="reviewer-name">Sunaina Regmi</h4>
+                      <h4 className="reviewer-name">Sanjeev Dhiman</h4>
                       <div className="review-stars">
                         <span className="star filled">★</span>
                         <span className="star filled">★</span>
@@ -437,21 +438,18 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="review-source" />
+                  <img src="/google_g_logo.svg" alt="Google" className="review-source" />
                 </div>
                 <p className="testimonial-text">
-                  "Outstanding service and professional approach. The team delivered beyond our expectations with innovative solutions."
+                  Eon Infotech Ltd is a technology company. This is very Good and stable organisation. It provide flexible working hours and all the benefits as per law of their employees. Management is very supportive and always tries to maintain work life balance for the employees. I recommend this company who want to learn and grow in own life.
                 </p>
               </div>
-              
               <div className="testimonial-card">
                 <div className="testimonial-header">
                   <div className="reviewer-info">
-                    <div className="reviewer-avatar">
-                      <span>A</span>
-                    </div>
+                    <div className="reviewer-avatar"><span>S</span></div>
                     <div className="reviewer-details">
-                      <h4 className="reviewer-name">Anotya Bhattri</h4>
+                      <h4 className="reviewer-name">Sonia Sharma</h4>
                       <div className="review-stars">
                         <span className="star filled">★</span>
                         <span className="star filled">★</span>
@@ -461,12 +459,34 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="review-source" />
+                  <img src="/google_g_logo.svg" alt="Google" className="review-source" />
                 </div>
                 <p className="testimonial-text">
-                  "Excellent quality work and timely delivery. Highly recommended for defense technology solutions."
-                </p>              
+                  It's a good organization to work with who value their employees, motivates them to grow further. Head of the company is very down to earth and always appreciates the hard work of their employees.
+                </p>
               </div>
+            </div>
+            <div className="more-reviews-cta" style={{ textAlign: 'center', marginTop: '2rem' }}>
+              <a
+                href="https://www.google.com/search?client=opera-gx&hs=Qg2&sca_esv=e636a3bf86a437ec&sxsrf=AE3TifOLvICl9f40w9EbOK7-1bK_hiA0SA:1750749413018&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s3BmHbvkFGdIsbgNgyosAEOxT7r3hy2bOZG7Gh00Ql4okmmi8q0as_DRly_gtzmLf2ckutOZqmZBCyZstom3J2MgbV50kDVwQ-OZUmPj5qixz1wnRg%3D%3D&q=Eon+Infotech+Limited+Reviews&sa=X&ved=2ahUKEwiB9unmwYmOAxVJ6jgGHeKjLQgQ0bkNegQISRAE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-btn"
+                style={{
+                  display: 'inline-block',
+                  background: '#4285F4',
+                  color: '#fff',
+                  padding: '0.75rem 2rem',
+                  borderRadius: '8px',
+                  fontWeight: 600,
+                  textDecoration: 'none',
+                  fontSize: '1rem',
+                  boxShadow: '0 2px 8px rgba(66,133,244,0.15)',
+                  transition: 'background 0.2s',
+                }}
+              >
+                Read More Reviews on Google
+              </a>
             </div>
           </div>        </div>
       </section>
