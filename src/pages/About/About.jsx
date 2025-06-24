@@ -321,37 +321,37 @@ const About = () => {
               At the core Eon's philosophy are<br />the following principles
             </h2>
           </div>
-          <div className="philosophy-grid">
-            <div className="philosophy-card card-1">
-              <div className="philosophy-bg-number">01</div>
-              <div className="philosophy-content">
+          <div className="philosophy-grid redesigned-philosophy-grid">
+            <div className="philosophy-card redesigned-philosophy-card card-1">
+              <div className="philosophy-floating-icon philosophy-icon-1">👥</div>
+              <div className="philosophy-bg-number redesigned-bg-number">01</div>
+              <div className="philosophy-content redesigned-content">
                 <h3>Customer-Centric Approach</h3>
                 <p>Eon believes in understanding and fulfilling their customer's vision, dreams, and needs.</p>
-                <div className="philosophy-icon">👥</div>
               </div>
             </div>
-            <div className="philosophy-card card-2">
-              <div className="philosophy-bg-number">02</div>
-              <div className="philosophy-content">
+            <div className="philosophy-card redesigned-philosophy-card card-2">
+              <div className="philosophy-floating-icon philosophy-icon-2">🚀</div>
+              <div className="philosophy-bg-number redesigned-bg-number">02</div>
+              <div className="philosophy-content redesigned-content">
                 <h3>Innovative Spirit</h3>
-                <p>Eon Infotech stay ahead of the curve in innovation and providing cutting-edge technology solutions in their products.</p>
-                <div className="philosophy-icon">🚀</div>
+                <p>Eon Infotech stays ahead of the curve in innovation and provides cutting-edge technology solutions in their products.</p>
               </div>
             </div>
-            <div className="philosophy-card card-3">
-              <div className="philosophy-bg-number">03</div>
-              <div className="philosophy-content">
+            <div className="philosophy-card redesigned-philosophy-card card-3">
+              <div className="philosophy-floating-icon philosophy-icon-3">🏅</div>
+              <div className="philosophy-bg-number redesigned-bg-number">03</div>
+              <div className="philosophy-content redesigned-content">
                 <h3>Commitment to Excellence</h3>
                 <p>Eon upholds a culture of excellence in all aspects of their operations to ensure the highest level of customer satisfaction.</p>
-                <div className="philosophy-icon">🏅</div>
               </div>
             </div>
-            <div className="philosophy-card card-4">
-              <div className="philosophy-bg-number">04</div>
-              <div className="philosophy-content">
+            <div className="philosophy-card redesigned-philosophy-card card-4">
+              <div className="philosophy-floating-icon philosophy-icon-4">💲</div>
+              <div className="philosophy-bg-number redesigned-bg-number">04</div>
+              <div className="philosophy-content redesigned-content">
                 <h3>Value-Oriented Pricing</h3>
-                <p>Eon also values affordability as they aim to provide cost-effective solutions to their valueable clients.</p>
-                <div className="philosophy-icon">💲</div>
+                <p>Eon values affordability and aims to provide cost-effective solutions to their valuable clients.</p>
               </div>
             </div>
           </div>
