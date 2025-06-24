@@ -305,17 +305,16 @@
 }
 
 .achievement-image {
-  height: 260px;
+  height: 460px;
   overflow: hidden;
   position: relative;
 }
 
 .achievement-image img {
-  width: 100%;
+  width: 110%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
-  border-radius: 16px;
 }
 
 .achievement-title {
@@ -326,6 +325,7 @@
   text-align: center;
   line-height: 1.4;
   margin: 0;
+  background: #b6b4b418;
 }
 
 /* Life at EON Section */
@@ -1165,6 +1165,17 @@
 .consultation-cta:active {
   transform: translateY(0);
   box-shadow: 0 2px 10px rgba(59, 130, 246, 0.4);
+}
+
+/* Make feature icons in Life at EON section black */
+.life-at-eon-section .feature-icon svg {
+  stroke: #000 !important;
+  color: #000 !important;
+  fill: none !important;
+}
+
+.life-at-eon-section .feature-icon {
+  background: none !important;
 }
 
 /* Responsive Design */

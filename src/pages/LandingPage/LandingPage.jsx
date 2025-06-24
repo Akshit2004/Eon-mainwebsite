@@ -24,7 +24,7 @@ const LandingPage = () => {
         
         <div className="hero-content">
           <div className="hero-text">
-            <div className="tagline">// INNOVATION AT ITS PEAK</div>
+            <div className="tagline">//INNOVATION AT ITS PEAK</div>
             <h1 className="hero-title">
               Defending Those Who<br />
               Defend Us!
@@ -42,7 +42,7 @@ const LandingPage = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2 className="section-title">About Company</h2>
+              <h2 className="tagline">//About Company</h2>
               <h3 className="about-heading">What We Actually Do</h3>
               <p className="about-description">
                 We are a leading technology company specializing in advanced defense and security solutions. 
@@ -81,7 +81,7 @@ const LandingPage = () => {
       <section className="achievements-section">
         <div className="container">
           <div className="section-header">
-            <div className="tagline">// OUR ACHIEVEMENTS</div>
+            <div className="tagline">//OUR ACHIEVEMENTS</div>
             <h2 className="section-title">
               Recipient of top awards for defense<br />
               force service.
@@ -120,7 +120,7 @@ const LandingPage = () => {
         <div className="container">
           <div className="life-content">
             <div className="life-text">
-              <div className="tagline">// LIFE AT EON</div>
+              <div className="tagline">//LIFE AT EON</div>
               <h2 className="life-title">
                 Improve and Innovate with<br />
                 the Tech Trends
@@ -194,7 +194,7 @@ const LandingPage = () => {
       <section className="products-section">
         <div className="container">
           <div className="section-header">
-            <div className="tagline">// OUR PRODUCTS</div>
+            <div className="tagline">OUR PRODUCTS</div>
             <h2 className="section-title">
               We provide a variety<br />
               of products for defence
@@ -294,7 +294,7 @@ const LandingPage = () => {
       <section className="premises-section">
         <div className="container">
           <div className="section-header">
-            <div className="tagline">// GALLERY</div>
+            <div className="tagline">//GALLERY</div>
             <h2 className="section-title">
               Have A Glimpse Of Our Premises<br />
               And Work Environment
@@ -324,7 +324,7 @@ const LandingPage = () => {
         <div className="container">
           <div className="quality-content">
             <div className="quality-text">
-              <div className="tagline">// EXCEEDING EXPECTATIONS</div>
+              <div className="tagline">//EXCEEDING EXPECTATIONS</div>
               <h2 className="quality-title">
                 Quality: An Integral<br />
                 Part Of Work Culture
@@ -373,7 +373,7 @@ const LandingPage = () => {
       <section className="testimonials-section">
         <div className="container">
           <div className="section-header">
-            <div className="tagline">// TESTIMONIALS</div>
+            <div className="tagline">//TESTIMONIALS</div>
             <h2 className="section-title">
               What our clients say<br />
               about us!
@@ -477,7 +477,7 @@ const LandingPage = () => {
         <div className="consultation-overlay"></div>
         <div className="container">
           <div className="consultation-content">
-            <div className="consultation-tagline">// Drop us a line! We are here to answer your questions 24/7</div>
+            <div className="consultation-tagline">//Drop us a line! We are here to answer your questions 24/7</div>
             <h2 className="consultation-title">NEED A CONSULTATION?</h2>
             <button className="consultation-cta">
               CONTACT US
