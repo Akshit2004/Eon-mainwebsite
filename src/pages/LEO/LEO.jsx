@@ -9,8 +9,6 @@ import prodLeo from '../../assets/Products/leo/prod5leo1-min.JPG';
 import prodLeo1 from '../../assets/Products/leo/prod5leo1-min.JPG';
 import prodLeo2 from '../../assets/Products/leo/prod5leo2-min.JPG';
 import prodLeo3 from '../../assets/Products/leo/prod5leo3-min.JPG';
-import prodLeo4 from '../../assets/Products/leo/prod5leo4-min.JPG';
-import prodLeo5 from '../../assets/Products/leo/prod5leo5-min.JPG';
 import prodLibra from '../../assets/Products/libra/prod3libra1-min.JPG';
 import prodCris from '../../assets/Products/cris/prod4cris1-min.JPG';
 
@@ -153,8 +151,6 @@ const LEO = () => {
           <img src={prodLeo1} alt="LEO Product 1" className="product-gallery-img" />
           <img src={prodLeo2} alt="LEO Product 2" className="product-gallery-img" />
           <img src={prodLeo3} alt="LEO Product 3" className="product-gallery-img" />
-          <img src={prodLeo4} alt="LEO Product 4" className="product-gallery-img" />
-          <img src={prodLeo5} alt="LEO Product 5" className="product-gallery-img" />
         </div>
       </section>
 

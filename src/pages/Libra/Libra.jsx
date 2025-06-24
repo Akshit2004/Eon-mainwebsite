@@ -85,7 +85,6 @@ const Libra = () => {
           <img src={prodLibra1} alt="Libra Product 1" className="product-gallery-img" />
           <img src={prodLibra2} alt="Libra Product 2" className="product-gallery-img" />
           <img src={prodLibra3} alt="Libra Product 3" className="product-gallery-img" />
-          <img src={prodLibra4} alt="Libra Product 4" className="product-gallery-img" />
         </div>
       </section>
 

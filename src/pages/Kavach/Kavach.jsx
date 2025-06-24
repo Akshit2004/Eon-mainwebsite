@@ -85,7 +85,6 @@ const Kavach = () => {
           <img src={prodKavach1} alt="Kavach Product 1" className="product-gallery-img" />
           <img src={prodKavach2} alt="Kavach Product 2" className="product-gallery-img" />
           <img src={prodKavach3} alt="Kavach Product 3" className="product-gallery-img" />
-          <img src={prodKavach4} alt="Kavach Product 4" className="product-gallery-img" />
         </div>
       </section>
 

@@ -1,1 +1,9 @@
 @import "../Product/Product.css";
+
+.product-gallery-img {
+  width: 360px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 8px 36px rgba(30, 92, 122, 0.18);
+}

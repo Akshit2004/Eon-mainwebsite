@@ -83,8 +83,6 @@ const Aqua = () => {
           <img src={prodAqua1} alt="Aqua Product 1" className="product-gallery-img" />
           <img src={prodAqua3} alt="Aqua Product 2" className="product-gallery-img" />
           <img src={prodAqua4} alt="Aqua Product 3" className="product-gallery-img" />
-          <img src={prodAqua5} alt="Aqua Product 4" className="product-gallery-img" />
-          <img src={prodAqua6} alt="Aqua Product 5" className="product-gallery-img" />
         </div>
       </section>
 
