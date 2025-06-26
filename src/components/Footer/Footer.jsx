@@ -26,10 +26,7 @@ const Footer = () => {
           <div className="footer-info">
             <div className="footer-brand">
               <div className="footer-logo">
-                <div className="logo-icon">
-                  <span>Eon</span>
-                  <span className="logo-subtitle">InfoTech</span>
-                </div>
+                <img src="/EonWebLogoBlueTransWhiteText2.png" alt="Eon InfoTech Logo" className="footer-logo-img" />
               </div>
               <p className="footer-description">
                 A technical company<br />
