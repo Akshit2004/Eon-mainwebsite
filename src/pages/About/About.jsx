@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
 import laptopImage from "../../assets/image-from-rawpixel-id-12362751-png.png";
 import photo1 from '../../assets/OurPhotos/1.png';
 import photo2 from '../../assets/OurPhotos/2.png';
@@ -357,17 +358,8 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* Consultation CTA Section */}
-      <div className="about-consultation-section">
-        <div className="consultation-overlay">
-          <div className="consultation-content">
-            <div className="consultation-badge">// Drop us a line! We are here to answer your questions 24/7</div>
-            <h2 className="consultation-title">NEED A CONSULTATION?</h2>
-            <a href="/contact" className="consultation-btn">Contact Us</a>
-          </div>
-        </div>
-      </div>
+      
+      <ConsultationSection />
 
       <Footer />
     </>
