@@ -101,7 +101,7 @@ const LandingPage = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2 className="tagline" style={{ color: '#184673' }}>//About Company</h2>
+              <h2 className="tagline" style={{ color: '#1874D0' }}>//About Company</h2>
               <h3 className="about-heading">What We Actually Do</h3>
               <p className="about-description">
                 We are a leading technology company specializing in advanced defense and security solutions. 

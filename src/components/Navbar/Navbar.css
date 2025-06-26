@@ -81,11 +81,11 @@
 }
 
 .nav-link:hover {
-  color: #2563eb;
+  color: #1874D0;
 }
 
 .nav-link.active {
-  color: #2563eb;
+  color: #1874D0;
 }
 
 .nav-link.active::after {
@@ -95,7 +95,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: #2563eb;
+  background: #1874D0;
   border-radius: 1px;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .nav-cta-btn {
-  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  background: linear-gradient(135deg, #1874D0, #1874D0);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -140,7 +140,7 @@
 }
 
 .nav-cta-btn:hover {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  background: linear-gradient(135deg, #125a9c, #1874D0);
   transform: translateY(-1px);
 }
 
