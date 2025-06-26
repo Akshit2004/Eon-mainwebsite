@@ -17,6 +17,8 @@ import prodKavach from '../../assets/Products/Kavach/kavach1-min.JPG';
 import prodT90 from '../../assets/Products/fcst90/prod2ACU1-min.JPG';
 import prodLibra from '../../assets/Products/libra/prod3libra1-min.JPG';
 import prodCris from '../../assets/Products/cris/prod4cris1-min.JPG';
+import slide1 from '../../assets/slide1.png';
+import slide2 from '../../assets/slide2.png';
 
 const LandingPage = () => {
   // Product grid scroll ref
@@ -34,13 +36,31 @@ const LandingPage = () => {
     }
   };
 
+  const heroSlides = [
+    slide1,
+    slide2,
+    'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+  ];
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="landing-page">
       <Navbar />
       
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-background"></div>
+        <div className="hero-background" style={{
+          backgroundImage: `url(${heroSlides[currentSlide]})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          transition: 'background-image 0.8s ease-in-out',
+        }}></div>
         <div className="hero-overlay"></div>
         
         <div className="hero-content">
@@ -464,7 +484,7 @@ const LandingPage = () => {
             <div className="quality-text">
               <div className="tagline">//EXCEEDING EXPECTATIONS</div>
               <h2 className="quality-title">
-                Quality: An Integral<br />
+                Quality: An Integral
                 Part Of Work Culture
               </h2>
               <p className="quality-description">
@@ -487,7 +507,7 @@ const LandingPage = () => {
                 </div>
                 <div className="flip-card-back">
                   <h3 className="feature-name">Extensive Reach</h3>
-                  <p className="feature-desc">Our solutions and services are trusted and implemented across a wide range of defense sectors, ensuring reliability and accessibility everywhere.</p>
+                  <p className="feature-desc">Our solutions and services are designed to be “better, faster and cheaper,” ensuring customer delight across diverse sectors.</p>
                 </div>
               </div>
             </div>
@@ -501,7 +521,7 @@ const LandingPage = () => {
                 </div>
                 <div className="flip-card-back">
                   <h3 className="feature-name">Feedback Efficiency</h3>
-                  <p className="feature-desc">We value and implement feedback rapidly, ensuring continuous improvement and client satisfaction at every stage.</p>
+                  <p className="feature-desc">A powerful feedback system enables rapid interaction and continuous process improvement to exceed customer expectations.</p>
                 </div>
               </div>
             </div>
@@ -515,7 +535,7 @@ const LandingPage = () => {
                 </div>
                 <div className="flip-card-back">
                   <h3 className="feature-name">Continuous Enhancement</h3>
-                  <p className="feature-desc">We are committed to ongoing process and product enhancement, keeping us ahead in quality and innovation.</p>
+                  <p className="feature-desc">We practice dynamic, continually improved processes, focusing on prevention, appraisal, and failure to ensure quality excellence.</p>
                 </div>
               </div>
             </div>
