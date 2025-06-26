@@ -475,35 +475,51 @@ const LandingPage = () => {
                 working towards <strong>SEI CMMI level 3</strong>.
               </p>
             </div>
-            
-            <div className="quality-features">
-              <div className="quality-feature-card">
-                <div className="feature-image">
+          </div>
+          <div className="quality-features quality-features-flip">
+            <div className="quality-feature-card flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front feature-image">
                   <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Extensive Reach" />
                   <div className="feature-overlay">
                     <h3 className="feature-name">Extensive Reach</h3>
                   </div>
                 </div>
+                <div className="flip-card-back">
+                  <h3 className="feature-name">Extensive Reach</h3>
+                  <p className="feature-desc">Our solutions and services are trusted and implemented across a wide range of defense sectors, ensuring reliability and accessibility everywhere.</p>
+                </div>
               </div>
-              
-              <div className="quality-feature-card">
-                <div className="feature-image">
+            </div>
+            <div className="quality-feature-card flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front feature-image">
                   <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Feedback Efficiency" />
                   <div className="feature-overlay">
                     <h3 className="feature-name">Feedback Efficiency</h3>
                   </div>
                 </div>
+                <div className="flip-card-back">
+                  <h3 className="feature-name">Feedback Efficiency</h3>
+                  <p className="feature-desc">We value and implement feedback rapidly, ensuring continuous improvement and client satisfaction at every stage.</p>
+                </div>
               </div>
-              
-              <div className="quality-feature-card">
-                <div className="feature-image">
+            </div>
+            <div className="quality-feature-card flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front feature-image">
                   <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Continuous Enhancement" />
                   <div className="feature-overlay">
                     <h3 className="feature-name">Continuous Enhancement</h3>
                   </div>
                 </div>
+                <div className="flip-card-back">
+                  <h3 className="feature-name">Continuous Enhancement</h3>
+                  <p className="feature-desc">We are committed to ongoing process and product enhancement, keeping us ahead in quality and innovation.</p>
+                </div>
               </div>
-            </div>          </div>
+            </div>
+          </div>
         </div>
       </section>
 
