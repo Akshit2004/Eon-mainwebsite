@@ -57,20 +57,17 @@ const Footer = () => {
               <div className="footer-column">
                 <h4 className="footer-column-title">Contact Info</h4>
                 <div className="contact-item">
-                  <span className="contact-icon">📍</span>
                   <div className="contact-text-white">
-                    <p>C-180 Industrial Area, Phase</p>
-                    <p>8-B, Sector 74, Mohali</p>
+                    <p>📍 C-180 Industrial Area, Phase</p>
+                    <p> 8-B, Sector 74, Mohali</p>
                     <p>160059, India</p>
                   </div>
                 </div>
                 <div className="contact-item">
-                  <span className="contact-icon">📞</span>
-                  <p className="contact-text-white">+91 172 5044700</p>
+                  <p className="contact-text-white">📞 +91 172 5044700</p>
                 </div>
                 <div className="contact-item">
-                  <span className="contact-icon">✉️</span>
-                  <p className="contact-text-white">info@eoninfotech.com</p>
+                  <p className="contact-text-white">✉️ info@eoninfotech.com</p>
                 </div>
               </div>              
               <div className="footer-column">

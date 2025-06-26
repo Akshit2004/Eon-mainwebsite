@@ -756,7 +756,7 @@
 
 /* Quality Section */
 .quality-section {
-  background: linear-gradient(120deg, #f8fafc 60%, #e6f0fa 100%);
+  background: linear-gradient(120deg, #e6f0fa 100%, #e6f0fa 100%);
   padding: 6rem 0 7rem 0;
   position: relative;
   overflow: hidden;

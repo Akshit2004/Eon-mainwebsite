@@ -18,6 +18,10 @@ import prodT90 from '../../assets/Products/fcst90/prod2ACU1-min.JPG';
 import prodLibra from '../../assets/Products/libra/prod3libra1-min.JPG';
 import prodCris from '../../assets/Products/cris/prod4cris1-min.JPG';
 import slide2 from '../../assets/slide2.png';
+import ourPhoto1 from '../../assets/OurPhotos/1.png';
+import ourPhoto2 from '../../assets/OurPhotos/2.png';
+import ourPhoto3 from '../../assets/OurPhotos/3.png';
+import ourPhoto4 from '../../assets/OurPhotos/4.png';
 
 const LandingPage = () => {
   // Product grid scroll ref
@@ -473,19 +477,19 @@ const LandingPage = () => {
           </div>
           <div className="premises-grid">
             <div className="premises-item large">
-              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Office Building Exterior" />
+              <img src={ourPhoto1} alt="Eon Premises 1" />
             </div>
             <div className="premises-item">
-              <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Office Entrance" />
+              <img src={ourPhoto2} alt="Eon Premises 2" />
             </div>
             <div className="premises-item">
-              <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Work Environment" />
+              <img src={ourPhoto3} alt="Eon Premises 3" />
             </div>
             <div className="premises-item">
-              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Conference Room" />
+              <img src={ourPhoto4} alt="Eon Premises 4" />
             </div>
             <div className="premises-item">
-              <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Workspace" />
+              <img src={ourPhoto1} alt="Eon Premises 5" />
             </div>          
             </div>
         </div>
