@@ -21,6 +21,56 @@
   background: #000;
 }
 
+.hero-backgrounds-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero-slide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-slide-img.active.right {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.hero-slide-img.prev.right {
+  opacity: 0;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.hero-slide-img.active.left {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.hero-slide-img.prev.left {
+  opacity: 0;
+  transform: translateX(100%);
+  z-index: 1;
+}
+
 .hero-background {
   position: absolute;
   top: 0;

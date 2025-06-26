@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import ConsultationSection from '../../components/ConsultationSection/ConsultationSection'; // add this import
+import ConsultationSection from '../../components/ConsultationSection/ConsultationSection';
 import './LandingPage.css';
 import img1 from '../../assets/img1/1.png';
 import img2 from '../../assets/img1/2.png';
@@ -17,7 +17,6 @@ import prodKavach from '../../assets/Products/Kavach/kavach1-min.JPG';
 import prodT90 from '../../assets/Products/fcst90/prod2ACU1-min.JPG';
 import prodLibra from '../../assets/Products/libra/prod3libra1-min.JPG';
 import prodCris from '../../assets/Products/cris/prod4cris1-min.JPG';
-import slide1 from '../../assets/slide1.png';
 import slide2 from '../../assets/slide2.png';
 
 const LandingPage = () => {
@@ -37,17 +36,22 @@ const LandingPage = () => {
   };
 
   const heroSlides = [
-    slide1,
     slide2,
-    'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    'https://www.marvell.com/content/dam/marvell/en/products/assets/custom-asic/images/heroes/bnr-hero-1900x1266-asic.jpg',
   ];
   const [currentSlide, setCurrentSlide] = React.useState(0);
+  const [prevSlide, setPrevSlide] = React.useState(null);
+  const [slideDirection, setSlideDirection] = React.useState('right');
+
+  // Slide change with direction
   React.useEffect(() => {
     const interval = setInterval(() => {
+      setPrevSlide(currentSlide);
+      setSlideDirection('right'); // Always right for auto, can be dynamic if you add manual controls
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 3500);
     return () => clearInterval(interval);
-  }, []);
+  }, [currentSlide, heroSlides.length]);
 
   return (
     <div className="landing-page">
@@ -55,12 +59,22 @@ const LandingPage = () => {
       
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-background" style={{
-          backgroundImage: `url(${heroSlides[currentSlide]})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          transition: 'background-image 0.8s ease-in-out',
-        }}></div>
+        <div className="hero-backgrounds-wrapper">
+          {heroSlides.map((slide, idx) => {
+            let className = 'hero-slide-img';
+            if (idx === currentSlide) className += ' active ' + slideDirection;
+            else if (idx === prevSlide) className += ' prev ' + slideDirection;
+            else className += ' hidden';
+            return (
+              <img
+                key={slide}
+                src={slide}
+                alt="Hero Slide"
+                className={className}
+              />
+            );
+          })}
+        </div>
         <div className="hero-overlay"></div>
         
         <div className="hero-content">
