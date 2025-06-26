@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import ConsultationSection from '../../components/ConsultationSection/ConsultationSection'; // add this import
 import './LandingPage.css';
 import img1 from '../../assets/img1/1.png';
 import img2 from '../../assets/img1/2.png';
@@ -538,19 +539,7 @@ const LandingPage = () => {
           </div>        </div>
       </section>
 
-      {/* Consultation Section */}
-      <section className="consultation-section">
-        <div className="consultation-background"></div>
-        <div className="hero-overlay"></div>
-        <div className="container">
-          <div className="consultation-content">
-            <div className="consultation-tagline">//Drop us a line! We are here to answer your questions 24/7</div>
-            <h2 className="consultation-title">NEED A CONSULTATION?</h2>
-            <button className="consultation-cta">
-              CONTACT US
-            </button>          </div>
-        </div>
-      </section>
+      <ConsultationSection />
 
       <Footer />
     </div>
