@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import ConsultationSection from '../../components/ConsultationSection/ConsultationSection'; // add this import
@@ -19,6 +19,21 @@ import prodLibra from '../../assets/Products/libra/prod3libra1-min.JPG';
 import prodCris from '../../assets/Products/cris/prod4cris1-min.JPG';
 
 const LandingPage = () => {
+  // Product grid scroll ref
+  const productsScrollRef = useRef(null);
+
+  // Scroll handler
+  const handleProductScroll = (direction) => {
+    const container = productsScrollRef.current;
+    if (!container) return;
+    const scrollAmount = container.offsetWidth * 0.7; // Scroll by 70% of visible width
+    if (direction === 'left') {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="landing-page">
       <Navbar />
@@ -267,92 +282,147 @@ const LandingPage = () => {
               of products for defence
             </h2>
           </div>
-          <div className="products-scroll-container">
-            <div className="products-grid">
-              <div className="product-card">
-                <div className="product-image">
-                  <img src={prodAqua} alt="Equipment - Aqua" />
+          <div className="products-scroll-wrapper" style={{ gap: '1rem', justifyContent: 'center', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+            <div
+              className="products-scroll-container"
+              style={{ flex: 1, minWidth: 0, width: '100%', overflowX: 'auto', scrollBehavior: 'smooth' }}
+              ref={productsScrollRef}
+            >
+              <div className="products-grid">
+                <div className="product-card">
+                  <div className="product-image">
+                    <img src={prodAqua} alt="Equipment - Aqua" />
+                  </div>
+                  <div className="product-info">
+                    <h3 className="product-title">Equipment - Aqua</h3>
+                    <a href="/Aqua" className="product-arrow" title="View Aqua">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-                <div className="product-info">
-                  <h3 className="product-title">Equipment - Aqua</h3>
-                  <a href="/Aqua" className="product-arrow" title="View Aqua">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
+                
+                <div className="product-card">
+                  <div className="product-image">
+                    <img src={prodKavach} alt="Fire Control System - Kavach" />
+                  </div>
+                  <div className="product-info">
+                    <h3 className="product-title">Fire Control System - Kavach</h3>
+                    <a href="/Kavach" className="product-arrow" title="View Kavach">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="product-card">
+                  <div className="product-image">
+                    <img src={prodT90} alt="Fire Control System T90" />
+                  </div>
+                  <div className="product-info">
+                    <h3 className="product-title">Fire Control System T90</h3>
+                    <a href="/T90" className="product-arrow" title="View T90">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="product-card">
+                  <div className="product-image">
+                    <img src={prodLibra} alt="CREW - Library" />
+                  </div>
+                  <div className="product-info">
+                    <h3 className="product-title">CREW - Library</h3>
+                    <a href="/Libra" className="product-arrow" title="View Libra">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="product-card">
+                  <div className="product-image">
+                    <img src={prodCris} alt="Advanced Defense System" />
+                  </div>
+                  <div className="product-info">
+                    <h3 className="product-title">Advanced Defense System</h3>
+                    <a href="/Cris" className="product-arrow" title="View Cris">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="product-card">
+                  <div className="product-image">
+                    <img src={prodLeo} alt="CREW Equipment - LEO" />
+                  </div>
+                  <div className="product-info">
+                    <h3 className="product-title">CREW Equipment - LEO</h3>
+                    <a href="/LEO" className="product-arrow" title="View LEO">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-              
-              <div className="product-card">
-                <div className="product-image">
-                  <img src={prodKavach} alt="Fire Control System - Kavach" />
-                </div>
-                <div className="product-info">
-                  <h3 className="product-title">Fire Control System - Kavach</h3>
-                  <a href="/Kavach" className="product-arrow" title="View Kavach">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              
-              <div className="product-card">
-                <div className="product-image">
-                  <img src={prodT90} alt="Fire Control System T90" />
-                </div>
-                <div className="product-info">
-                  <h3 className="product-title">Fire Control System T90</h3>
-                  <a href="/T90" className="product-arrow" title="View T90">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              
-              <div className="product-card">
-                <div className="product-image">
-                  <img src={prodLibra} alt="CREW - Library" />
-                </div>
-                <div className="product-info">
-                  <h3 className="product-title">CREW - Library</h3>
-                  <a href="/Libra" className="product-arrow" title="View Libra">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              
-              <div className="product-card">
-                <div className="product-image">
-                  <img src={prodCris} alt="Advanced Defense System" />
-                </div>
-                <div className="product-info">
-                  <h3 className="product-title">Advanced Defense System</h3>
-                  <a href="/Cris" className="product-arrow" title="View Cris">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              
-              <div className="product-card">
-                <div className="product-image">
-                  <img src={prodLeo} alt="CREW Equipment - LEO" />
-                </div>
-                <div className="product-info">
-                  <h3 className="product-title">CREW Equipment - LEO</h3>
-                  <a href="/LEO" className="product-arrow" title="View LEO">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>        
+            </div>
+            {/* Traversal buttons for PC view */}
+            <div className="products-traversal-buttons" style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginTop: '1.5rem' }}>
+              <button
+                className="traverse-btn left"
+                onClick={() => handleProductScroll('left')}
+                aria-label="Scroll left"
+                style={{
+                  background: '#e6f0fa',
+                  border: 'none',
+                  borderRadius: '50%',
+                  width: '48px',
+                  height: '48px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                  cursor: 'pointer',
+                  fontSize: '1.5rem',
+                  transition: 'background 0.2s',
+                }}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 19L8 12L15 5" stroke="#184673" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+              <button
+                className="traverse-btn right"
+                onClick={() => handleProductScroll('right')}
+                aria-label="Scroll right"
+                style={{
+                  background: '#e6f0fa',
+                  border: 'none',
+                  borderRadius: '50%',
+                  width: '48px',
+                  height: '48px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                  cursor: 'pointer',
+                  fontSize: '1.5rem',
+                  transition: 'background 0.2s',
+                }}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 5L16 12L9 19" stroke="#184673" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
