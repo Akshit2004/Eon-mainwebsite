@@ -74,10 +74,23 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="about-image">
+              <div style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '100%',
+                height: '100%',
+                background: 'radial-gradient(circle, rgba(24,116,208,0.10) 0%, rgba(24,116,208,0.07) 60%, rgba(24,116,208,0.03) 100%)',
+                borderRadius: '50%',
+                zIndex: 0,
+                animation: 'aboutImgSpin 18s linear infinite'
+              }}></div>
               <img 
                 src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                 alt="Technology and Innovation" 
                 className="about-img"
+                style={{ position: 'relative', zIndex: 1 }}
               />
             </div>
           </div>        

@@ -1,6 +1,11 @@
+/* Apply Elephant font globally */
+body, html {
+  font-family: 'Elephant', Arial, Helvetica, sans-serif;
+}
+
 /* Footer Section Styles */
 .footer-section {
-  background: #1e3a5f;
+  background: #071b12; /* Sea green */
   color: white;
   padding: 60px 0 40px;
 }
