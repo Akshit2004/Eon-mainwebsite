@@ -602,7 +602,7 @@ const LandingPage = () => {
                   <img src="/google_g_logo.svg" alt="Google" className="review-source" />
                 </div>
                 <p className="testimonial-text">
-                  Colleagues are good, they are very supportive, interaction with the customer and their feedback is valuable. A great place to learn, experiment, unlearn and relearn. The management supports initiatives and recognises the impact created by each employee.
+                  Great place to learn, experiment, and grow. Supportive colleagues and management.
                 </p>
               </div>
               <div className="testimonial-card">
@@ -623,7 +623,7 @@ const LandingPage = () => {
                   <img src="/google_g_logo.svg" alt="Google" className="review-source" />
                 </div>
                 <p className="testimonial-text">
-                  Eon Infotech Ltd is a technology company. This is very Good and stable organisation. It provide flexible working hours and all the benefits as per law of their employees. Management is very supportive and always tries to maintain work life balance for the employees. I recommend this company who want to learn and grow in own life.
+                  Good and stable organization with flexible hours. Supportive management and work-life balance.
                 </p>
               </div>
               <div className="testimonial-card">
@@ -644,7 +644,7 @@ const LandingPage = () => {
                   <img src="/google_g_logo.svg" alt="Google" className="review-source" />
                 </div>
                 <p className="testimonial-text">
-                  It's a good organization to work with who value their employees, motivates them to grow further. Head of the company is very down to earth and always appreciates the hard work of their employees.
+                  Values employees and motivates them to grow. Appreciates hard work.
                 </p>
               </div>
             </div>
