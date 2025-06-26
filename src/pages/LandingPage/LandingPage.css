@@ -572,12 +572,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #184673; /* set background color to match screenshot */
 }
 
 .product-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #1f2937;
+  color: #ffffff;
   margin: 0;
   line-height: 1.4;
 }
@@ -1137,7 +1138,6 @@
   color: white;
   padding: 16px 40px;
   border: none;
-  border-radius: 8px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.05em;

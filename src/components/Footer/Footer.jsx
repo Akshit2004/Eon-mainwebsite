@@ -58,7 +58,7 @@ const Footer = () => {
                 <h4 className="footer-column-title">Contact Info</h4>
                 <div className="contact-item">
                   <span className="contact-icon">📍</span>
-                  <div className="contact-text">
+                  <div className="contact-text-white">
                     <p>C-180 Industrial Area, Phase</p>
                     <p>8-B, Sector 74, Mohali</p>
                     <p>160059, India</p>
@@ -66,14 +66,16 @@ const Footer = () => {
                 </div>
                 <div className="contact-item">
                   <span className="contact-icon">📞</span>
-                  <p>+91 172 5044700</p>
+                  <p className="contact-text-white">+91 172 5044700</p>
                 </div>
                 <div className="contact-item">
                   <span className="contact-icon">✉️</span>
-                  <p>info@eoninfotech.com</p>
+                  <p className="contact-text-white">info@eoninfotech.com</p>
                 </div>
-              </div>              <div className="footer-column">
-                <h4 className="footer-column-title">Quick Links</h4>                <ul className="footer-menu">
+              </div>              
+              <div className="footer-column">
+                <h4 className="footer-column-title">Quick Links</h4>                
+                <ul className="footer-menu">
                   <li><a href="/">Home</a></li>
                   <li><a href="/about">About Us</a></li>
                   <li><a href="/contact">Contact Us</a></li>
@@ -85,12 +87,11 @@ const Footer = () => {
               <div className="footer-column">
                 <h4 className="footer-column-title">Our Products</h4>
                 <ul className="footer-menu">
-                  <li><a href="#kavach">Fire Control System - Kavach</a></li>
-                  <li><a href="#t90">Fire Control System T90</a></li>
-                  <li><a href="#crew-libra">CREW - Libra</a></li>
-                  <li><a href="#crew-orps">CREW - ORPS</a></li>
-                  <li><a href="#crew-leo">CREW Equipment - Leo</a></li>
-                  <li><a href="#crew-aqua">CREW Equipment - Aqua</a></li>
+                  <li><a href="/Kavach">Fire Control System - Kavach</a></li>
+                  <li><a href="/T90">Fire Control System T90</a></li>
+                  <li><a href="/Libra">CREW - Libra</a></li>
+                  <li><a href="/LEO">CREW Equipment - Leo</a></li>
+                  <li><a href="/Aqua">CREW Equipment - Aqua</a></li>
                 </ul>
               </div>
             </div>

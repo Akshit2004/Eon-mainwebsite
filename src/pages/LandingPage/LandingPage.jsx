@@ -247,7 +247,7 @@ const LandingPage = () => {
       <section className="products-section">
         <div className="container">
           <div className="section-header">
-            <div className="tagline">OUR PRODUCTS</div>
+            <div className="tagline">//OUR PRODUCTS</div>
             <h2 className="section-title">
               We provide a variety<br />
               of products for defence
@@ -525,7 +525,6 @@ const LandingPage = () => {
                   background: '#4285F4',
                   color: '#fff',
                   padding: '0.75rem 2rem',
-                  borderRadius: '8px',
                   fontWeight: 600,
                   textDecoration: 'none',
                   fontSize: '1rem',
