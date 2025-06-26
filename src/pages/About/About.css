@@ -53,49 +53,75 @@
   backdrop-filter: blur(10px);
   border-radius: 24px;
   padding: 50px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* --- Enhanced About Main Images with Animation --- */
 .about-main-images {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 24px;
+  align-items: flex-end;
   position: relative;
+  min-width: 380px;
 }
-
 .about-main-img1 {
-  width: 350px;
-  height: 240px;
+  width: 400px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(30,41,59,0.13), 0 2px 8px rgba(59,130,246,0.10);
+  border: 3px solid #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 2;
+  animation: aboutImgFloat 4s ease-in-out infinite;
 }
-
-.about-main-img1:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
 .about-main-img2 {
-  width: 200px;
-  height: 130px;
+  width: 220px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 16px;
-  position: relative;
-  left: 100px;
-  top: -50px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(59,130,246,0.13);
+  border: 2px solid #e0e7ef;
+  position: absolute;
+  left: 260px;
+  bottom: -40px;
   background: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 3;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: aboutImgFloat2 4.5s ease-in-out infinite;
 }
-
-.about-main-img2:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+.about-main-img1:hover, .about-main-img2:hover {
+  transform: scale(1.04) translateY(-4px) rotate(-2deg);
+  box-shadow: 0 16px 48px rgba(59,130,246,0.18), 0 4px 16px rgba(30,41,59,0.10);
+  z-index: 4;
 }
-
+@keyframes aboutImgFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-12px) scale(1.03) rotate(-1deg); }
+}
+@keyframes aboutImgFloat2 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-18px) scale(1.05) rotate(2deg); }
+}
+@media (max-width: 900px) {
+  .about-main-images {
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    gap: 12px;
+  }
+  .about-main-img1 {
+    width: 98vw;
+    max-width: 400px;
+    height: 200px;
+  }
+  .about-main-img2 {
+    width: 70vw;
+    max-width: 180px;
+    height: 110px;
+  }
+}
 .about-main-content {
   flex: 1;
   display: flex;
@@ -883,15 +909,16 @@
 
 .vision-badge {
   display: inline-block;
-  background: rgba(59, 130, 246, 0.1);
+  /* background: rgba(59, 130, 246, 0.1); */
+  background: none;
   color: #3b82f6;
-  padding: 8px 20px;
-  border-radius: 50px;
+  padding: 0;
+  border-radius: 0;
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 24px;
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: none;
 }
 
 .vision-title {
@@ -1661,6 +1688,7 @@
 
 .journey-card.horizontal .card-content {
   border-left: 4px solid #2563eb;
+  align-items: center;
   padding-left: 24px;
   flex: 1;
 }
@@ -1702,6 +1730,7 @@
   .journey-card.horizontal .card-content {
     padding-left: 0;
     border-left: none;
+    align-items: center;
     width: 100%;
   }
 }
@@ -1793,3 +1822,90 @@
   }
 }
 /* --- End Horizontal Journey Card (Combined) --- */
+
+/* --- Modern Journey Steps Timeline --- */
+.journey-steps-modern {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  background: linear-gradient(90deg, #f8fafc 60%, #e0e7ef 100%);
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(30,41,59,0.07);
+  padding: 36px 32px;
+  margin: 0 auto 32px auto;
+  max-width: 900px;
+  position: relative;
+}
+.journey-step-modern {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+  text-align: center;
+  position: relative;
+}
+.journey-step-circle {
+  width: 38px;
+  height: 38px;
+  background: #0066cc;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,102,204,0.10);
+}
+.journey-step-icon-modern {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+.journey-step-modern:hover .journey-step-icon-modern {
+  transform: scale(1.15) rotate(-8deg);
+}
+.journey-step-title-modern {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 6px 0;
+}
+.journey-step-desc {
+  font-size: 0.98rem;
+  color: #475569;
+  margin: 0 0 8px 0;
+  opacity: 0.85;
+}
+.journey-step-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.journey-step-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: #b6c6e3;
+  font-weight: 700;
+  margin: 0 0.5rem;
+  user-select: none;
+}
+@media (max-width: 900px) {
+  .journey-steps-modern {
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px 10px;
+  }
+  .journey-step-modern {
+    min-width: 0;
+  }
+  .journey-step-connector {
+    font-size: 1.5rem;
+    margin: 0.2rem 0;
+  }
+}
+/* --- End Modern Journey Steps Timeline --- */
