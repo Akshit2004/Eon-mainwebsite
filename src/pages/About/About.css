@@ -974,7 +974,7 @@
 
 .pillars-badge {
   display: inline-block;
-  background: rgba(59, 130, 246, 0.1);
+  background: none;
   color: #3b82f6;
   padding: 8px 20px;
   border-radius: 50px;
@@ -982,7 +982,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 16px;
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: none;
 }
 
 .pillars-title {
@@ -1111,7 +1111,7 @@
 
 .philosophy-badge {
   display: inline-block;
-  background: rgba(59, 130, 246, 0.1);
+  background: none;
   color: #3b82f6;
   padding: 8px 20px;
   border-radius: 50px;
@@ -1119,7 +1119,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 16px;
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: none;
 }
 
 .philosophy-title {
@@ -1138,72 +1138,6 @@
   margin: 0 auto;
 }
 
-.philosophy-card {
-  background: #133047;
-  color: #fff;
-  border-radius: 16px;
-  position: relative;
-  overflow: hidden;
-  min-height: 260px;
-  box-shadow: 0 8px 32px rgba(19, 48, 71, 0.10);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.philosophy-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 16px 48px rgba(19, 48, 71, 0.18);
-}
-
-.philosophy-bg-number {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: rgba(255,255,255,0.07);
-  z-index: 1;
-  pointer-events: none;
-  user-select: none;
-}
-
-.philosophy-content {
-  position: relative;
-  z-index: 2;
-  padding: 38px 28px 28px 28px;
-  display: flex;
-  flex-direction: column;
-  min-height: 200px;
-  justify-content: flex-end;
-}
-
-.philosophy-content h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #fff;
-}
-
-.philosophy-content p {
-  font-size: 1rem;
-  color: #e0e7ef;
-  margin-bottom: 18px;
-  font-weight: 400;
-}
-
-.philosophy-icon {
-  font-size: 2rem;
-  color: #fff;
-  opacity: 0.18;
-  position: absolute;
-  bottom: 18px;
-  right: 22px;
-  z-index: 0;
-}
-
 /* --- Redesigned Philosophy Cards --- */
 .redesigned-philosophy-grid {
   display: grid;
@@ -1214,69 +1148,46 @@
 }
 
 .redesigned-philosophy-card {
-  background: rgba(255, 255, 255, 0.18);
-  border: 1.5px solid rgba(59, 130, 246, 0.13);
-  box-shadow: 0 8px 32px rgba(30, 41, 59, 0.13), 0 1.5px 8px rgba(59,130,246,0.08);
-  border-radius: 22px;
+  background: #fff;
+  border: 1.5px solid #e2e8f0;
+  box-shadow: 0 4px 24px rgba(30, 41, 59, 0.08);
+  border-radius: 16px;
   position: relative;
   overflow: visible;
-  min-height: 270px;
+  min-height: 210px;
   padding: 0;
-  transition: transform 0.3s, box-shadow 0.3s;
-  backdrop-filter: blur(12px);
+  transition: box-shadow 0.3s, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  backdrop-filter: none;
 }
 
 .redesigned-philosophy-card:hover {
-  transform: translateY(-10px) scale(1.04);
-  box-shadow: 0 16px 48px 0 rgba(59,130,246,0.18), 0 2px 12px rgba(30,41,59,0.10);
+  box-shadow: 0 8px 32px rgba(59,130,246,0.13);
   border-color: #3b82f6;
 }
 
+/* Remove floating icon and bg number for a cleaner look */
+.philosophy-floating-icon,
 .redesigned-bg-number {
-  position: absolute;
-  top: 22px;
-  left: 26px;
-  font-size: 3.2rem;
-  font-weight: 900;
-  color: rgba(59,130,246,0.08);
-  z-index: 1;
-  pointer-events: none;
-  user-select: none;
-  letter-spacing: -2px;
-}
-
-.philosophy-floating-icon {
-  position: absolute;
-  top: -28px;
-  right: 28px;
-  font-size: 2.8rem;
-  background: linear-gradient(135deg, #3b82f6 60%, #38bdf8 100%);
-  color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 4px 18px 0 rgba(59,130,246,0.18);
-  padding: 16px 18px;
-  z-index: 3;
-  border: 3px solid #fff;
-  transition: transform 0.25s;
-}
-
-.redesigned-philosophy-card:hover .philosophy-floating-icon {
-  transform: scale(1.12) rotate(-8deg);
+  display: none !important;
 }
 
 .redesigned-content {
   position: relative;
   z-index: 2;
-  padding: 54px 32px 32px 32px;
+  padding: 32px 28px 28px 18px;
   display: flex;
   flex-direction: column;
-  min-height: 180px;
-  justify-content: flex-end;
+  min-height: 120px;
+  justify-content: flex-start;
   background: none;
+  border-left: 4px solid #3b82f6;
 }
 
 .redesigned-content h3 {
-  font-size: 1.18rem;
+  font-size: 1.13rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #1e293b;
@@ -1296,13 +1207,8 @@
     gap: 28px;
   }
   .redesigned-content {
-    padding: 48px 18px 24px 18px;
-  }
-  .philosophy-floating-icon {
-    top: -18px;
-    right: 16px;
-    font-size: 2.1rem;
-    padding: 10px 12px;
+    padding: 24px 12px 18px 10px;
+    border-left: 3px solid #3b82f6;
   }
 }
 
