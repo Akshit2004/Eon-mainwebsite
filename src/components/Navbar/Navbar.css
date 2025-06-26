@@ -34,9 +34,11 @@
 }
 
 .logo-image {
-  height: 40px;
+  height: 64px;
   width: auto;
+  max-width: 220px;
   object-fit: contain;
+  transition: height 0.2s;
 }
 
 .brand-text {
@@ -254,5 +256,12 @@
 
   .nav-cta-btn {
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-logo .logo-image {
+    height: 48px;
+    max-width: 150px;
   }
 }

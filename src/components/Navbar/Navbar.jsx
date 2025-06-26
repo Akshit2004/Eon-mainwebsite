@@ -16,13 +16,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="nav-container">        <div className="nav-logo">
+      <div className="nav-container">       
+         <div className="nav-logo">
           <Link to="/" className="logo">
-            <img src="/eon_logo_trans.png" alt="Eon Infotech" className="logo-image" />
-            <div className="brand-text">
-              <strong>Eon</strong>
-              <div className="brand-subtitle">Infotech</div>
-            </div>
+            <img src="\EonWebLogoBlueTransWhiteText.png" alt="Eon Infotech" className="logo-image" />
           </Link>
         </div>
           <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>          <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={toggleMenu}>
