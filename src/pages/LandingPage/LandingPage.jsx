@@ -79,7 +79,8 @@ const LandingPage = () => {
                 className="about-img"
               />
             </div>
-          </div>        </div>
+          </div>        
+          </div>
       </section>
 
       {/* Achievements Section */}
@@ -130,6 +131,15 @@ const LandingPage = () => {
                 Improve and Innovate with<br />
                 the Tech Trends
               </h2>
+              <div className="life-subtitle" style={{
+                color: "#4b5563",
+                fontSize: "1.1rem",
+                marginBottom: "2rem",
+                fontWeight: 500,
+                letterSpacing: "0.01em"
+              }}>
+                Discover what makes our workplace unique and empowering.
+              </div>
               <p className="life-description">
                 At EON, what is appreciated most is the enthusiasm to be creative 
                 and shoulder responsibility, and the drive and hard work put in by its 
@@ -137,29 +147,66 @@ const LandingPage = () => {
                 player in its domain.
               </p>
               
-              <div className="life-features">
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <div className="life-features" style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "2rem",
+                marginTop: "2.5rem"
+              }}>
+                <div className="feature-item" style={{
+                  background: "#f3f6fa",
+                  borderRadius: "16px",
+                  padding: "1.5rem 1rem",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "1.25rem"
+                }}>
+                  <div className="feature-icon" style={{
+                    background: "#e6f0fa",
+                    borderRadius: "12px",
+                    width: "56px",
+                    height: "56px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
+                  }}>
+                    <svg viewBox="0 0 24 24" fill="none" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" stroke="#0066cc" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <div className="feature-content" style={{ color: '#000' }}>
-                    <h3 className="feature-title">Experience</h3>
-                    <p className="feature-text">Our great team of expert certified engineers.</p>
+                    <h3 className="feature-title" style={{ margin: 0, fontSize: "1.15rem" }}>Experience</h3>
+                    <p className="feature-text" style={{ margin: 0, color: "#4b5563" }}>Our great team of expert certified engineers.</p>
                   </div>
                 </div>
                 
-                <div className="feature-item">
-                  <div className="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2"/>
-                      <path d="M19.4 15C19.2 15.1 19.1 15.2 19 15.4C18.9 15.6 18.9 15.8 19 16L20.2 17.2C20.3 17.3 20.4 17.4 20.4 17.6C20.4 17.8 20.3 17.9 20.2 18L18.4 19.8C18.3 19.9 18.1 20 18 20C17.9 20 17.7 19.9 17.6 19.8L16.3 18.6C16.1 18.5 15.9 18.4 15.7 18.5C15.5 18.6 15.4 18.7 15.3 18.9L14.8 20.3C14.7 20.7 14.4 21 14 21H12C11.6 21 11.3 20.7 11.2 20.3L10.7 18.9C10.6 18.7 10.5 18.6 10.3 18.5C10.1 18.4 9.9 18.5 9.7 18.6L8.4 19.8C8.3 19.9 8.1 20 8 20C7.9 20 7.7 19.9 7.6 19.8L5.8 18C5.7 17.9 5.6 17.7 5.6 17.6C5.6 17.4 5.7 17.3 5.8 17.2L7 16C7.1 15.8 7.1 15.6 7 15.4C6.9 15.2 6.8 15.1 6.6 15L5.2 14.5C4.8 14.4 4.5 14.1 4.5 13.7V10.3C4.5 9.9 4.8 9.6 5.2 9.5L6.6 9C6.8 8.9 6.9 8.8 7 8.6C7.1 8.4 7.1 8.2 7 8L5.8 6.8C5.7 6.7 5.6 6.6 5.6 6.4C5.6 6.2 5.7 6.1 5.8 6L7.6 4.2C7.7 4.1 7.9 4 8 4C8.1 4 8.3 4.1 8.4 4.2L9.7 5.4C9.9 5.5 10.1 5.6 10.3 5.5C10.5 5.4 10.6 5.3 10.7 5.1L11.2 3.7C11.3 3.3 11.6 3 12 3H14C14.4 3 14.7 3.3 14.8 3.7L15.3 5.1C15.4 5.3 15.5 5.4 15.7 5.5C15.9 5.6 16.1 5.5 16.3 5.4L17.6 4.2C17.7 4.1 17.9 4 18 4C18.1 4 18.3 4.1 18.4 4.2L20.2 6C20.3 6.1 20.4 6.3 20.4 6.4C20.4 6.6 20.3 6.7 20.2 6.8L19 8C18.9 8.2 18.9 8.4 19 8.6C19.1 8.8 19.2 8.9 19.4 9L20.8 9.5C21.2 9.6 21.5 9.9 21.5 10.3V13.7C21.5 14.1 21.2 14.4 20.8 14.5L19.4 15Z" stroke="currentColor" strokeWidth="2"/>
+                <div className="feature-item" style={{
+                  background: "#f3f6fa",
+                  borderRadius: "16px",
+                  padding: "1.5rem 1rem",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "1.25rem"
+                }}>
+                  <div className="feature-icon" style={{
+                    background: "#e6f0fa",
+                    borderRadius: "12px",
+                    width: "56px",
+                    height: "56px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
+                  }}>
+                    <svg viewBox="0 0 24 24" fill="none" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="12" cy="12" r="3" stroke="#0066cc" strokeWidth="2"/>
+                      <path d="M19.4 15C19.2 15.1 19.1 15.2 19 15.4C18.9 15.6 18.9 15.8 19 16L20.2 17.2C20.3 17.3 20.4 17.4 20.4 17.6C20.4 17.8 20.3 17.9 20.2 18L18.4 19.8C18.3 19.9 18.1 20 18 20C17.9 20 17.7 19.9 17.6 19.8L16.3 18.6C16.1 18.5 15.9 18.4 15.7 18.5C15.5 18.6 15.4 18.7 15.3 18.9L14.8 20.3C14.7 20.7 14.4 21 14 21H12C11.6 21 11.3 20.7 11.2 20.3L10.7 18.9C10.6 18.7 10.5 18.6 10.3 18.5C10.1 18.4 9.9 18.5 9.7 18.6L8.4 19.8C8.3 19.9 8.1 20 8 20C7.9 20 7.7 19.9 7.6 19.8L5.8 18C5.7 17.9 5.6 17.7 5.6 17.6C5.6 17.4 5.7 17.3 5.8 17.2L7 16C7.1 15.8 7.1 15.6 7 15.4C6.9 15.2 6.8 15.1 6.6 15L5.2 14.5C4.8 14.4 4.5 14.1 4.5 13.7V10.3C4.5 9.9 4.8 9.6 5.2 9.5L6.6 9C6.8 8.9 6.9 8.8 7 8.6C7.1 8.4 7.1 8.2 7 8L5.8 6.8C5.7 6.7 5.6 6.6 5.6 6.4C5.6 6.2 5.7 6.1 5.8 6L7.6 4.2C7.7 4.1 7.9 4 8 4C8.1 4 8.3 4.1 8.4 4.2L9.7 5.4C9.9 5.5 10.1 5.6 10.3 5.5C10.5 5.4 10.6 5.3 10.7 5.1L11.2 3.7C11.3 3.3 11.6 3 12 3H14C14.4 3 14.7 3.3 14.8 3.7L15.3 5.1C15.4 5.3 15.5 5.4 15.7 5.5C15.9 5.6 16.1 5.5 16.3 5.4L17.6 4.2C17.7 4.1 17.9 4 18 4C18.1 4 18.3 4.1 18.4 4.2L20.2 6C20.3 6.1 20.4 6.3 20.4 6.4C20.4 6.6 20.3 6.7 20.2 6.8L19 8C18.9 8.2 18.9 8.4 19 8.6C19.1 8.8 19.2 8.9 19.4 9L20.8 9.5C21.2 9.6 21.5 9.9 21.5 10.3V13.7C21.5 14.1 21.2 14.4 20.8 14.5L19.4 15Z" stroke="#0066cc" strokeWidth="2"/>
                     </svg>
                   </div>
                   <div className="feature-content" style={{ color: '#000' }}>
-                    <h3 className="feature-title">Quick Support</h3>
-                    <p className="feature-text">We'll help you test bold new ideas while sharing your.</p>
+                    <h3 className="feature-title" style={{ margin: 0, fontSize: "1.15rem" }}>Quick Support</h3>
+                    <p className="feature-text" style={{ margin: 0, color: "#4b5563" }}>We'll help you test bold new ideas while sharing your.</p>
                   </div>
                 </div>
               </div>
@@ -191,7 +238,8 @@ const LandingPage = () => {
                   </div>
                 </div>
               </div>
-            </div>          </div>
+            </div>         
+            </div>
         </div>
       </section>
 

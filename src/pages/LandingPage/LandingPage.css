@@ -288,10 +288,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  width: 110%;
+  width: 90%;
   max-width: 2500px;
-  padding-right: 110px;
   margin: 0 auto;
+  padding-right: 0; /* Remove fixed padding */
 }
 
 .achievement-card {
@@ -340,21 +340,6 @@
   background: #f9fafb;
   position: relative;
   overflow: hidden;
-}
-
-.life-at-eon-section::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -10%;
-  width: 30%;
-  height: 200%;
-  background: linear-gradient(45deg, 
-    rgba(59, 130, 246, 0.03) 0%, 
-    rgba(147, 51, 234, 0.03) 50%, 
-    rgba(236, 72, 153, 0.03) 100%);
-  transform: rotate(-15deg);
-  z-index: 0;
 }
 
 .life-content {
@@ -1206,8 +1191,10 @@
   }
 
   .achievements-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
     gap: 1.5rem;
+    padding-right: 0;
   }
 
   .premises-grid {
