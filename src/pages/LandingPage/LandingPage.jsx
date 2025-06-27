@@ -278,25 +278,21 @@ const LandingPage = () => {
                 <div className="grid-item large">
                   <img src={img1} alt="Our Mission" />
                   <div className="image-overlay">
-                    <span>Our Mission</span>
                   </div>
                 </div>
                 <div className="grid-item">
                   <img src={img2} alt="Our Philosophy" />
                   <div className="image-overlay">
-                    <span>Our Philosophy</span>
                   </div>
                 </div>
                 <div className="grid-item">
                   <img src={img3} alt="Our Vision" />
                   <div className="image-overlay">
-                    <span>Our Vision</span>
                   </div>
                 </div>
                 <div className="grid-item">
                   <img src={img4} alt="Our Strategy" />
                   <div className="image-overlay">
-                    <span>Our Strategy</span>
                   </div>
                 </div>
               </div>
