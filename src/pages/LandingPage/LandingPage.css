@@ -123,7 +123,7 @@
 }
 
 .hero-title {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1.5rem;
@@ -376,7 +376,7 @@
 .achievement-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover; /* Changed from contain to cover to fill the card and remove grey part above */
   background: #f5f6fa;
   transition: transform 0.3s ease;
 }
@@ -710,6 +710,7 @@
 .premises-section {
   background: #f9fafb;
   position: relative;
+  padding-top: 6rem; /* Added vertical padding above */
 }
 
 .premises-section .tagline {
@@ -759,10 +760,6 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
-}
-
-.premises-item:hover img {
-  transform: scale(1.05);
 }
 
 /* Quality Section */

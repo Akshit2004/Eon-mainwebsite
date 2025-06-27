@@ -85,13 +85,8 @@ const LandingPage = () => {
           <div className="hero-text">
             <div className="tagline">//INNOVATION AT ITS PEAK</div>
             <h1 className="hero-title">
-              Defending Those Who<br />
-              Defend Us!
+              Defending Those Who Defend Us!
             </h1>
-            <p className="hero-description">
-              Leading the way in advanced technology solutions for defense and security applications.
-              Our cutting-edge innovations protect those who protect our nation.
-            </p>
           </div>
         </div>
       </section>
