@@ -526,7 +526,7 @@ const LandingPage = () => {
             <div className="quality-feature-card flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front feature-image">
-                  <img src={quality2} alt="Feedback Efficiency" />
+                  <img src={quality3} alt="Feedback Efficiency" />
                   <div className="feature-overlay">
                     <h3 className="feature-name">Feedback Efficiency</h3>
                   </div>
@@ -540,7 +540,7 @@ const LandingPage = () => {
             <div className="quality-feature-card flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front feature-image">
-                  <img src={quality3} alt="Continuous Enhancement" />
+                  <img src={quality2} alt="Continuous Enhancement" />
                   <div className="feature-overlay">
                     <h3 className="feature-name">Continuous Enhancement</h3>
                   </div>
