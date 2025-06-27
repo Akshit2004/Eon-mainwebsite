@@ -36,8 +36,7 @@ const Life = () => {
                 <div className="eon-logo-section">
                   <div className="eon-logo">
                     <div className="logo-circle">
-                      <span className="logo-text">Eon</span>
-                      <span className="logo-subtext">Infotech</span>
+                      <img src="/eon_logo_trans_white.png" alt="Eon Logo" className="logo-img" />
                     </div>
                   </div>
                   <h2 className="culture-title">Let's Get Started!</h2>
