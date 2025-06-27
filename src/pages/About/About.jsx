@@ -212,7 +212,7 @@ const About = () => {
             />
           </div>
           <div className="vision-content">
-            <div className="vision-badge">// OUR VISION</div>
+            <div className="vision-badge">//OUR VISION</div>
             <h2 className="vision-title">Explained.</h2>
             <p className="vision-description">
               We envision ourselves in the leadership position in providing embedded product-
