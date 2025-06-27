@@ -22,9 +22,9 @@ import ourPhoto1 from '../../assets/OurPhotos/1.png';
 import ourPhoto2 from '../../assets/OurPhotos/2.png';
 import ourPhoto3 from '../../assets/OurPhotos/3.png';
 import ourPhoto4 from '../../assets/OurPhotos/4.png';
-import quality1 from '../../assets/Quality/1.png';
-import quality2 from '../../assets/Quality/2.png';
-import quality3 from '../../assets/Quality/3.png';
+import quality1 from '../../assets/quality/1.png';
+import quality2 from '../../assets/quality/2.png';
+import quality3 from '../../assets/quality/3.png';
 
 const LandingPage = () => {
   // Product grid scroll ref

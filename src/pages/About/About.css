@@ -1,7 +1,7 @@
 .about-hero-section {
   position: relative;
   width: 100%;
-  height: 520px; /* Increased height for a larger hero section */
+  height: 70vh; /* Set to 70vh for consistency across hero sections */
   background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
   display: flex;
   align-items: center;
