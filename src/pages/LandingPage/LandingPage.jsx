@@ -22,6 +22,9 @@ import ourPhoto1 from '../../assets/OurPhotos/1.png';
 import ourPhoto2 from '../../assets/OurPhotos/2.png';
 import ourPhoto3 from '../../assets/OurPhotos/3.png';
 import ourPhoto4 from '../../assets/OurPhotos/4.png';
+import quality1 from '../../assets/Quality/1.png';
+import quality2 from '../../assets/Quality/2.png';
+import quality3 from '../../assets/Quality/3.png';
 
 const LandingPage = () => {
   // Product grid scroll ref
@@ -509,7 +512,7 @@ const LandingPage = () => {
             <div className="quality-feature-card flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front feature-image">
-                  <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Extensive Reach" />
+                  <img src={quality1} alt="Extensive Reach" />
                   <div className="feature-overlay">
                     <h3 className="feature-name">Extensive Reach</h3>
                   </div>
@@ -523,7 +526,7 @@ const LandingPage = () => {
             <div className="quality-feature-card flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front feature-image">
-                  <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Feedback Efficiency" />
+                  <img src={quality2} alt="Feedback Efficiency" />
                   <div className="feature-overlay">
                     <h3 className="feature-name">Feedback Efficiency</h3>
                   </div>
@@ -537,7 +540,7 @@ const LandingPage = () => {
             <div className="quality-feature-card flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front feature-image">
-                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Continuous Enhancement" />
+                  <img src={quality3} alt="Continuous Enhancement" />
                   <div className="feature-overlay">
                     <h3 className="feature-name">Continuous Enhancement</h3>
                   </div>

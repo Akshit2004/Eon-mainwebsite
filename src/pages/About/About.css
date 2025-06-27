@@ -32,12 +32,12 @@
   width: 100vw;
   max-width: none;
   margin: 0;
-  box-shadow: none;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 80px 32px;
   min-height: 500px;
+  background: #ffffff;
 }
 
 .about-main-wrapper {
@@ -47,7 +47,6 @@
   gap: 60px;
   max-width: 1200px;
   width: 100%;
-  backdrop-filter: blur(10px);
   padding: 50px;
 }
 
@@ -239,7 +238,7 @@
 /* Technology Innovation Section */
 .about-tech-section {
   width: 100%;
-  background: none; /* Removed purple gradient background */
+  background: #f3f4f6; /* Changed from none to light grey */
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -567,7 +566,7 @@
 /* Customer Journey Section */
 .about-journey-section {
   width: 100%;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: #f3f4f6; /* Changed from gradient to light grey */
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -580,8 +579,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 70% 80%, rgba(147, 51, 234, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -948,7 +945,7 @@
 /* Five Pillars Section */
 .about-pillars-section {
   width: 100%;
-  background: #fff; /* Changed from purple gradient to white */
+  background: #f3f4f6; /* Changed from white to light grey */
   padding: 100px 0;
   position: relative;
 }
@@ -1059,7 +1056,7 @@
 /* Our Philosophy Section */
 .about-philosophy-section {
   width: 100%;
-  background: #f5f6fa;
+  background: #ffffff;
   padding: 90px 0 100px 0;
 }
 
