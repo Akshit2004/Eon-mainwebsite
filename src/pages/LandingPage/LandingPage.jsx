@@ -219,7 +219,7 @@ const LandingPage = () => {
                 marginTop: "2.5rem"
               }}>
                 <div className="feature-item" style={{
-                  background: "#f3f6fa",
+                  background: "#e1e5f1",
                   borderRadius: "16px",
                   padding: "1.5rem 1rem",
                   boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
@@ -247,7 +247,7 @@ const LandingPage = () => {
                 </div>
                 
                 <div className="feature-item" style={{
-                  background: "#f3f6fa",
+                  background: "#e1e5f1",
                   borderRadius: "16px",
                   padding: "1.5rem 1rem",
                   boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
@@ -262,7 +262,7 @@ const LandingPage = () => {
                     height: "56px",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center"
+                    justifyContent: "center",
                   }}>
                     <svg viewBox="0 0 24 24" fill="none" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="12" cy="12" r="3" stroke="#0066cc" strokeWidth="2"/>
