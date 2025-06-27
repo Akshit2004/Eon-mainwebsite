@@ -32,9 +32,7 @@
   width: 100vw;
   max-width: none;
   margin: 0;
-  border-radius: 0;
   box-shadow: none;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,11 +47,8 @@
   gap: 60px;
   max-width: 1200px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  border-radius: 24px;
   padding: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* --- Enhanced About Main Images with Animation --- */
@@ -187,7 +182,6 @@
   color: #1e293b;
   background: rgba(59, 130, 246, 0.1);
   padding: 12px 16px;
-  border-radius: 12px;
   border: 1px solid rgba(59, 130, 246, 0.2);
   transition: all 0.3s ease;
 }
@@ -228,7 +222,6 @@
   background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
   color: #fff;
   border: none;
-  border-radius: 12px;
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: 600;
@@ -1814,4 +1807,50 @@
     margin: 0.2rem 0;
   }
 }
-/* --- End Modern Journey Steps Timeline --- */
+
+/* Tagline/Badge Styles for About Page */
+.about-main-content h5,
+.about-tech-badge,
+.vision-badge,
+.pillars-badge,
+.philosophy-badge {
+  color: #3b82f6 !important;
+}
+
+.journey-highlight-card {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px rgba(59,130,246,0.10), 0 1.5px 8px rgba(59,130,246,0.07);
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  border: 2px solid #e0e7ef;
+}
+
+.journey-highlight-card .card-content {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.journey-step {
+  color: #3b82f6;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.journey-arrow {
+  font-size: 2.2rem;
+  color: #2563eb;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  vertical-align: middle;
+  rotate: 90deg;
+}

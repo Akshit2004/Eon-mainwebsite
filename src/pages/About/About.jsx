@@ -164,23 +164,18 @@ const About = () => {
       <div className="about-journey-section">
         <div className="about-journey-container">
           <div className="journey-cards">
-            <div className="journey-card combined-card horizontal">
+            <div className="journey-card combined-card horizontal journey-highlight-card">
               <div className="card-content">
-                <h3>Our Customer Dreams</h3>
-                <p>We listen to our customers' aspirations and understand their vision for the future.</p>
-              </div>
-              <div className="card-content">
-                <h3>And We Believe</h3>
-                <p>We believe in turning those dreams into achievable goals with our expertise and dedication.</p>
-              </div>
-              <div className="card-content">
-                <h3>Then We Create</h3>
-                <p>We create innovative solutions that bring those dreams to life with precision and excellence.</p>
+                <h3 className="journey-step">Our Customer Dreams</h3>
+                <span className="journey-arrow">&#8594;</span>
+                <h3 className="journey-step">And We Believe</h3>
+                <span className="journey-arrow">&#8594;</span>
+                <h3 className="journey-step">Then We Create</h3>
               </div>
             </div>
           </div>
 
-          <div className="journey-message">
+            <div className="journey-message">
             <div className="success-message">
               <h2>And then he succeeds.</h2>
               <p>His success inspires us to do More.</p>
