@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
 import "./Kavach.css";
 import prodKavach1 from '../../assets/Products/Kavach/kavach1-min.JPG';
 import prodKavach2 from '../../assets/Products/Kavach/kavach2-min.JPG';
@@ -85,21 +86,12 @@ const Kavach = () => {
           <img src={prodKavach1} alt="Kavach Product 1" className="kavach-gallery-img" />
           <img src={prodKavach2} alt="Kavach Product 2" className="kavach-gallery-img" />
           <img src={prodKavach3} alt="Kavach Product 3" className="kavach-gallery-img" />
+          <img src={prodKavach4} alt="Kavach Product 4" className="kavach-gallery-img" />
         </div>
       </section>
 
       {/* Consultation Section */}
-      <section className="kavach-consultation-section">
-        <div className="kavach-consultation-bg">
-          <div className="kavach-consultation-overlay">
-            <div className="kavach-consultation-content">
-              <div className="kavach-consultation-label">// Drop us a line! We are here to answer your questions 24/7</div>
-              <h2 className="kavach-consultation-title">NEED A CONSULTATION?</h2>
-              <button className="kavach-consultation-btn">CONTACT US</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ConsultationSection />
 
       <Footer />
     </>

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
 import "./Cris.css";
 import prodCris1 from '../../assets/Products/cris/prod4cris1-min.JPG';
 import prodCris2 from '../../assets/Products/cris/prod4cris2-min.JPG';
@@ -85,17 +86,7 @@ const Cris = () => {
       </section>
 
       {/* Consultation Section */}
-      <section className="cris-consultation-section">
-        <div className="cris-consultation-bg">
-          <div className="cris-consultation-overlay">
-            <div className="cris-consultation-content">
-              <div className="cris-consultation-label">// Drop us a line! We are here to answer your questions 24/7</div>
-              <h2 className="cris-consultation-title">NEED A CONSULTATION?</h2>
-              <button className="cris-consultation-btn">CONTACT US</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ConsultationSection />
 
       <Footer />
     </>

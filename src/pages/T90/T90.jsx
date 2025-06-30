@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
 import "./T90.css";
 import prodT90_1 from '../../assets/Products/fcst90/prod2ACU1-min.JPG';
 import prodT90_2 from '../../assets/Products/fcst90/prod2ACU2-min.JPG';
@@ -88,17 +89,7 @@ const T90 = () => {
       </section>
 
       {/* Consultation Section */}
-      <section className="t90-consultation-section">
-        <div className="t90-consultation-bg">
-          <div className="t90-consultation-overlay">
-            <div className="t90-consultation-content">
-              <div className="t90-consultation-label">// Drop us a line! We are here to answer your questions 24/7</div>
-              <h2 className="t90-consultation-title">NEED A CONSULTATION?</h2>
-              <button className="t90-consultation-btn">CONTACT US</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ConsultationSection />
 
       <Footer />
     </>

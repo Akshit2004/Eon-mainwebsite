@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
 import "./LEO.css";
 import prodLeo1 from '../../assets/Products/leo/prod5leo1-min.JPG';
 import prodLeo2 from '../../assets/Products/leo/prod5leo2-min.JPG';
@@ -88,17 +89,7 @@ const LEO = () => {
       </section>
 
       {/* Consultation Section */}
-      <section className="leo-consultation-section">
-        <div className="leo-consultation-bg">
-          <div className="leo-consultation-overlay">
-            <div className="leo-consultation-content">
-              <div className="leo-consultation-label">// Drop us a line! We are here to answer your questions 24/7</div>
-              <h2 className="leo-consultation-title">NEED A CONSULTATION?</h2>
-              <button className="leo-consultation-btn">CONTACT US</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ConsultationSection />
 
       <Footer />
     </>

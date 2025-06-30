@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
 import "./Libra.css";
 import prodLibra1 from '../../assets/Products/libra/prod3libra1-min.JPG';
 import prodLibra2 from '../../assets/Products/libra/prod3libra2-min.JPG';
@@ -85,21 +86,12 @@ const Libra = () => {
           <img src={prodLibra1} alt="Libra Product 1" className="libra-gallery-img" />
           <img src={prodLibra2} alt="Libra Product 2" className="libra-gallery-img" />
           <img src={prodLibra3} alt="Libra Product 3" className="libra-gallery-img" />
+          <img src={prodLibra4} alt="Libra Product 4" className="libra-gallery-img" />
         </div>
       </section>
 
       {/* Consultation Section */}
-      <section className="libra-consultation-section">
-        <div className="libra-consultation-bg">
-          <div className="libra-consultation-overlay">
-            <div className="libra-consultation-content">
-              <div className="libra-consultation-label">// Drop us a line! We are here to answer your questions 24/7</div>
-              <h2 className="libra-consultation-title">NEED A CONSULTATION?</h2>
-              <button className="libra-consultation-btn">CONTACT US</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ConsultationSection />
 
       <Footer />
     </>
