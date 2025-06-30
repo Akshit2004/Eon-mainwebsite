@@ -1,12 +1,13 @@
-.product-hero-section {
+/* T90-specific classes */
+.t90-hero-section {
   position: relative;
   height: 40vh;
-  background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  background: url('../../assets/Products/fcst90/prod2ACU1-min.JPG') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-hero-overlay {
+.t90-hero-overlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.55);
@@ -17,7 +18,7 @@
   top: 0;
   left: 0;
 }
-.product-hero-overlay h1 {
+.t90-hero-overlay h1 {
   color: #fff;
   font-size: 3rem;
   font-weight: 800;
@@ -25,11 +26,11 @@
   padding-top: 100px;
 }
 
-.product-details-section {
+.t90-details-section {
   background: #f7fafd;
   padding: 48px 0 32px 0;
 }
-.product-details-container {
+.t90-details-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1100px;
@@ -37,118 +38,118 @@
   gap: 40px;
   align-items: center;
 }
-.product-details-image-wrap {
+.t90-details-image-wrap {
   flex: 1 1 320px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-details-main-img {
+.t90-details-main-img {
   width: 320px;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(30, 92, 122, 0.15);
 }
-.product-details-content {
+.t90-details-content {
   flex: 2 1 400px;
 }
-.product-details-label {
+.t90-details-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-details-title {
+.t90-details-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
-.product-details-desc {
+.t90-details-desc {
   color: #333;
   font-size: 1.08rem;
   margin-bottom: 10px;
 }
 
-.product-key-features-section {
+.t90-key-features-section {
   background: #fff;
   padding: 40px 0 32px 0;
 }
-.product-key-features-header {
+.t90-key-features-header {
   max-width: 900px;
   margin: 0 auto 32px auto;
   text-align: center;
 }
-.product-key-features-label {
+.t90-key-features-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-key-features-title {
+.t90-key-features-title {
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.product-key-features-desc {
+.t90-key-features-desc {
   color: #444;
   font-size: 1.08rem;
   margin-bottom: 0;
 }
-.product-key-features-cards {
+.t90-key-features-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   margin-top: 24px;
 }
-.product-key-feature-card {
+.t90-key-feature-card {
   background: #f7fafd;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
   padding: 40px 32px 32px 32px;
-  max-width: 300px;
+  max-width: 420px;
   flex: 1 1 220px;
   min-width: 220px;
   width: 420px;
   min-height: 260px;
 }
-.product-key-feature-title {
+.t90-key-feature-title {
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
-.product-key-feature-desc {
+.t90-key-feature-desc {
   color: #333;
   font-size: 1.13rem;
 }
 
-.product-gallery-section {
+.t90-gallery-section {
   background: #f7fafd;
   padding: 40px 0 32px 0;
 }
-.product-gallery-header {
+.t90-gallery-header {
   max-width: 900px;
   margin: 0 auto 32px auto;
   text-align: center;
 }
-.product-gallery-label {
+.t90-gallery-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-gallery-title {
+.t90-gallery-title {
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.product-gallery-images {
+.t90-gallery-images {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
   justify-content: center;
   margin-top: 24px;
 }
-.product-gallery-img {
+.t90-gallery-img {
   width: 360px;
   height: 600px;
   object-fit: cover;
@@ -156,37 +157,37 @@
   box-shadow: 0 8px 36px rgba(30, 92, 122, 0.18);
 }
 
-.consultation-section {
+.t90-consultation-section {
   background: linear-gradient(120deg, #0a2a43 60%, #1e5c7a 100%);
   padding: 48px 0 32px 0;
 }
-.consultation-bg {
+.t90-consultation-bg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.consultation-overlay {
+.t90-consultation-overlay {
   background: rgba(255,255,255,0.07);
   border-radius: 16px;
   padding: 32px 40px;
   box-shadow: 0 4px 24px rgba(30, 92, 122, 0.12);
 }
-.consultation-content {
+.t90-consultation-content {
   text-align: center;
 }
-.consultation-label {
+.t90-consultation-label {
   color: #fff;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.consultation-title {
+.t90-consultation-title {
   color: #fff;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 18px;
 }
-.consultation-btn {
+.t90-consultation-btn {
   background: #1e5c7a;
   color: #fff;
   border: none;
@@ -197,6 +198,6 @@
   cursor: pointer;
   transition: background 0.2s;
 }
-.consultation-btn:hover {
+.t90-consultation-btn:hover {
   background: #0a2a43;
 }

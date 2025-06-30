@@ -1,9 +1,203 @@
-@import "../Product/Product.css";
+/* LEO-specific classes */
+.leo-hero-section {
+  position: relative;
+  height: 40vh;
+  background: url('') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leo-hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.leo-hero-overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-top: 100px;
+}
 
-.product-gallery-img {
+.leo-details-section {
+  background: #f7fafd;
+  padding: 48px 0 32px 0;
+}
+.leo-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+}
+.leo-details-image-wrap {
+  flex: 1 1 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leo-details-main-img {
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(30, 92, 122, 0.15);
+}
+.leo-details-content {
+  flex: 2 1 400px;
+}
+.leo-details-label {
+  color: #1e5c7a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.leo-details-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.leo-details-desc {
+  color: #333;
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+}
+
+.leo-key-features-section {
+  background: #fff;
+  padding: 40px 0 32px 0;
+}
+.leo-key-features-header {
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+.leo-key-features-label {
+  color: #1e5c7a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.leo-key-features-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.leo-key-features-desc {
+  color: #444;
+  font-size: 1.08rem;
+  margin-bottom: 0;
+}
+.leo-key-features-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+}
+.leo-key-feature-card {
+  background: #f7fafd;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
+  padding: 40px 32px 32px 32px;
+  max-width: 420px;
+  flex: 1 1 220px;
+  min-width: 220px;
+  width: 420px;
+  min-height: 260px;
+}
+.leo-key-feature-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.leo-key-feature-desc {
+  color: #333;
+  font-size: 1.13rem;
+}
+
+.leo-gallery-section {
+  background: #f7fafd;
+  padding: 40px 0 32px 0;
+}
+.leo-gallery-header {
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+.leo-gallery-label {
+  color: #1e5c7a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.leo-gallery-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.leo-gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 24px;
+}
+.leo-gallery-img {
   width: 360px;
   height: 600px;
   object-fit: cover;
   border-radius: 18px;
   box-shadow: 0 8px 36px rgba(30, 92, 122, 0.18);
+}
+
+.leo-consultation-section {
+  background: linear-gradient(120deg, #0a2a43 60%, #1e5c7a 100%);
+  padding: 48px 0 32px 0;
+}
+.leo-consultation-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leo-consultation-overlay {
+  background: rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 32px 40px;
+  box-shadow: 0 4px 24px rgba(30, 92, 122, 0.12);
+}
+.leo-consultation-content {
+  text-align: center;
+}
+.leo-consultation-label {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.leo-consultation-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.leo-consultation-btn {
+  background: #1e5c7a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.leo-consultation-btn:hover {
+  background: #0a2a43;
 }

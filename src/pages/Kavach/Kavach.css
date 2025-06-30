@@ -1,12 +1,13 @@
-.product-hero-section {
+/* Kavach-specific classes */
+.kavach-hero-section {
   position: relative;
   height: 40vh;
-  background: url('https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  background: url('../../assets/Products/Kavach/kavach1-min.JPG') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-hero-overlay {
+.kavach-hero-overlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.55);
@@ -17,7 +18,7 @@
   top: 0;
   left: 0;
 }
-.product-hero-overlay h1 {
+.kavach-hero-overlay h1 {
   color: #fff;
   font-size: 3rem;
   font-weight: 800;
@@ -25,11 +26,11 @@
   padding-top: 100px;
 }
 
-.product-details-section {
+.kavach-details-section {
   background: #f7fafd;
   padding: 48px 0 32px 0;
 }
-.product-details-container {
+.kavach-details-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1100px;
@@ -37,118 +38,118 @@
   gap: 40px;
   align-items: center;
 }
-.product-details-image-wrap {
+.kavach-details-image-wrap {
   flex: 1 1 320px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-details-main-img {
+.kavach-details-main-img {
   width: 320px;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(30, 92, 122, 0.15);
 }
-.product-details-content {
+.kavach-details-content {
   flex: 2 1 400px;
 }
-.product-details-label {
+.kavach-details-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-details-title {
+.kavach-details-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
-.product-details-desc {
+.kavach-details-desc {
   color: #333;
   font-size: 1.08rem;
   margin-bottom: 10px;
 }
 
-.product-key-features-section {
+.kavach-key-features-section {
   background: #fff;
   padding: 40px 0 32px 0;
 }
-.product-key-features-header {
+.kavach-key-features-header {
   max-width: 900px;
   margin: 0 auto 32px auto;
   text-align: center;
 }
-.product-key-features-label {
+.kavach-key-features-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-key-features-title {
+.kavach-key-features-title {
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.product-key-features-desc {
+.kavach-key-features-desc {
   color: #444;
   font-size: 1.08rem;
   margin-bottom: 0;
 }
-.product-key-features-cards {
+.kavach-key-features-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   margin-top: 24px;
 }
-.product-key-feature-card {
+.kavach-key-feature-card {
   background: #f7fafd;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
   padding: 40px 32px 32px 32px;
-  max-width: 300px;
+  max-width: 420px;
   flex: 1 1 220px;
   min-width: 220px;
   width: 420px;
   min-height: 260px;
 }
-.product-key-feature-title {
+.kavach-key-feature-title {
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
-.product-key-feature-desc {
+.kavach-key-feature-desc {
   color: #333;
   font-size: 1.13rem;
 }
 
-.product-gallery-section {
+.kavach-gallery-section {
   background: #f7fafd;
   padding: 40px 0 32px 0;
 }
-.product-gallery-header {
+.kavach-gallery-header {
   max-width: 900px;
   margin: 0 auto 32px auto;
   text-align: center;
 }
-.product-gallery-label {
+.kavach-gallery-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-gallery-title {
+.kavach-gallery-title {
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.product-gallery-images {
+.kavach-gallery-images {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
   justify-content: center;
   margin-top: 24px;
 }
-.product-gallery-img {
+.kavach-gallery-img {
   width: 360px;
   height: 600px;
   object-fit: cover;
@@ -156,37 +157,37 @@
   box-shadow: 0 8px 36px rgba(30, 92, 122, 0.18);
 }
 
-.consultation-section {
+.kavach-consultation-section {
   background: linear-gradient(120deg, #0a2a43 60%, #1e5c7a 100%);
   padding: 48px 0 32px 0;
 }
-.consultation-bg {
+.kavach-consultation-bg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.consultation-overlay {
+.kavach-consultation-overlay {
   background: rgba(255,255,255,0.07);
   border-radius: 16px;
   padding: 32px 40px;
   box-shadow: 0 4px 24px rgba(30, 92, 122, 0.12);
 }
-.consultation-content {
+.kavach-consultation-content {
   text-align: center;
 }
-.consultation-label {
+.kavach-consultation-label {
   color: #fff;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.consultation-title {
+.kavach-consultation-title {
   color: #fff;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 18px;
 }
-.consultation-btn {
+.kavach-consultation-btn {
   background: #1e5c7a;
   color: #fff;
   border: none;
@@ -197,6 +198,6 @@
   cursor: pointer;
   transition: background 0.2s;
 }
-.consultation-btn:hover {
+.kavach-consultation-btn:hover {
   background: #0a2a43;
 }

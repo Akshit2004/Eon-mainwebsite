@@ -1,12 +1,13 @@
-.product-hero-section {
+/* Aqua-specific classes */
+.aqua-hero-section {
   position: relative;
   height: 40vh;
-  background: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  background: url('../../assets/Products/aqua/prod6aqua1-min.JPG') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-hero-overlay {
+.aqua-hero-overlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.55);
@@ -17,7 +18,7 @@
   top: 0;
   left: 0;
 }
-.product-hero-overlay h1 {
+.aqua-hero-overlay h1 {
   color: #fff;
   font-size: 3rem;
   font-weight: 800;
@@ -25,11 +26,11 @@
   padding-top: 100px;
 }
 
-.product-details-section {
+.aqua-details-section {
   background: #f7fafd;
   padding: 48px 0 32px 0;
 }
-.product-details-container {
+.aqua-details-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1100px;
@@ -37,70 +38,70 @@
   gap: 40px;
   align-items: center;
 }
-.product-details-image-wrap {
+.aqua-details-image-wrap {
   flex: 1 1 320px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-details-main-img {
+.aqua-details-main-img {
   width: 320px;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(30, 92, 122, 0.15);
 }
-.product-details-content {
+.aqua-details-content {
   flex: 2 1 400px;
 }
-.product-details-label {
+.aqua-details-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-details-title {
+.aqua-details-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
-.product-details-desc {
+.aqua-details-desc {
   color: #333;
   font-size: 1.08rem;
   margin-bottom: 10px;
 }
 
-.product-key-features-section {
+.aqua-key-features-section {
   background: #fff;
   padding: 40px 0 32px 0;
 }
-.product-key-features-header {
+.aqua-key-features-header {
   max-width: 900px;
   margin: 0 auto 32px auto;
   text-align: center;
 }
-.product-key-features-label {
+.aqua-key-features-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-key-features-title {
+.aqua-key-features-title {
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.product-key-features-desc {
+.aqua-key-features-desc {
   color: #444;
   font-size: 1.08rem;
   margin-bottom: 0;
 }
-.product-key-features-cards {
+.aqua-key-features-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   margin-top: 24px;
 }
-.product-key-feature-card {
+.aqua-key-feature-card {
   background: #f7fafd;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
@@ -111,44 +112,44 @@
   width: 420px;
   min-height: 260px;
 }
-.product-key-feature-title {
+.aqua-key-feature-title {
   font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
-.product-key-feature-desc {
+.aqua-key-feature-desc {
   color: #333;
   font-size: 1.13rem;
 }
 
-.product-gallery-section {
+.aqua-gallery-section {
   background: #f7fafd;
   padding: 40px 0 32px 0;
 }
-.product-gallery-header {
+.aqua-gallery-header {
   max-width: 900px;
   margin: 0 auto 32px auto;
   text-align: center;
 }
-.product-gallery-label {
+.aqua-gallery-label {
   color: #1e5c7a;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.product-gallery-title {
+.aqua-gallery-title {
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.product-gallery-images {
+.aqua-gallery-images {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
   justify-content: center;
   margin-top: 24px;
 }
-.product-gallery-img {
+.aqua-gallery-img {
   width: 360px;
   height: 600px;
   object-fit: cover;
@@ -156,37 +157,37 @@
   box-shadow: 0 8px 36px rgba(30, 92, 122, 0.18);
 }
 
-.consultation-section {
+.aqua-consultation-section {
   background: linear-gradient(120deg, #0a2a43 60%, #1e5c7a 100%);
   padding: 48px 0 32px 0;
 }
-.consultation-bg {
+.aqua-consultation-bg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.consultation-overlay {
+.aqua-consultation-overlay {
   background: rgba(255,255,255,0.07);
   border-radius: 16px;
   padding: 32px 40px;
   box-shadow: 0 4px 24px rgba(30, 92, 122, 0.12);
 }
-.consultation-content {
+.aqua-consultation-content {
   text-align: center;
 }
-.consultation-label {
+.aqua-consultation-label {
   color: #fff;
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.consultation-title {
+.aqua-consultation-title {
   color: #fff;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 18px;
 }
-.consultation-btn {
+.aqua-consultation-btn {
   background: #1e5c7a;
   color: #fff;
   border: none;
@@ -197,6 +198,6 @@
   cursor: pointer;
   transition: background 0.2s;
 }
-.consultation-btn:hover {
+.aqua-consultation-btn:hover {
   background: #0a2a43;
 }

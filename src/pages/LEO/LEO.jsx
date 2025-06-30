@@ -49,32 +49,33 @@ const LEO = () => {
   return (
     <>
       <Navbar />
-      <section className="product-hero-section">
-        <div className="product-hero-overlay">
+      <section className="leo-hero-section">
+        <div className="leo-hero-overlay">
+          <img src={prodLeo} alt="LEO Product Hero" className="leo-hero-img" />
           <h1>LEO</h1>
         </div>
       </section>
-      <section className="product-details-section">
-        <div className="product-details-container">
-          <div className="product-details-image-wrap">
+      <section className="leo-details-section">
+        <div className="leo-details-container">
+          <div className="leo-details-image-wrap">
             <img
               src={prodLeo}
               alt="CREW Equipment LEO"
-              className="product-details-main-img"
+              className="leo-details-main-img"
             />
           </div>
-          <div className="product-details-content">
-            <div className="product-details-label">
+          <div className="leo-details-content">
+            <div className="leo-details-label">
               // ABOUT THIS PRODUCT
             </div>
-            <h2 className="product-details-title">CREW Equipment - LEO</h2>
-            <p className="product-details-desc">
+            <h2 className="leo-details-title">CREW Equipment - LEO</h2>
+            <p className="leo-details-desc">
               Leo is a Manpack CREW system which is suitable for Long Range
               Patrols, Special ops as well as convoy protection duties. This
               equipment can provide an effective solution against threats using
               public networks.
             </p>
-            <p className="product-details-desc">
+            <p className="leo-details-desc">
               The equipment works from internal batteries with easy provision of
               changing the battery and fast recharging. Leo covers the four bands
               of interest simultaneously. Depending on the necessity and assessed
@@ -83,7 +84,7 @@ const LEO = () => {
               Remote Control Device enables the soldier to switch on the system
               only when he enters the vulnerable areas.
             </p>
-            <p className="product-details-desc">
+            <p className="leo-details-desc">
               The product is also effective against other types of threats during
               the target search phase. A threatened ship can surround itself with
               decoys, when missile attack is imminent. On the commencement of
@@ -96,41 +97,41 @@ const LEO = () => {
 
 
       {/* Key Features Section */}
-      <section className="product-key-features-section">
-        <div className="product-key-features-header">
-          <div className="product-key-features-label">// KEY FEATURES</div>
-          <h2 className="product-key-features-title">
+      <section className="leo-key-features-section">
+        <div className="leo-key-features-header">
+          <div className="leo-key-features-label">// KEY FEATURES</div>
+          <h2 className="leo-key-features-title">
             What makes{" "}
             <span style={{ fontWeight: 700 }}>LEO</span> special
           </h2>
-          <p className="product-key-features-desc">
+          <p className="leo-key-features-desc">
             Leo provides comprehensive protection for long-range patrols, special
             operations, and convoys by effectively countering threats from public
             networks, offering simultaneous multi-band coverage, and featuring
             remote control operation for targeted activation in vulnerable areas.
           </p>
         </div>
-        <div className="product-key-features-cards">
-          <div className="product-key-feature-card">
-            <h3 className="product-key-feature-title">CREW System</h3>
-            <p className="product-key-feature-desc">
+        <div className="leo-key-features-cards">
+          <div className="leo-key-feature-card">
+            <h3 className="leo-key-feature-title">CREW System</h3>
+            <p className="leo-key-feature-desc">
               Leo is a portable Counter Radio Electronic Warfare (CREW) system
               designed for long-range patrol, special operations, and convoy
               protection.
             </p>
           </div>
-          <div className="product-key-feature-card">
-            <h3 className="product-key-feature-title">
+          <div className="leo-key-feature-card">
+            <h3 className="leo-key-feature-title">
               Against Public Network Threats
             </h3>
-            <p className="product-key-feature-desc">
+            <p className="leo-key-feature-desc">
               The equipment provides a robust solution against threats utilizing
               public networks.
             </p>
           </div>
-          <div className="product-key-feature-card">
-            <h3 className="product-key-feature-title">Multi-Band Coverage</h3>
-            <p className="product-key-feature-desc">
+          <div className="leo-key-feature-card">
+            <h3 className="leo-key-feature-title">Multi-Band Coverage</h3>
+            <p className="leo-key-feature-desc">
               Leo covers four bands of interest at the same time, with flexible
               band selection and the ability to switch off specific channels
               based on environmental conditions.
@@ -140,60 +141,17 @@ const LEO = () => {
       </section>
 
       {/* Product Gallery Section */}
-      <section className="product-gallery-section">
-        <div className="product-gallery-header">
-          <div className="product-gallery-label">// PRODUCT GALLERY</div>
-          <h2 className="product-gallery-title">
+      <section className="leo-gallery-section">
+        <div className="leo-gallery-header">
+          <div className="leo-gallery-label">// PRODUCT GALLERY</div>
+          <h2 className="leo-gallery-title">
             Visual Showcase of Our<br />CREW Equipment - LEO
           </h2>
         </div>
-        <div className="product-gallery-images">
-          <img src={prodLeo1} alt="LEO Product 1" className="product-gallery-img" />
-          <img src={prodLeo2} alt="LEO Product 2" className="product-gallery-img" />
-          <img src={prodLeo3} alt="LEO Product 3" className="product-gallery-img" />
-        </div>
-      </section>
-
-      {/* More Products Section */}
-      <section className="product-more-section">
-        <div className="product-more-label">// MORE PRODUCTS FROM EON</div>
-        <h2 className="product-more-title">
-          We provide a variety<br />of products for defence
-        </h2>
-        <div className="product-more-scroll-outer">
-          <button className="scroll-btn left" onClick={() => scrollByAmount(-300)} aria-label="Scroll left">&#8592;</button>
-          <div
-            className="product-more-scroll-container"
-            ref={scrollRef}
-            onMouseDown={handleMouseDown}
-            style={{ cursor: 'grab' }}
-          >
-            <div className="product-more-card">
-              <img src={prodT90} alt="Control System T90" className="product-more-img" />
-              <div className="product-more-card-title">Control System T90</div>
-            </div>
-            <div className="product-more-card">
-              <img src={prodLeo} alt="CREW - Libra" className="product-more-img" />
-              <div className="product-more-card-title">CREW - Libra</div>
-            </div>
-            <div className="product-more-card">
-              <img src={prodCris} alt="CREW - CRIS" className="product-more-img" />
-              <div className="product-more-card-title">CREW - CRIS</div>
-            </div>
-            <div className="product-more-card">
-              <img src={prodAqua} alt="CREW Equipment - Aqua" className="product-more-img" />
-              <div className="product-more-card-title">CREW Equipment - Aqua</div>
-            </div>
-            <div className="product-more-card">
-              <img src={prodKavach} alt="CREW - Kavach" className="product-more-img" />
-              <div className="product-more-card-title">CREW - Kavach</div>
-            </div>
-            <div className="product-more-card">
-              <img src={prodLibra} alt="CREW - Libra" className="product-more-img" />
-              <div className="product-more-card-title">CREW - Libra</div>
-            </div>
-          </div>
-          <button className="scroll-btn right" onClick={() => scrollByAmount(300)} aria-label="Scroll right">&#8594;</button>
+        <div className="leo-gallery-images">
+          <img src={prodLeo1} alt="LEO Product 1" className="leo-gallery-img" />
+          <img src={prodLeo2} alt="LEO Product 2" className="leo-gallery-img" />
+          <img src={prodLeo3} alt="LEO Product 3" className="leo-gallery-img" />
         </div>
       </section>
 
