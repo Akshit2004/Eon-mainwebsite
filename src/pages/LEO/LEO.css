@@ -157,47 +157,4 @@
   box-shadow: 0 8px 36px rgba(30, 92, 122, 0.18);
 }
 
-.leo-consultation-section {
-  background: linear-gradient(120deg, #0a2a43 60%, #1e5c7a 100%);
-  padding: 48px 0 32px 0;
-}
-.leo-consultation-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.leo-consultation-overlay {
-  background: rgba(255,255,255,0.07);
-  border-radius: 16px;
-  padding: 32px 40px;
-  box-shadow: 0 4px 24px rgba(30, 92, 122, 0.12);
-}
-.leo-consultation-content {
-  text-align: center;
-}
-.leo-consultation-label {
-  color: #fff;
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-.leo-consultation-title {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
-.leo-consultation-btn {
-  background: #1e5c7a;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 32px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.leo-consultation-btn:hover {
-  background: #0a2a43;
-}
+/* Remove old consultation section styles for this product page */
