@@ -15,14 +15,9 @@ const Life = () => {
         
         <div className="life-hero-content">
           <div className="life-hero-text">
-            <div className="life-tagline">// WORK • LIFE • BALANCE</div>
             <h1 className="life-hero-title">
               Life at Eon
             </h1>
-            <p className="life-hero-description">
-              Discover a workplace where innovation meets collaboration, where your career grows alongside 
-              cutting-edge technology, and where every day brings new opportunities to make a difference.
-            </p>
           </div>        
           </div>
       </section>

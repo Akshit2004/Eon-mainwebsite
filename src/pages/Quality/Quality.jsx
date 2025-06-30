@@ -18,10 +18,6 @@ const Quality = () => {
             <h1 className="quality-hero-title">
               Quality!
             </h1>
-            <p className="quality-hero-description">
-              Excellence in every detail. Our commitment to quality drives innovation, 
-              ensures reliability, and delivers solutions that exceed expectations.
-            </p>
           </div>        
         </div>      
         </section>

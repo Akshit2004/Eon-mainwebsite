@@ -13,7 +13,7 @@
 /* Contact Hero Section Styles */
 .contact-hero {
   position: relative;
-  height: 70vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,6 +71,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-top: 100px;
 }
 
 .contact-hero-description {
