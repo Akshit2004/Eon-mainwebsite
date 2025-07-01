@@ -1,0 +1,38 @@
+[
+  {
+    "key": "aqua",
+    "title": "Equipment - Aqua",
+    "alt": "Equipment - Aqua",
+    "link": "/Aqua"
+  },
+  {
+    "key": "kavach",
+    "title": "Fire Control System - Kavach",
+    "alt": "Fire Control System - Kavach",
+    "link": "/Kavach"
+  },
+  {
+    "key": "t90",
+    "title": "Fire Control System T90",
+    "alt": "Fire Control System T90",
+    "link": "/T90"
+  },
+  {
+    "key": "libra",
+    "title": "CREW - Library",
+    "alt": "CREW - Library",
+    "link": "/Libra"
+  },
+  {
+    "key": "cris",
+    "title": "Advanced Defense System",
+    "alt": "Advanced Defense System",
+    "link": "/Cris"
+  },
+  {
+    "key": "leo",
+    "title": "CREW Equipment - LEO",
+    "alt": "CREW Equipment - LEO",
+    "link": "/LEO"
+  }
+]
