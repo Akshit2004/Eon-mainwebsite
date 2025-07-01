@@ -55,8 +55,8 @@ const Footer = () => {
                 <h4 className="footer-column-title">Contact Info</h4>
                 <div className="contact-item">
                   <div className="contact-text-white">
-                    <p>📍 C-180 Industrial Area, Phase</p>
-                    <p> 8-B, Sector 74, Mohali</p>
+                    <p>📍 C-180 Industrial Area,</p>
+                    <p> Phase 8-B, Sector 74, Mohali</p>
                     <p>160059, India</p>
                   </div>
                 </div>

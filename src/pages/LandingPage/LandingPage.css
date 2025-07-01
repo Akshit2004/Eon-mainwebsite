@@ -116,11 +116,27 @@
   font-family: 'Elephant', Arial, Helvetica, sans-serif !important;
   font-size: 1.1rem;
   font-weight: bold;
-  color: #1773CF;
+  color: #ffffff;
   margin-bottom: 1rem;
   letter-spacing: 1px;
   opacity: 0.9;
   text-transform: uppercase !important;
+}
+
+/* All taglines except hero section */
+.achievements-section .tagline,
+.products-section .tagline,
+.premises-section .tagline,
+.quality-section .tagline,
+.life-at-eon-section .tagline,
+.testimonials-section .tagline,
+.about-section .tagline {
+  color: #0272B9 !important;
+}
+
+/* Hero section tagline stays white */
+.hero .tagline {
+  color: #ffffff !important;
 }
 
 .hero-title {
@@ -132,7 +148,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 12px #f1f1f1;
+  /* Reduced white shadow for a subtler effect */
+  text-shadow: 1px 1px 3px #fff, 0 1px 4px #fff;
 }
 
 .hero-description {
