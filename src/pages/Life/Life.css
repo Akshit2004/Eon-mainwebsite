@@ -81,74 +81,94 @@
 }
 
 /* Company Culture Section */
-.company-culture-section {
+.eon-life-company-culture-section {
   padding: 5rem 0;
   background: #f8fafc;
 }
 
-.culture-content {
+.eon-life-culture-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 4rem;
   align-items: start;
 }
 
-.culture-left {
+.eon-life-culture-left {
   position: sticky;
   top: 2rem;
 }
 
-.culture-card-main {
-  background: linear-gradient(145deg, #1874D0 0%, #1874D0 50%, #1874D0   100%);
-  border-radius: 0;
-  padding: 3.5rem 2.5rem;
+.eon-life-culture-card-main {
+  background: linear-gradient(135deg, #1874D0 0%, #1565C0 50%, #0D47A1 100%);
+  border-radius: 24px;
+  padding: 4rem 3rem;
   color: white;
   text-align: center;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 20px 60px rgba(24, 116, 208, 0.25), 
+              0 8px 32px rgba(24, 116, 208, 0.15),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.culture-card-main::before {
+.eon-life-culture-card-main::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 60%),
+              radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
   pointer-events: none;
 }
 
-.eon-logo-section {
+.eon-life-culture-card-main:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(24, 116, 208, 0.35), 
+              0 12px 40px rgba(24, 116, 208, 0.25),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.eon-life-eon-logo-section {
   margin-bottom: 2.5rem;
   position: relative;
   z-index: 1;
 }
 
-.eon-logo {
+.eon-life-eon-logo {
   margin-bottom: 2.5rem;
 }
 
-.logo-circle {
-  width: 140px;
-  height: 140px;
+.eon-life-logo-circle {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
-  border: 3px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-.logo-circle:hover {
-  transform: translateY(-2px);
+.eon-life-logo-circle:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15),
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.logo-img {
+.eon-life-logo-img {
   width: 90px;
   height: 90px;
   object-fit: contain;
@@ -157,14 +177,14 @@
   filter: drop-shadow(0 2px 8px rgba(59, 91, 255, 0.10));
 }
 
-.logo-text {
+.eon-life-logo-text {
   font-size: 2rem;
   font-weight: 800;
   color: white;
   line-height: 1;
 }
 
-.logo-subtext {
+.eon-life-logo-subtext {
   font-size: 1rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
@@ -172,7 +192,7 @@
   margin-top: 2px;
 }
 
-.culture-title {
+.eon-life-culture-title {
   font-size: 2.25rem;
   font-weight: 800;
   margin-bottom: 2rem;
@@ -180,22 +200,26 @@
   letter-spacing: -0.02em;
 }
 
-.contact-btn {
-  background: white;
-  color: #3b5bff;
+.eon-life-contact-btn {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  color: #1874D0;
   border: none;
-  padding: 1rem 2.5rem;
-  border-radius: 0;
+  padding: 1.2rem 3rem;
+  border-radius: 16px;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 2.5rem;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1),
+              inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.contact-btn::before {
+.eon-life-contact-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -206,23 +230,26 @@
   transition: left 0.5s;
 }
 
-.contact-btn:hover::before {
+.eon-life-contact-btn:hover::before {
   left: 100%;
 }
 
-.contact-btn:hover {
-  background: #f8fafc;
-  transform: translateY(-3px);
+.eon-life-contact-btn:hover {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15),
+              inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  color: #0D47A1;
 }
 
-.culture-features {
+.eon-life-culture-features {
   border-top: 1px solid rgba(250, 250, 250, 0.15);
   padding-top: 2.5rem;
   position: relative;
   z-index: 1;
 }
 
-.feature-item {
+.eon-life-feature-item {
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -235,12 +262,12 @@
   padding-right: 1rem;
 }
 
-.feature-item:hover {
+.eon-life-feature-item:hover {
   background: rgba(255, 255, 255, 0.08);
   transform: translateX(5px);
 }
 
-.feature-icon {
+.eon-life-feature-icon {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -254,28 +281,28 @@
   transition: all 0.3s ease;
 }
 
-.feature-item:hover .feature-icon {
+.eon-life-feature-item:hover .eon-life-feature-icon {
   background: rgba(255, 255, 255, 0.35);
   transform: scale(1.1);
 }
 
-.feature-text {
+.eon-life-feature-text {
   font-size: 1.05rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
 }
 
-.culture-right {
+.eon-life-culture-right {
   background: white;
   border-radius: 0;
   padding: 3rem;
 }
 
-.culture-text-content {
+.eon-life-culture-text-content {
   max-width: none;
 }
 
-.culture-paragraph {
+.eon-life-culture-paragraph {
   font-size: 1rem;
   line-height: 1.7;
   color: #374151;
@@ -283,18 +310,18 @@
   text-align: justify;
 }
 
-.culture-paragraph:last-child {
+.eon-life-culture-paragraph:last-child {
   margin-bottom: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .culture-content {
+  .eon-life-culture-content {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
   
-  .culture-left {
+  .eon-life-culture-left {
     position: static;
   }
 }
@@ -308,78 +335,80 @@
     font-size: 1.1rem;
   }
   
-  .culture-card-main {
-    padding: 2.5rem 1.75rem;
+  .eon-life-culture-card-main {
+    padding: 3rem 2rem;
+    border-radius: 20px;
   }
   
-  .culture-right {
+  .eon-life-culture-right {
     padding: 2rem;
   }
   
-  .culture-title {
+  .eon-life-culture-title {
     font-size: 1.9rem;
   }
   
-  .logo-circle {
-    width: 120px;
-    height: 120px;
+  .eon-life-logo-circle {
+    width: 130px;
+    height: 130px;
   }
   
-  .logo-text {
+  .eon-life-logo-text {
     font-size: 1.7rem;
   }
   
-  .logo-subtext {
+  .eon-life-logo-subtext {
     font-size: 0.9rem;
   }
   
-  .contact-btn {
+  .eon-life-contact-btn {
     padding: 0.9rem 2.2rem;
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .culture-card-main {
-    padding: 2rem 1.25rem;
+  .eon-life-culture-card-main {
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
   }
   
-  .culture-right {
+  .eon-life-culture-right {
     padding: 1.5rem;
   }
   
-  .culture-paragraph {
+  .eon-life-culture-paragraph {
     font-size: 0.95rem;
   }
   
-  .culture-title {
+  .eon-life-culture-title {
     font-size: 1.75rem;
   }
   
-  .logo-circle {
-    width: 100px;
-    height: 100px;
+  .eon-life-logo-circle {
+    width: 110px;
+    height: 110px;
   }
   
-  .logo-text {
+  .eon-life-logo-text {
     font-size: 1.5rem;
   }
   
-  .logo-subtext {
+  .eon-life-logo-subtext {
     font-size: 0.85rem;
   }
   
-  .contact-btn {
+  .eon-life-contact-btn {
     padding: 0.8rem 2rem;
     font-size: 0.95rem;
   }
   
-  .feature-item {
+  .eon-life-feature-item {
     padding: 0.8rem 0.8rem;
     margin: 0 -0.8rem;
   }
   
-  .feature-text {
+  .eon-life-feature-text {
     font-size: 0.95rem;
   }
   
