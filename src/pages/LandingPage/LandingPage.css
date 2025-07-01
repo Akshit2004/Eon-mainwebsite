@@ -113,13 +113,14 @@
 }
 
 .tagline {
-    font-family: 'Elephant', Arial, Helvetica, sans-serif !important;
-  font-size: 1.15rem;
+  font-family: 'Elephant', Arial, Helvetica, sans-serif !important;
+  font-size: 1.1rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #1773CF;
   margin-bottom: 1rem;
   letter-spacing: 1px;
   opacity: 0.9;
+  text-transform: uppercase !important;
 }
 
 .hero-title {
@@ -190,7 +191,7 @@
 }
 
 .about-heading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 1.5rem;
@@ -323,12 +324,13 @@
 
 .achievements-section .tagline {
   font-family: 'Elephant', Arial, Helvetica, sans-serif !important;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #0066cc;
   margin-bottom: 1rem;
   letter-spacing: 1px;
   text-align: center;
+  text-transform: uppercase !important;
 }
 
 .achievements-section .section-title {
@@ -350,7 +352,7 @@
 
 .achievement-card {
   background: #ffffff;
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s ease;
   border: 1px solid  #ffffff;
@@ -384,7 +386,7 @@
 
 .achievement-title {
   padding: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #1f2937;
   text-align: center;
@@ -392,8 +394,8 @@
   margin: 0;
   background: #e2e2f1;
   flex-grow: 1;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /* Life at EON Section */
@@ -419,11 +421,12 @@
 
 .life-at-eon-section .tagline {
   font-family: 'Elephant', Arial, Helvetica, sans-serif !important;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #0066cc;
   margin-bottom: 1rem;
   letter-spacing: 1px;
+  text-transform: uppercase !important;
 }
 
 .life-title {
@@ -443,14 +446,95 @@
 
 .life-features {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 2.5rem;
 }
 
 .feature-item {
+  background: linear-gradient(135deg, #e2e2f1 0%, #f0f2f8 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(24, 116, 208, 0.1), 0 4px 16px rgba(0, 0, 0, 0.04);
+  width: 220px;
+  height: 220px;
+  min-width: 220px;
+  min-height: 220px;
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(24, 116, 208, 0.02) 0%, rgba(59, 130, 246, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.feature-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(24, 116, 208, 0.15), 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.feature-item:hover::before {
+  opacity: 1;
+}
+
+.feature-icon {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 16px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(24, 116, 208, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(24, 116, 208, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-item:hover .feature-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(24, 116, 208, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.feature-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.feature-text {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .feature-icon {
@@ -475,7 +559,7 @@
 }
 
 .feature-title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 0.5rem;
@@ -555,12 +639,13 @@
 
 .products-section .tagline {
   font-family: 'Elephant', Arial, Helvetica, sans-serif !important;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #0066cc;
   margin-bottom: 1rem;
   letter-spacing: 1px;
   text-align: center;
+  text-transform: uppercase !important;
 }
 
 .products-section .section-title {
@@ -669,7 +754,7 @@
 }
 
 .product-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #ffffff;
   margin: 0;
@@ -705,12 +790,13 @@
 
 .premises-section .tagline {
   font-family: 'Elephant', Arial, Helvetica, sans-serif !important;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #0066cc;
   margin-bottom: 1rem;
   letter-spacing: 1px;
   text-align: center;
+  text-transform: uppercase !important;
 }
 
 .premises-section .section-title {
@@ -863,7 +949,7 @@
 
 .flip-card-front .feature-name {
   color: #222b3a;
-  font-size: 1.18rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -883,14 +969,14 @@
 }
 
 .flip-card-back .feature-name {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #fff;
 }
 
 .flip-card-back .feature-desc {
-  font-size: 1.08rem;
+  font-size: 1rem;
   color: #e0e7ef;
   line-height: 1.7;
 }
@@ -950,14 +1036,14 @@
   }
   .flip-card-front .feature-name,
   .flip-card-back .feature-name {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
   }
   .flip-card-back {
     padding: 1rem 0.5rem 0.7rem 0.5rem;
     font-size: 0.98rem;
   }
   .flip-card-back .feature-desc {
-    font-size: 0.97rem;
+    font-size: 1rem;
     line-height: 1.5;
   }
 }
@@ -1117,12 +1203,13 @@
 
 .testimonials-section .tagline {
   font-family: 'Elephant', Arial, Helvetica, sans-serif !important;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #0066cc;
   margin-bottom: 1rem;
   letter-spacing: 1px;
   text-align: center;
+  text-transform: uppercase !important;
 }
 
 .testimonials-section .section-title {
@@ -1247,7 +1334,7 @@
 }
 
 .reviewer-name {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #1f2937;
   margin: 0;
@@ -1265,7 +1352,7 @@
 }
 
 .testimonial-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #4b5563;
   margin: 0;  
@@ -1372,7 +1459,7 @@
     font-size: 2rem;
   }
   .about-heading {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 
   .about-image {
@@ -1402,7 +1489,7 @@
   }
   .achievement-title {
     padding: 1.25rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .products-scroll-container {
@@ -1454,7 +1541,7 @@
   }
 
   .life-title {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
   .image-grid {
     height: 320px;
@@ -1470,7 +1557,7 @@
   }
   .achievement-title {
     padding: 1rem;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 
   .products-scroll-container {
@@ -1496,7 +1583,7 @@
   }
 
   .product-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }  .product-arrow {
     width: 35px;
     height: 35px;
@@ -1513,7 +1600,7 @@
   }
 
   .quality-title {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 
   .quality-features {
@@ -1524,7 +1611,7 @@
     height: 100px;
   }
   .feature-name {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .testimonials-container {
@@ -1594,13 +1681,5 @@
 .life-at-eon-section .tagline,
 .testimonials-section .tagline {
   font-weight: bold !important;
-}
-
-.achievements-section .tagline,
-.products-section .tagline,
-.premises-section .tagline,
-.quality-section .tagline,
-.life-at-eon-section .tagline,
-.testimonials-section .tagline {
-  color: #1874D0;
+  text-transform: uppercase !important;
 }
