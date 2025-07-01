@@ -607,32 +607,19 @@
 .products-scroll-container {
   position: relative;
   flex: 1 1 auto;
-  overflow-x: auto;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
   padding-bottom: 1rem;
-  margin: 0 4rem 0 0; /* Remove right margin, keep left flush */
+  margin: 0 4rem 0 0;
   padding-left: 2rem;
   padding-right: 2rem;
   scroll-behavior: smooth;
-  mask-image: linear-gradient(to right, black 0%, black 88%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, black 0%, black 88%, transparent 100%);
+  /* Remove fade effect */
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
 }
 
 .products-scroll-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.products-scroll-container::-webkit-scrollbar-track {
-  background: #f1f5f9;
-  
-}
-
-.products-scroll-container::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  
-}
-
-.products-scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  display: none !important;
 }
 
 .products-grid {

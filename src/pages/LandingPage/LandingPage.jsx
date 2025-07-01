@@ -39,17 +39,40 @@ const productImages = {
 const LandingPage = () => {
   // Product grid scroll ref
   const productsScrollRef = useRef(null);
+  // Infinite carousel logic
+  const [displayProducts, setDisplayProducts] = React.useState([...products, ...products, ...products]);
+  const [productSets, setProductSets] = React.useState(3); // How many times products are repeated
+  const productCardWidth = 350 + 32; // 350px card + 2rem gap (32px)
 
-  // Scroll handler
+  // Infinite scroll handler
   const handleProductScroll = (direction) => {
     const container = productsScrollRef.current;
     if (!container) return;
-    const scrollAmount = container.offsetWidth * 0.7; // Scroll by 70% of visible width
+    const scrollAmount = container.offsetWidth * 0.7;
     if (direction === 'left') {
       container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     } else {
       container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
+    setTimeout(() => {
+      if (!container) return;
+      // If user is near the end, append more products
+      if (container.scrollLeft + container.offsetWidth >= container.scrollWidth - productCardWidth * 2) {
+        setDisplayProducts((prev) => [...prev, ...products]);
+        setProductSets((prev) => prev + 1);
+      }
+      // If user is near the start, prepend more products and adjust scroll
+      if (container.scrollLeft <= productCardWidth * 2) {
+        setDisplayProducts((prev) => [...products, ...prev]);
+        setProductSets((prev) => prev + 1);
+        // Adjust scroll position to keep view stable
+        setTimeout(() => {
+          if (productsScrollRef.current) {
+            productsScrollRef.current.scrollLeft += products.length * productCardWidth;
+          }
+        }, 50);
+      }
+    }, 400);
   };
 
   const heroSlides = [
@@ -327,12 +350,12 @@ const LandingPage = () => {
           <div className="products-scroll-wrapper" style={{ gap: '1rem', justifyContent: 'center', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
             <div
               className="products-scroll-container"
-              style={{ flex: 1, minWidth: 0, width: '100%', overflowX: 'auto', scrollBehavior: 'smooth' }}
+              style={{ flex: 1, minWidth: 0, width: '100%', overflowX: 'hidden', scrollBehavior: 'smooth' }}
               ref={productsScrollRef}
             >
               <div className="products-grid">
-                {products.map((product, idx) => (
-                  <div className="product-card" key={idx}>
+                {displayProducts.map((product, idx) => (
+                  <div className="product-card" key={idx + '-' + product.key} style={{ minWidth: 350, marginRight: '2rem' }}>
                     <div className="product-image">
                       <img src={productImages[product.key]} alt={product.alt} />
                     </div>
