@@ -226,7 +226,7 @@ const LandingPage = () => {
             <div className="life-text">
               <div className="tagline">//LIFE AT EON</div>
               <h2 className="life-title">
-                Improve and Innovate with<br />
+                Improve and Innovate with
                 the Tech Trends
               </h2>
               <div className="life-subtitle" style={{
