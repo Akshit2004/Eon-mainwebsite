@@ -139,7 +139,7 @@
 }
 
 .description-left strong {
-  color: #667eea;
+  color: #1741ff;
   font-weight: 600;
 }
 
@@ -147,7 +147,7 @@
   background: #f8f9fa;
   padding: 2rem;
   border-radius: 15px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #3e60f8;
 }
 
 .highlight-item {
@@ -182,7 +182,7 @@
 .quality-approach {
   margin: 4rem 0;
   padding: 3rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1874D0 0%, #1565C0 50%, #0D47A1 100%);
   border-radius: 20px;
   color: white;
 }
@@ -227,7 +227,7 @@
 }
 
 .philosophy-card strong {
-  color: #667eea;
+  color: #395dff;
 }
 
 .philosophy-features {
@@ -238,7 +238,7 @@
 }
 
 .feature-tag {
-  background: #667eea;
+  background: #2950ff;
   color: white;
   padding: 0.7rem 1.5rem;
   border-radius: 25px;
@@ -248,7 +248,7 @@
 }
 
 .feature-tag:hover {
-  background: #764ba2;
+  background: #18a2ff;
   transform: translateY(-2px);
 }
 
