@@ -2,7 +2,7 @@
 .libra-hero-section {
   position: relative;
   height: 40vh;
-  background: url('../../assets/Products/libra/prod3libra1-min.JPG') center center/cover no-repeat;
+  background: url('../../assets/Products/combinedprods-min.JPG') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,6 +105,7 @@
   background: #f7fafd;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
+  border: 2px dotted #0074D9;
   padding: 40px 32px 32px 32px;
   max-width: 420px;
   flex: 1 1 220px;

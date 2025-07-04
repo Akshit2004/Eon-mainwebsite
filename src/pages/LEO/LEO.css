@@ -2,7 +2,7 @@
 .leo-hero-section {
   position: relative;
   height: 40vh;
-  background: url('../../assets/Products/leo/prod5leo1-min.JPG') center center/cover no-repeat;
+  background: url('../../assets/Products/combinedprods-min.JPG') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,6 +106,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
   padding: 40px 32px 32px 32px;
+  border: 2px dotted #0074D9;
   max-width: 420px;
   flex: 1 1 220px;
   min-width: 220px;

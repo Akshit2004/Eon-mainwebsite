@@ -12,11 +12,13 @@ import T90 from './pages/T90/T90';
 import Libra from './pages/Libra/Libra';
 import Cris from './pages/Cris/Cris';
 import './App.css';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />

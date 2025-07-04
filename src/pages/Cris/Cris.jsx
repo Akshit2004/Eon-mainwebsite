@@ -6,6 +6,7 @@ import "./Cris.css";
 import prodCris1 from '../../assets/Products/cris/prod4cris1-min.JPG';
 import prodCris2 from '../../assets/Products/cris/prod4cris2-min.JPG';
 import prodCris4 from '../../assets/Products/cris/prod4cris4-min.JPG';
+import product6 from  '../../assets/Products/combinedprods-min.JPG';
 
 const Cris = () => {
   return (
