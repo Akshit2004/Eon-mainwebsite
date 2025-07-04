@@ -106,9 +106,6 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(24, 116, 208, 0.25), 
-              0 8px 32px rgba(24, 116, 208, 0.15),
-              inset 0 1px 0 rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,9 +125,6 @@
 
 .eon-life-culture-card-main:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 30px 80px rgba(24, 116, 208, 0.35), 
-              0 12px 40px rgba(24, 116, 208, 0.25),
-              inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .eon-life-eon-logo-section {
