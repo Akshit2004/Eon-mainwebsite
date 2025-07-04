@@ -94,11 +94,47 @@
   line-height: 1.6;
 }
 
+.quality-highlights {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 4px solid #1874D0;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.highlight-item:last-child {
+  margin-bottom: 0;
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.highlight-content h4 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.highlight-content p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 .quality-statement {
   text-align: center;
   margin: 4rem 0;
   padding: 3rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: #00000011;
   border-radius: 20px;
   position: relative;
 }
@@ -143,46 +179,10 @@
   font-weight: 600;
 }
 
-.quality-highlights {
-  background: #f8f9fa;
-  padding: 2rem;
-  border-radius: 15px;
-  border-left: 4px solid #3e60f8;
-}
-
-.highlight-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-}
-
-.highlight-item:last-child {
-  margin-bottom: 0;
-}
-
-.highlight-icon {
-  font-size: 2rem;
-  margin-right: 1rem;
-  margin-top: 0.5rem;
-}
-
-.highlight-content h4 {
-  color: #333;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.highlight-content p {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
 .quality-approach {
   margin: 4rem 0;
   padding: 3rem;
-  background: linear-gradient(135deg, #1874D0 0%, #1565C0 50%, #0D47A1 100%);
+  background: linear-gradient(135deg, #1874D0, #1874D0);
   border-radius: 20px;
   color: white;
 }
@@ -238,7 +238,7 @@
 }
 
 .feature-tag {
-  background: #2950ff;
+  background: linear-gradient(135deg, #1874D0, #1874D0);
   color: white;
   padding: 0.7rem 1.5rem;
   border-radius: 25px;
@@ -248,7 +248,7 @@
 }
 
 .feature-tag:hover {
-  background: #18a2ff;
+  background: linear-gradient(135deg, #125a9c, #1874D0);
   transform: translateY(-2px);
 }
 

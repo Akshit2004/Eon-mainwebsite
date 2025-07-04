@@ -22,7 +22,8 @@ const Navbar = () => {
             <img src="\EonWebLogoBlueTransWhiteText.png" alt="Eon Infotech" className="logo-image" />
           </Link>
         </div>
-          <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>          <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={toggleMenu}>
+          <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>          
+            <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={toggleMenu}>
             Home
           </Link>
           <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} onClick={toggleMenu}>
