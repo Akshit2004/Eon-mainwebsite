@@ -100,6 +100,26 @@ body, html {
   gap: 20px;
 }
 
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-right: 0 !important;
+}
+
+.footer-logo-img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+
+.footer-logo .logo-icon {
+  margin-bottom: 0;
+}
+
 .footer-logo .logo-icon {
   display: flex;
   flex-direction: column;
@@ -153,7 +173,16 @@ body, html {
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  min-width: 0;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .footer-column-title {
@@ -221,7 +250,8 @@ body, html {
   }
   
   .footer-links {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 

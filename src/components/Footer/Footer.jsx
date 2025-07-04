@@ -25,7 +25,7 @@ const Footer = () => {
           
           <div className="footer-info">
             <div className="footer-brand">
-              <div className="footer-logo" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '1rem', marginRight: '300px' }}>
+              <div className="footer-logo">
                 <img 
                   src="/EonWebLogoBlueTransWhiteText2.png" 
                   alt="Eon InfoTech Logo" 

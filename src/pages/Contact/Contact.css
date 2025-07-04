@@ -102,69 +102,18 @@
   padding-right: 2rem;
 }
 
-.contact-info-card {
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 2.5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border: 1.5px solid #e5e7eb;
-}
-
 .contact-info-title {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #0a2540;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
 }
 
-.contact-info-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.contact-info-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.2rem;
-}
-
-.contact-info-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  font-size: 1.7rem;
-  background: #e0f2fe;
-  color: #2563eb;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(96,165,250,0.08);
-}
-.contact-info-icon.location { background: #e0f2fe; color: #2563eb; }
-.contact-info-icon.phone { background: #fef9c3; color: #ca8a04; }
-.contact-info-icon.email { background: #fee2e2; color: #dc2626; }
-
-.contact-info-label {
-  display: block;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin-bottom: 0.2rem;
-}
-
-.contact-info-value {
-  display: block;
-  font-size: 0.98rem;
-  color: #64748b;
+.contact-info-description {
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 3rem;
 }
 
 .contact-details {
@@ -323,10 +272,6 @@
 
   .contact-info-title {
     font-size: 2rem;
-  }
-
-  .contact-info-card {
-    padding: 1.5rem 1rem;
   }
 }
 
