@@ -61,7 +61,7 @@ body, html {
 
 .newsletter-submit {
   padding: 14px 20px;
-  background: #3b82f6;
+  background: linear-gradient(135deg, #1874D0, #1874D0);
   color: white;
   border: none;
   border-radius: 0;
@@ -74,7 +74,7 @@ body, html {
 }
 
 .newsletter-submit:hover {
-  background: #2563eb;
+  background: linear-gradient(135deg, #125a9c, #1874D0);
   transform: translateY(-1px);
 }
 
