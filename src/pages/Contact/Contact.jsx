@@ -28,35 +28,34 @@ const Contact = () => {
         <div className="container">
           <div className="contact-content">
             {/* Left Side - Contact Information */}
-            <div className="contact-info">
-              <h2 className="contact-info-title">Contact us</h2>
-              <p className="contact-info-description">
-                Have a project idea or question you need to be answered? Let's talk about it.
-                We're here to help make your project a reality.
-              </p>
-
-              <div className="contact-details">
-                <div className="contact-item">
-                  <div className="contact-icon">📍</div>
-                  <div className="contact-text">
-                    <h4>Our Address</h4>
-                    <p>123 Technology Drive, Suite 456, Defense City, DC 20001</p>
+            <div className="contact-info redesigned-contact-info">
+              <div className="contact-info-card">
+                <h2 className="contact-info-title">Contact us</h2>
+                <p className="contact-info-description">
+                  Have a project idea or question you need to be answered? Let's talk about it.<br/>
+                  <span className="contact-highlight">We're here to help make your project a reality.</span>
+                </p>
+                <div className="contact-details">
+                  <div className="contact-item">
+                    <div className="contact-icon contact-icon-gradient">📍</div>
+                    <div className="contact-text">
+                      <h4>Our Address</h4>
+                      <p>123 Technology Drive, Suite 456, Defense City, DC 20001</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-icon">📞</div>
-                  <div className="contact-text">
-                    <h4>Our Hotline</h4>
-                    <p>+1 (555) 123-4567</p>
+                  <div className="contact-item">
+                    <div className="contact-icon contact-icon-gradient">📞</div>
+                    <div className="contact-text">
+                      <h4>Our Hotline</h4>
+                      <p>+1 (555) 123-4567</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="contact-item">
-                  <div className="contact-icon">✉️</div>
-                  <div className="contact-text">
-                    <h4>Our Email</h4>
-                    <p>info@eontech.com</p>
+                  <div className="contact-item">
+                    <div className="contact-icon contact-icon-gradient">✉️</div>
+                    <div className="contact-text">
+                      <h4>Our Email</h4>
+                      <p>info@eontech.com</p>
+                    </div>
                   </div>
                 </div>
               </div>
