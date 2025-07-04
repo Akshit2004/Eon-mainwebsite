@@ -185,19 +185,15 @@
   background: linear-gradient(135deg, #1874D0, #1874D0);
   border-radius: 20px;
   color: white;
+  transition: transform 0.3s cubic-bezier(0.4,0.2,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0.2,0.2,1);
+  box-shadow: 0 4px 24px 0 rgba(24, 116, 208, 0.12);
+  perspective: 800px;
 }
 
-.approach-content h3 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-}
-
-.approach-content p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  opacity: 0.95;
+.quality-approach:hover {
+  transform: rotateY(8deg) scale(1.04) translateY(-8px);
+  box-shadow: 0 16px 40px 0 rgba(24, 116, 208, 0.25), 0 2px 8px 0 rgba(0,0,0,0.10);
+  z-index: 10;
 }
 
 .quality-philosophy {
