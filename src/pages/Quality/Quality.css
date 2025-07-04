@@ -22,7 +22,7 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-  background-image: url('https://aimcontrolgroup.com/vnt_upload/expert/QAQC/quality_inspection/quality-inspection.jpg');
+  background-image: url('src/assets/FAQs.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@
 }
 
 .description-left strong {
-  color: #1741ff;
+  color: #1565C0;
   font-weight: 600;
 }
 
@@ -227,7 +227,7 @@
 }
 
 .philosophy-card strong {
-  color: #395dff;
+  color: #1565C0;
 }
 
 .philosophy-features {

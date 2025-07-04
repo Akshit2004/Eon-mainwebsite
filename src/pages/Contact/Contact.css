@@ -28,7 +28,7 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-  background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+  background-image: url('src/assets/contact_us.png') ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -236,7 +236,7 @@
 }
 
 .contact-form-card {
-  background: #60a5fa;
+  background: linear-gradient(135deg, #1874D0 0%, #1565C0 50%, #0D47A1 100%);
   padding: 2.5rem;
   color: white;
 }
