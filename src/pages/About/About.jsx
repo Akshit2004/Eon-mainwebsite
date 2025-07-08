@@ -4,8 +4,8 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
 import laptopImage from "../../assets/image-from-rawpixel-id-12362751-png.png";
-import photo1 from '../../assets/OurPhotos/1.png';
-import photo2 from '../../assets/OurPhotos/2.png';
+import gallery1 from '../../assets/OurPhotos/gallery1.jpg';
+import gallery2 from '../../assets/OurPhotos/gallery2.jpg';
 import pillar1 from '../../assets/Pillars/visionPillar-1.png';
 import pillar2 from '../../assets/Pillars/speedPillar-1.png';
 import pillar3 from '../../assets/Pillars/rdPillar.png';
@@ -33,12 +33,12 @@ const About = () => {
         <div className="about-main-wrapper">
           <div className="about-main-images">
             <img
-              src={photo1}
+              src={gallery1}
               alt="EON Team 1"
               className="about-main-img1"
             />
             <img
-              src={photo2}
+              src={gallery2}
               alt="EON Team 2"
               className="about-main-img2"
             />
