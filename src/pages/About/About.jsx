@@ -6,11 +6,11 @@ import ConsultationSection from "../../components/ConsultationSection/Consultati
 import laptopImage from "../../assets/image-from-rawpixel-id-12362751-png.png";
 import photo1 from '../../assets/OurPhotos/1.png';
 import photo2 from '../../assets/OurPhotos/2.png';
-import pillar1 from '../../assets/Pillars/Focus on Customer Vision.jpeg';
-import pillar2 from '../../assets/Pillars/Speed.jpeg';
-import pillar3 from '../../assets/Pillars/Research & Development.jpg';
-import pillar4 from '../../assets/Pillars/Quality Practices, Standards and Management.jpeg';
-import pillar5 from '../../assets/Pillars/Prices.jpeg';
+import pillar1 from '../../assets/Pillars/visionPillar-1.png';
+import pillar2 from '../../assets/Pillars/speedPillar-1.png';
+import pillar3 from '../../assets/Pillars/rdPillar.png';
+import pillar4 from '../../assets/Pillars/QualityPillar.png';
+import pillar5 from '../../assets/Pillars/pricePillar.png';
 
 const About = () => {
   return (

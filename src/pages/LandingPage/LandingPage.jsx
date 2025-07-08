@@ -18,14 +18,19 @@ import prodT90 from '../../assets/Products/fcst90/prod2ACU1-min.JPG';
 import prodLibra from '../../assets/Products/libra/prod3libra1-min.JPG';
 import prodCris from '../../assets/Products/cris/prod4cris1-min.JPG';
 import slide2 from '../../assets/slide2.png';
-import ourPhoto1 from '../../assets/OurPhotos/1.png';
-import ourPhoto2 from '../../assets/OurPhotos/2.png';
-import ourPhoto3 from '../../assets/OurPhotos/3.png';
-import ourPhoto4 from '../../assets/OurPhotos/4.png';
 import quality1 from '../../assets/quality/quality1.png';
 import quality2 from '../../assets/quality/quality2.png';
 import quality3 from '../../assets/quality/quality3.png';
 import products from '../../assets/products.json';
+import gallery1 from '../../assets/OurPhotos/gallery1.jpg';
+import gallery2 from '../../assets/OurPhotos/gallery2.jpg';
+import gallery5 from '../../assets/OurPhotos/gallery5.png';
+import gallery6 from '../../assets/OurPhotos/gallery6.png';
+import gallery7 from '../../assets/OurPhotos/gallery7.jpg';
+import gallery8 from '../../assets/OurPhotos/gallery8.jpg';
+import img6484 from '../../assets/OurPhotos/IMG_6484.jpg';
+import img6485 from '../../assets/OurPhotos/IMG_6485.jpg';
+import img6486 from '../../assets/OurPhotos/IMG_6486.jpg';
 // Map product keys to imported images
 const productImages = {
   aqua: prodAqua,
@@ -436,21 +441,33 @@ const LandingPage = () => {
           </div>
           <div className="premises-grid">
             <div className="premises-item large">
-              <img src={ourPhoto1} alt="Eon Premises 1" />
+              <img src={gallery1} alt="Eon Premises 1" />
             </div>
             <div className="premises-item">
-              <img src={ourPhoto2} alt="Eon Premises 2" />
+              <img src={gallery2} alt="Eon Premises 2" />
             </div>
             <div className="premises-item">
-              <img src={ourPhoto3} alt="Eon Premises 3" />
+              <img src={gallery5} alt="Eon Premises 3" />
             </div>
             <div className="premises-item">
-              <img src={ourPhoto4} alt="Eon Premises 4" />
+              <img src={gallery6} alt="Eon Premises 4" />
             </div>
             <div className="premises-item">
-              <img src={ourPhoto1} alt="Eon Premises 5" />
-            </div>          
+              <img src={gallery7} alt="Eon Premises 5" />
             </div>
+            <div className="premises-item">
+              <img src={gallery8} alt="Eon Premises 6" />
+            </div>
+            <div className="premises-item">
+              <img src={img6484} alt="Eon Premises 7" />
+            </div>
+            <div className="premises-item">
+              <img src={img6485} alt="Eon Premises 8" />
+            </div>
+            <div className="premises-item">
+              <img src={img6486} alt="Eon Premises 9" />
+            </div>
+          </div>
         </div>
       </section>
 
