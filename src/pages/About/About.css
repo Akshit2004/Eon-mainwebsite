@@ -1104,10 +1104,25 @@
 /* --- Redesigned Philosophy Cards --- */
 .redesigned-philosophy-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   max-width: 1100px;
+  width: auto; /* Let grid shrink to fit content */
   margin: 0 auto;
+  box-sizing: border-box; /* Prevent overflow from global styles */
+  justify-items: center; /* Center grid items if they are smaller */
+  justify-content: center; /* Center the grid itself */
+}
+
+@media (max-width: 1100px) {
+  .redesigned-philosophy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .redesigned-philosophy-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .redesigned-philosophy-card {
