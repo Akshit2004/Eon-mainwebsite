@@ -228,7 +228,10 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
 
+          {/* Separate div for Quality Practices and Prices */}
+          <div className="pillars-grid pillars-grid-bottom">
             <div className="pillar-card pillar-4">
               <div className="pillar-image">
                 <img 
