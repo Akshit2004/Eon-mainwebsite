@@ -3,7 +3,7 @@ import "./About.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
-import laptopImage from "../../assets/image-from-rawpixel-id-12362751-png.png";
+import laptopImage from "../../assets/laptop2.png";
 import gallery1 from '../../assets/OurPhotos/gallery1.jpg';
 import gallery2 from '../../assets/OurPhotos/gallery2.jpg';
 import pillar1 from '../../assets/Pillars/visionPillar-1.png';
@@ -89,75 +89,14 @@ const About = () => {
 
       {/* New Technology Innovation Section */}
       <div className="about-tech-section">
-        <div className="about-tech-container">
-          <div className="about-tech-content">
-            <div className="about-tech-badge">// Innovation</div>
-            <h2 className="about-tech-title">
-              Cutting-Edge Technology
-              <br />
-              <span>Driving Innovation</span>
+        <div className="about-tech-container" style={{flexDirection: 'column', alignItems: 'center', gap: '32px'}}>
+          <div style={{textAlign: 'center', width: '100%'}}>
+            <div className="about-tech-badge">// Our Mission</div>
+            <h2 className="about-tech-title" style={{fontSize: '2.4rem', fontWeight: 800, margin: 0, lineHeight: 1.2}}>
+              Our mission is to make our<br />customer’s vision possible
             </h2>
-            <p className="about-tech-description">
-              Our mission is to make our customer's vision possible through
-              advanced embedded solutions and innovative software development.
-              We believe in transforming ideas into reality with precision and
-              excellence.
-            </p>
-
-            <div className="about-tech-stats">
-              <div className="tech-stat">
-                <div className="stat-number">10+</div>
-                <div className="stat-label">Years Experience</div>
-              </div>
-              <div className="tech-stat">
-                <div className="stat-number">500+</div>
-                <div className="stat-label">Projects Delivered</div>
-              </div>
-              <div className="tech-stat">
-                <div className="stat-number">99%</div>
-                <div className="stat-label">Client Satisfaction</div>
-              </div>
-            </div>
-
-            <div className="about-tech-points">
-              <div className="tech-point">
-                <div className="tech-point-icon">🚀</div>
-                <div className="tech-point-text">Advanced Embedded Systems</div>
-              </div>
-              <div className="tech-point">
-                <div className="tech-point-icon">⚡</div>
-                <div className="tech-point-text">Real-time Processing</div>
-              </div>
-              <div className="tech-point">
-                <div className="tech-point-icon">🔒</div>
-                <div className="tech-point-text">Secure Defense Solutions</div>
-              </div>
-            </div>
           </div>
-
-          <div className="about-tech-visual">
-            <div className="laptop-container">
-              <img
-                src={laptopImage}
-                alt="Technology Laptop"
-                className="laptop-image"
-              />
-              <div className="floating-elements">
-                <div className="floating-circle circle-1"></div>
-                <div className="floating-circle circle-2"></div>
-                <div className="floating-circle circle-3"></div>
-                <div className="code-snippet snippet-1">
-                  <span>{'<EON/>'}</span>
-                </div>
-                <div className="code-snippet snippet-2">
-                  <span>console.log('innovation')</span>
-                </div>
-                <div className="tech-icon icon-1">💻</div>
-                <div className="tech-icon icon-2">⚙️</div>
-                <div className="tech-icon icon-3">🔧</div>
-              </div>
-            </div>
-          </div>        </div>
+        </div>
       </div>
 
       {/* Customer Journey Section */}
