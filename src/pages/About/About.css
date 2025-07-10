@@ -241,7 +241,7 @@
   width: 100%;
   min-height: 780px; /* Increased height for Our Mission section */
   background:
-    url('../../assets/laptop2.png') center 120px/contain no-repeat,
+    url('../../assets/laptop2.png') center 60px /contain no-repeat,
     url('../../assets/WhiteBG.png') center 50px/cover no-repeat;
   padding: 120px 0 0 0;
   position: relative;
@@ -554,7 +554,7 @@
 /* Customer Journey Section */
 .about-journey-section {
   width: 100%;
-  background: #f3f4f6; /* Changed from gradient to light grey */
+  background: #ffffff; /* Changed from gradient to light grey */
   padding: 100px 0;
   position: relative;
   overflow: hidden;
