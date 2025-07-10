@@ -1665,3 +1665,14 @@
   gap: 32px;
   margin-top: 32px;
 }
+
+.about-hero-section,
+.about-main-section,
+.about-tech-section,
+.about-journey-section,
+.about-vision-section,
+.about-pillars-section,
+.about-philosophy-section {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}

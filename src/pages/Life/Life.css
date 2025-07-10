@@ -308,6 +308,12 @@
   margin-bottom: 0;
 }
 
+/* Life Section Padding */
+.life-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .eon-life-culture-content {

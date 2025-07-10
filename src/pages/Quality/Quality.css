@@ -248,6 +248,12 @@
   transform: translateY(-2px);
 }
 
+/* Quality Section */
+.quality-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .quality-hero-title {
