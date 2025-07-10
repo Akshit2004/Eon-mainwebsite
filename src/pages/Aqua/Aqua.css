@@ -28,7 +28,7 @@
 
 .aqua-details-section {
   background: #ffffff;
-  padding: 48px 0 32px 0;
+  padding: 6rem 0 6rem 0;
 }
 .aqua-details-container {
   display: flex;
@@ -71,7 +71,7 @@
 
 .aqua-key-features-section {
   background: #f1f1f1;
-  padding: 40px 0 32px 0;
+  padding: 6rem 0 6rem 0;
 }
 .aqua-key-features-header {
   max-width: 900px;
@@ -124,7 +124,7 @@
 
 .aqua-gallery-section {
   background: #ffffff;
-  padding: 40px 0 32px 0;
+  padding: 6rem 0 6rem 0;
 }
 .aqua-gallery-header {
   max-width: 900px;

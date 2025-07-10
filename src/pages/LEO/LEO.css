@@ -28,7 +28,7 @@
 
 .leo-details-section {
   background: #ffffff;
-  padding: 48px 0 32px 0;
+  padding: 6rem 0 6rem 0;
 }
 .leo-details-container {
   display: flex;
@@ -71,7 +71,7 @@
 
 .leo-key-features-section {
   background: #f1f1f1;
-  padding: 40px 0 32px 0;
+  padding: 6rem 0 6rem 0;
 }
 .leo-key-features-header {
   max-width: 900px;
@@ -125,7 +125,7 @@
 
 .leo-gallery-section {
   background: #ffffff;
-  padding: 40px 0 32px 0;
+  padding: 6rem 0 6rem 0;
 }
 .leo-gallery-header {
   max-width: 900px;
