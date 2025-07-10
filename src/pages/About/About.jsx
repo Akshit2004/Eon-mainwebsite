@@ -89,18 +89,17 @@ const About = () => {
 
       {/* New Technology Innovation Section */}
       <div className="about-tech-section">
-        <div className="about-tech-container" style={{flexDirection: 'column', alignItems: 'center', gap: '32px'}}>
+        <div className="about-tech-container" style={{flexDirection: 'column', alignItems: 'center', gap: '20px'}}>
           <div style={{textAlign: 'center', width: '100%'}}>
             <div className="about-tech-badge">// Our Mission</div>
             <h2 className="about-tech-title" style={{fontSize: '2.4rem', fontWeight: 800, margin: 0, lineHeight: 1.2}}>
               Our mission is to make our<br />customer’s vision possible
             </h2>
           </div>
-          {/* Place for laptop image or visual here if needed */}
         </div>
       </div>
       {/* Customer Journey Section (now below Our Mission) */}
-      <div className="about-journey-section" style={{background: 'transparent', padding: 0, marginTop: 32}}>
+      <div className="about-journey-section" style={{background: 'transparent', padding: ' 0 0 0', marginTop: 2}}>
         <div className="about-journey-container" style={{padding: 0}}>
           <div className="journey-cards modern-journey-cards">
             <div className="journey-card modern-journey-card card-1">
