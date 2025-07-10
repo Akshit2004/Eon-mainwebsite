@@ -837,7 +837,7 @@
 /* Vision Section */
 .about-vision-section {
   width: 100%;
-  background: #ffffff;
+  background: #f1f1f1;
   padding: 100px 0;
   position: relative;
 }
@@ -925,7 +925,7 @@
 /* Five Pillars Section */
 .about-pillars-section {
   width: 100%;
-  background: #f3f4f6; /* Changed from white to light grey */
+  background: #ffffff; /* Changed from white to light grey */
   padding: 100px 0;
   position: relative;
 }
@@ -1065,7 +1065,7 @@
 /* Our Philosophy Section */
 .about-philosophy-section {
   width: 100%;
-  background: #ffffff;
+  background: #f1f1f1;
   padding: 90px 0 100px 0;
 }
 
