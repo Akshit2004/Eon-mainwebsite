@@ -104,9 +104,9 @@
 .leo-key-feature-card {
   background: #f7fafd;
   border-radius: 10px;
+  border: 2.5px dashed #0074D9;
   box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
   padding: 40px 32px 32px 32px;
-  border: 2px dotted #0074D9;
   max-width: 420px;
   flex: 1 1 220px;
   min-width: 220px;
