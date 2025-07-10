@@ -96,12 +96,12 @@ const About = () => {
               Our mission is to make our<br />customer’s vision possible
             </h2>
           </div>
+          {/* Place for laptop image or visual here if needed */}
         </div>
       </div>
-
-      {/* Customer Journey Section */}
-      <div className="about-journey-section">
-        <div className="about-journey-container">
+      {/* Customer Journey Section (now below Our Mission) */}
+      <div className="about-journey-section" style={{background: 'transparent', padding: 0, marginTop: 32}}>
+        <div className="about-journey-container" style={{padding: 0}}>
           <div className="journey-cards modern-journey-cards">
             <div className="journey-card modern-journey-card card-1">
               <div className="modern-journey-content">
@@ -128,15 +128,14 @@ const About = () => {
               </div>
             </div>
           </div>
-
           <div className="journey-message" style={{ justifyContent: 'center', alignItems: 'center', textAlign: 'center', background: 'transparent', boxShadow: 'none', border: 'none', padding: 0 }}>
             <div className="success-message" style={{ width: '100%', textAlign: 'center', margin: 0, padding: 0, background: 'transparent' }}>
               <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: 0, padding: 0 }}>And then he succeeds.<br/>His success inspires us to do More.</h2>
             </div>
           </div>        
-          </div>
-      </div>     
-      {/* Vision Section */}
+        </div>
+      </div> 
+      {/* End Customer Journey Section */}
       <div className="about-vision-section">
         <div className="about-vision-container">
           <div className="vision-image-container">

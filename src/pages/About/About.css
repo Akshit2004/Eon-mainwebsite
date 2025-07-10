@@ -719,7 +719,7 @@
 
 .journey-card p {
   color: #64748b;
-  font-size: 1rem;
+  font-size: .4rem;
   line-height: 1.6;
   margin: 0;
 }
@@ -757,7 +757,7 @@
   color: #1e293b;
   margin-bottom: 16px;
   line-height: 1.2;
-  background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
+  background: #000000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1160,22 +1160,21 @@
 
 .modern-journey-cards {
   display: flex;
-  gap: 32px;
+  gap: 16px;
   justify-content: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 .modern-journey-card {
   flex: 1 1 0;
-  min-width: 320px; /* Increased min-width */
-  max-width: 480px; /* Increased max-width */
-  height: 120px; /* Reduced height */
-  background: linear-gradient(120deg, #4e54c8 0%, #8f94fb 100%); /* Default gradient */
-  border-radius: 22px;
-  box-shadow: 0 8px 32px rgba(30,41,59,0.13), 0 2px 8px rgba(59,130,246,0.10);
+  min-width: 200px;
+  max-width: 270px;
+  height: 110px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(30,41,59,0.10);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 44px;
+  padding: 0 20px;
   position: relative;
   overflow: hidden;
   transition: transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.22s cubic-bezier(.4,2,.6,1);
