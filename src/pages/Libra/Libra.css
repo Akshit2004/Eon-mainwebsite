@@ -27,7 +27,7 @@
 }
 
 .libra-details-section {
-  background: #f7fafd;
+  background: #ffffff;
   padding: 48px 0 32px 0;
 }
 .libra-details-container {
@@ -70,7 +70,7 @@
 }
 
 .libra-key-features-section {
-  background: #fff;
+  background: #f1f1f1;
   padding: 40px 0 32px 0;
 }
 .libra-key-features-header {
@@ -102,7 +102,7 @@
   margin-top: 24px;
 }
 .libra-key-feature-card {
-  background: #f7fafd;
+  background: #ffffff;
   border-radius: 10px;
   border: 2.5px dashed #0074D9;
   box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
@@ -124,7 +124,7 @@
 }
 
 .libra-gallery-section {
-  background: #f7fafd;
+  background: #ffffff;
   padding: 40px 0 32px 0;
 }
 .libra-gallery-header {

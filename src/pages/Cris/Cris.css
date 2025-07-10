@@ -27,7 +27,7 @@
 }
 
 .cris-details-section {
-  background: #f7fafd;
+  background: #ffffff;
   padding: 48px 0 32px 0;
 }
 .cris-details-container {
@@ -70,7 +70,7 @@
 }
 
 .cris-key-features-section {
-  background: #fff;
+  background: #f1f1f1;
   padding: 40px 0 32px 0;
 }
 .cris-key-features-header {
@@ -102,7 +102,7 @@
   margin-top: 24px;
 }
 .cris-key-feature-card {
-  background: #f7fafd;
+  background: #ffffff;
   border-radius: 10px;
   border: 2.5px dashed #0074D9;
   box-shadow: 0 2px 12px rgba(30, 92, 122, 0.08);
@@ -123,7 +123,7 @@
 }
 
 .cris-gallery-section {
-  background: #f7fafd;
+  background: #ffffff;
   padding: 40px 0 32px 0;
 }
 .cris-gallery-header {
