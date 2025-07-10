@@ -569,7 +569,7 @@ const LandingPage = () => {
                   <div className="reviewer-info">
                     <div className="reviewer-avatar"><span>S</span></div>
                     <div className="reviewer-details">
-                      <h4 className="reviewer-name">Shashank Srivastava</h4>
+                      <h4 className="reviewer-name">Shashank Srivastava (TL- Mobile dev)</h4>
                       <div className="review-stars">
                         <span className="star filled">★</span>
                         <span className="star filled">★</span>
