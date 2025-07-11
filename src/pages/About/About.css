@@ -36,7 +36,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 32px;
   min-height: 500px;
   background: #ffffff;
 }
@@ -1667,12 +1666,18 @@
 }
 
 .about-hero-section,
-.about-main-section,
 .about-tech-section,
-.about-journey-section,
 .about-vision-section,
 .about-pillars-section,
 .about-philosophy-section {
   padding-top: 6rem !important;
+}
+
+
+.about-hero-section,
+.about-journey-section,
+.about-vision-section,
+.about-pillars-section,
+.about-philosophy-section {
   padding-bottom: 6rem !important;
 }
