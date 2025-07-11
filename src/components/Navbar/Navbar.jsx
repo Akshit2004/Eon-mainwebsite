@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="nav-container">       
          <div className="nav-logo">
           <Link to="/" className="logo">
-            <img src="\EonWebLogoBlueTransWhiteText.png" alt="Eon Infotech" className="logo-image" />
+            <img src="/EonWebLogoBlueTransWhiteText.png" alt="Eon Infotech" className="logo-image" />
           </Link>
         </div>
           <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>          

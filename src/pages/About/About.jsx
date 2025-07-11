@@ -5,7 +5,6 @@ import Footer from "../../components/Footer";
 import ConsultationSection from "../../components/ConsultationSection/ConsultationSection";
 import laptopImage from "../../assets/laptop2.png";
 import gallery1 from '../../assets/OurPhotos/gallery1.jpg';
-import gallery2 from '../../assets/OurPhotos/gallery2.jpg';
 import pillar1 from '../../assets/Pillars/visionPillar-1.png';
 import pillar2 from '../../assets/Pillars/speedPillar-1.png';
 import pillar3 from '../../assets/Pillars/rdPillar.png';
@@ -34,54 +33,42 @@ const About = () => {
           <div className="about-main-images">
             <img
               src={gallery1}
-              alt="EON Team 1"
+              alt="EON Team Professional Environment"
               className="about-main-img1"
-            />
-            <img
-              src={gallery2}
-              alt="EON Team 2"
-              className="about-main-img2"
             />
           </div>
           <div className="about-main-content">
-            <h5>// About Us</h5>
+            <h5>About EON</h5>
             <h2>
-              World Class embedded
-              <br />
-              software-based solutions
-              <br />
-              for defence
+              World-Class Embedded<br />
+              Software Solutions<br />
+              for Defense & Beyond
             </h2>
             <p>
-              At EON, what is appreciated most is the enthusiasm to be creative
-              and shoulder responsibility, and the drive and hard work put in by
-              its partners has made EON a credible, respected and competitive
-              player in its domain.
+              At EON, we pride ourselves on delivering cutting-edge embedded software solutions 
+              that meet the highest standards of quality and reliability. Our commitment to innovation 
+              and excellence has made us a trusted partner for government agencies, defense organizations, 
+              and corporate clients worldwide.
             </p>
             <ul className="about-main-list">
-              <li>Government & Law Forces</li>
-              <li>Corporate Sector</li>
+              <li>Government & Defense Forces</li>
+              <li>Corporate & Enterprise Sector</li>
+              <li>Research & Development Organizations</li>
             </ul>
-            <hr
-              style={{
-                margin: "12px 0",
-                border: "none",
-                borderTop: "1px solid #eee",
-              }}
-            />
             <div className="about-main-features">
               <div className="about-feature">
-                <span className="about-feature-icon">👍</span> Assured Quality
+                <span className="about-feature-icon">🏆</span> 
+                <span>Certified Quality Assurance</span>
               </div>
               <div className="about-feature">
-                <span className="about-feature-icon">👨‍💻</span> Highly Qualified
-                Team
+                <span className="about-feature-icon">👨‍💻</span> 
+                <span>Expert Engineering Team</span>
               </div>
             </div>
             <div className="about-main-contact">
-              <span className="about-contact-label">Call Us Anytime</span>
-              <span className="about-contact-phone">+91 172 5044700</span>
-              <button className="about-products-btn">Our Products</button>
+              <span className="about-contact-label">Connect With Us</span>
+              <a href="tel:+911725044700" className="about-contact-phone">+91 172 5044700</a>
+              <button className="about-products-btn">Explore Our Solutions</button>
             </div>
           </div>
         </div>
