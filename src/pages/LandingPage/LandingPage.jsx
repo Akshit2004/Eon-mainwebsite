@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import ConsultationSection from '../../components/ConsultationSection/ConsultationSection';
 import './LandingPage.css';
+import './PremisesGallery.css';
 import img1 from '../../assets/img1/1.png';
 import img2 from '../../assets/img1/2.png';
 import img3 from '../../assets/img1/3.png';
@@ -440,31 +441,19 @@ const LandingPage = () => {
             </h2>
           </div>
           <div className="premises-grid">
-            <div className="premises-item large">
-              <img src={gallery1} alt="Eon Premises 1" />
-            </div>
-            <div className="premises-item">
+            <div className="premises-item item1">
               <img src={gallery2} alt="Eon Premises 2" />
             </div>
-            <div className="premises-item">
-              <img src={gallery5} alt="Eon Premises 3" />
-            </div>
-            <div className="premises-item">
-              <img src={gallery6} alt="Eon Premises 4" />
-            </div>
-            <div className="premises-item">
-              <img src={gallery7} alt="Eon Premises 5" />
-            </div>
-            <div className="premises-item">
+            <div className="premises-item item2">
               <img src={gallery8} alt="Eon Premises 6" />
             </div>
-            <div className="premises-item">
+            <div className="premises-item item3">
               <img src={img6484} alt="Eon Premises 7" />
             </div>
-            <div className="premises-item">
+            <div className="premises-item item4">
               <img src={img6485} alt="Eon Premises 8" />
             </div>
-            <div className="premises-item">
+            <div className="premises-item item5">
               <img src={img6486} alt="Eon Premises 9" />
             </div>
           </div>
@@ -569,7 +558,7 @@ const LandingPage = () => {
                   <div className="reviewer-info">
                     <div className="reviewer-avatar"><span>S</span></div>
                     <div className="reviewer-details">
-                      <h4 className="reviewer-name">Shashank Srivastava (TL- Mobile dev)</h4>
+                      <h4 className="reviewer-name">Shashank Srivastava (TL- App Development)</h4>
                       <div className="review-stars">
                         <span className="star filled">★</span>
                         <span className="star filled">★</span>
